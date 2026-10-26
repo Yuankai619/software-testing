@@ -1,0 +1,372 @@
+[
+  {
+    "name": "default-no-qop",
+    "algorithm": null,
+    "qop": null,
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"85f29767730492c5fa9ded4693d75fb1\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "default-auth",
+    "algorithm": null,
+    "qop": "auth",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"ab14cb9a0672a8a3eeafaab8a27f4e7e\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "default-auth-int,auth",
+    "algorithm": null,
+    "qop": "auth-int,auth",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"ab14cb9a0672a8a3eeafaab8a27f4e7e\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "MD5-no-qop",
+    "algorithm": "MD5",
+    "qop": null,
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"85f29767730492c5fa9ded4693d75fb1\", algorithm=\"MD5\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "MD5-auth",
+    "algorithm": "MD5",
+    "qop": "auth",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"ab14cb9a0672a8a3eeafaab8a27f4e7e\", algorithm=\"MD5\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "MD5-auth-int,auth",
+    "algorithm": "MD5",
+    "qop": "auth-int,auth",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"ab14cb9a0672a8a3eeafaab8a27f4e7e\", algorithm=\"MD5\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "md5-sess-no-qop",
+    "algorithm": "md5-sess",
+    "qop": null,
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"2e1d59fbb684735da7ca30b528838500\", algorithm=\"md5-sess\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "md5-sess-auth",
+    "algorithm": "md5-sess",
+    "qop": "auth",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"dfcab53f7b5275c9d322f61a6c32fe8b\", algorithm=\"md5-sess\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "md5-sess-auth-int,auth",
+    "algorithm": "md5-sess",
+    "qop": "auth-int,auth",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"dfcab53f7b5275c9d322f61a6c32fe8b\", algorithm=\"md5-sess\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "SHA-no-qop",
+    "algorithm": "SHA",
+    "qop": null,
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"b5b36acf88f8fe8d392635a2bc886113356c2d71\", algorithm=\"SHA\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "SHA-auth",
+    "algorithm": "SHA",
+    "qop": "auth",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"ca9135f8276cdd80659d3c50eaafe9dd4e074284\", algorithm=\"SHA\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "SHA-auth-int,auth",
+    "algorithm": "SHA",
+    "qop": "auth-int,auth",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"ca9135f8276cdd80659d3c50eaafe9dd4e074284\", algorithm=\"SHA\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "sha-256-no-qop",
+    "algorithm": "sha-256",
+    "qop": null,
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"7e5be2af329c564357f31dc4c1a981f4b1fa8be8acecb743cb6c13deebeeb4dd\", algorithm=\"sha-256\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "sha-256-auth",
+    "algorithm": "sha-256",
+    "qop": "auth",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"53c03852164d1457f0eda6570b1dc1709c870c009a138c8f6ee357caa9e91588\", algorithm=\"sha-256\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "sha-256-auth-int,auth",
+    "algorithm": "sha-256",
+    "qop": "auth-int,auth",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"53c03852164d1457f0eda6570b1dc1709c870c009a138c8f6ee357caa9e91588\", algorithm=\"sha-256\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "SHA-512-no-qop",
+    "algorithm": "SHA-512",
+    "qop": null,
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"7f090009e35d7f4a2c049459270ed03271dbecb7500f3c0663f07f3e3e1471c21378c98da3522cb116b55a9c2584f0b237ecca5ab80876be7985a4fb5fafbb25\", algorithm=\"SHA-512\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "SHA-512-auth",
+    "algorithm": "SHA-512",
+    "qop": "auth",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"f8dcf4560c5c6401e90b01327a7edd48fd19d23e104c4886c8f0df77c6630d11ccfb4feb3f8b943a1f0ca71e14d5133331a729850dfbc0c80704cfbb3f30c956\", algorithm=\"SHA-512\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "SHA-512-auth-int,auth",
+    "algorithm": "SHA-512",
+    "qop": "auth-int,auth",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"f8dcf4560c5c6401e90b01327a7edd48fd19d23e104c4886c8f0df77c6630d11ccfb4feb3f8b943a1f0ca71e14d5133331a729850dfbc0c80704cfbb3f30c956\", algorithm=\"SHA-512\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "unicode-credentials",
+    "algorithm": "SHA-256",
+    "qop": "auth",
+    "username": "用戶",
+    "password": "päss密碼",
+    "realm": "réalm",
+    "observations": [
+      {
+        "header": "Digest username=\"用戶\", realm=\"réalm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"952c05d1291b90e89685868d191707ae7683cdfd971661e8f127638cca318ba9\", algorithm=\"SHA-256\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "empty-path-query-fragment",
+    "algorithm": "MD5",
+    "qop": "auth",
+    "url": "https://example.test?x=1#ignored",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/?x=1\", response=\"0c1720c9e985815fb31a9cdfac1bc4da\", algorithm=\"MD5\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "empty-qop",
+    "algorithm": "MD5",
+    "qop": "",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"85f29767730492c5fa9ded4693d75fb1\", algorithm=\"MD5\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "opaque",
+    "algorithm": "MD5",
+    "qop": "auth",
+    "opaque": "opaque-token",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"ab14cb9a0672a8a3eeafaab8a27f4e7e\", opaque=\"opaque-token\", algorithm=\"MD5\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "empty-algorithm",
+    "algorithm": "",
+    "qop": "auth",
+    "observations": [
+      {
+        "header": null,
+        "nonce_count": 0,
+        "last_nonce": ""
+      }
+    ]
+  },
+  {
+    "name": "unknown-algorithm",
+    "algorithm": "SHA-999",
+    "qop": "auth",
+    "observations": [
+      {
+        "header": null,
+        "nonce_count": 0,
+        "last_nonce": ""
+      }
+    ]
+  },
+  {
+    "name": "qop-auth-int-only",
+    "algorithm": "MD5",
+    "qop": "auth-int",
+    "observations": [
+      {
+        "header": null,
+        "nonce_count": 1,
+        "last_nonce": ""
+      }
+    ]
+  },
+  {
+    "name": "qop-space-not-trimmed",
+    "algorithm": "MD5",
+    "qop": "auth-int, auth",
+    "observations": [
+      {
+        "header": null,
+        "nonce_count": 1,
+        "last_nonce": ""
+      }
+    ]
+  },
+  {
+    "name": "same-then-new-nonce",
+    "algorithm": "MD5",
+    "qop": "auth",
+    "nonces": [
+      "nonce-A",
+      "nonce-A",
+      "nonce-B"
+    ],
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"ab14cb9a0672a8a3eeafaab8a27f4e7e\", algorithm=\"MD5\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      },
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"80ce84547a8e4a53fb311d96ddfa657b\", algorithm=\"MD5\", qop=\"auth\", nc=00000002, cnonce=\"f3560d1c741957fb\"",
+        "nonce_count": 2,
+        "last_nonce": "nonce-A"
+      },
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-B\", uri=\"/resource?x=1\", response=\"f8705e7da15c0fb38adfed07a26e849f\", algorithm=\"MD5\", qop=\"auth\", nc=00000001, cnonce=\"bf990eaae2eeac00\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-B"
+      }
+    ]
+  },
+  {
+    "name": "md5-sess-without-qop",
+    "algorithm": "MD5-SESS",
+    "qop": null,
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/resource?x=1\", response=\"2e1d59fbb684735da7ca30b528838500\", algorithm=\"MD5-SESS\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  },
+  {
+    "name": "post-with-query",
+    "algorithm": "SHA-512",
+    "qop": "auth",
+    "method": "POST",
+    "url": "http://example.test/a/b?x=1&x=2#fragment",
+    "observations": [
+      {
+        "header": "Digest username=\"user\", realm=\"realm\", nonce=\"nonce-A\", uri=\"/a/b?x=1&x=2\", response=\"6184a76f58e67ec03a21d135997498978ff5989ec195508b6a065dd4c503c510eddcfff3ed6ab0ac213d76cbbec21df7311b5a9a37849731596789c928604b5f\", algorithm=\"SHA-512\", qop=\"auth\", nc=00000001, cnonce=\"ed5756984632fb8c\"",
+        "nonce_count": 1,
+        "last_nonce": "nonce-A"
+      }
+    ]
+  }
+]

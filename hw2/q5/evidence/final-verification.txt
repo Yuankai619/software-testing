@@ -1,0 +1,1654 @@
+Note: switching to '7a13c041dbef42f9f3feb14110f02626f6892e9a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-c', 'import sys, requests; from requests.compat import JSONDecodeError; print(sys.version); print(requests.__file__); print(JSONDecodeError.__module__)']
+3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]
+/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/__init__.py
+json.decoder
+Exit code: 0; expected: 0
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'unittest', 'discover', '-s', '/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests', '-v']
+test_current_error_metadata_and_catch_hierarchy (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_current_error_metadata_and_catch_hierarchy) ... ok
+test_deepcopy_uses_compatible_reconstruction (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_deepcopy_uses_compatible_reconstruction) ... FAIL
+test_direct_constructor_round_trip (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_direct_constructor_round_trip) ... FAIL
+test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) ... 
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=0) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=1) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=2) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=3) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=4) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=5) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=0) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=1) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=2) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=3) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=4) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=5) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=0) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=1) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=2) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=3) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=4) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=5) ... FAIL
+test_valid_json_is_unchanged (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_valid_json_is_unchanged) ... ok
+test_worker_exception_does_not_break_process_pool (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_worker_exception_does_not_break_process_pool) ... ERROR
+
+======================================================================
+ERROR: test_worker_exception_does_not_break_process_pool (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_worker_exception_does_not_break_process_pool)
+----------------------------------------------------------------------
+concurrent.futures.process._RemoteTraceback: 
+'''
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/concurrent/futures/process.py", line 423, in wait_result_broken_or_wakeup
+    result_item = result_reader.recv()
+  File "/usr/lib/python3.14/multiprocessing/connection.py", line 258, in recv
+    return _ForkingPickler.loads(buf.getbuffer())
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+'''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 75, in test_worker_exception_does_not_break_process_pool
+    pool.submit(decode_invalid_json).result(timeout=20)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 450, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+
+======================================================================
+FAIL: test_deepcopy_uses_compatible_reconstruction (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_deepcopy_uses_compatible_reconstruction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 55, in test_deepcopy_uses_compatible_reconstruction
+    restored = copy.deepcopy(original)
+  File "/usr/lib/python3.14/copy.py", line 157, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/usr/lib/python3.14/copy.py", line 234, in _reconstruct
+    y = func(*args)
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 57, in test_deepcopy_uses_compatible_reconstruction
+    self.fail(f'JSON exception could not be copied: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be copied: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_direct_constructor_round_trip (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_direct_constructor_round_trip)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 50, in test_direct_constructor_round_trip
+    self.assert_same_json_error(original, self.round_trip(original, pickle.HIGHEST_PROTOCOL))
+                                          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.088s
+
+FAILED (failures=20, errors=1)
+Exit code: 1; expected: 1
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv-simplejson/bin/python', '-c', 'import sys, requests; from requests.compat import JSONDecodeError; print(sys.version); print(requests.__file__); print(JSONDecodeError.__module__)']
+3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]
+/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/__init__.py
+simplejson.errors
+Exit code: 0; expected: 0
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv-simplejson/bin/python', '-m', 'unittest', 'discover', '-s', '/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests', '-v']
+test_current_error_metadata_and_catch_hierarchy (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_current_error_metadata_and_catch_hierarchy) ... ok
+test_deepcopy_uses_compatible_reconstruction (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_deepcopy_uses_compatible_reconstruction) ... FAIL
+test_direct_constructor_round_trip (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_direct_constructor_round_trip) ... FAIL
+test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) ... 
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=0) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=1) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=2) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=3) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=4) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=5) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=0) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=1) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=2) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=3) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=4) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=5) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=0) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=1) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=2) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=3) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=4) ... FAIL
+  test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=5) ... FAIL
+test_valid_json_is_unchanged (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_valid_json_is_unchanged) ... ok
+test_worker_exception_does_not_break_process_pool (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_worker_exception_does_not_break_process_pool) ... ERROR
+
+======================================================================
+ERROR: test_worker_exception_does_not_break_process_pool (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_worker_exception_does_not_break_process_pool)
+----------------------------------------------------------------------
+concurrent.futures.process._RemoteTraceback: 
+'''
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/concurrent/futures/process.py", line 423, in wait_result_broken_or_wakeup
+    result_item = result_reader.recv()
+  File "/usr/lib/python3.14/multiprocessing/connection.py", line 258, in recv
+    return _ForkingPickler.loads(buf.getbuffer())
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+'''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 75, in test_worker_exception_does_not_break_process_pool
+    pool.submit(decode_invalid_json).result(timeout=20)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 450, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+
+======================================================================
+FAIL: test_deepcopy_uses_compatible_reconstruction (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_deepcopy_uses_compatible_reconstruction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 55, in test_deepcopy_uses_compatible_reconstruction
+    restored = copy.deepcopy(original)
+  File "/usr/lib/python3.14/copy.py", line 157, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/usr/lib/python3.14/copy.py", line 234, in _reconstruct
+    y = func(*args)
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 57, in test_deepcopy_uses_compatible_reconstruction
+    self.fail(f'JSON exception could not be copied: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be copied: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_direct_constructor_round_trip (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_direct_constructor_round_trip)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 50, in test_direct_constructor_round_trip
+    self.assert_same_json_error(original, self.round_trip(original, pickle.HIGHEST_PROTOCOL))
+                                          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{"answer":}', protocol=5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{}{}', protocol=5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+======================================================================
+FAIL: test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) (body=b'{\n"\xe8\xb3\x87\xe6\x96\x99": }', protocol=5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 33, in round_trip
+    return pickle.loads(pickle.dumps(error, protocol=protocol))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original/src/requests/exceptions.py", line 41, in __init__
+    CompatJSONDecodeError.__init__(self, *args)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 46, in test_response_errors_round_trip_all_pickle_protocols
+    self.assert_same_json_error(caught.exception, self.round_trip(caught.exception, protocol))
+                                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests/test_json_exception_pickle.py", line 35, in round_trip
+    self.fail(f'JSON exception could not be deserialized: {error}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: JSON exception could not be deserialized: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.084s
+
+FAILED (failures=20, errors=1)
+Exit code: 1; expected: 1
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/original at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'pytest', 'tests/test_requests.py', '-k', 'test_json_decode_error_is_pickleable', '-q', '-o', 'addopts=']
+FFFFFFFFFFFF                                                             [100%]
+=================================== FAILURES ===================================
+________ TestPreparingURLs.test_json_decode_error_is_pickleable[None-0] ________
+
+self = <tests.test_requests.TestPreparingURLs object at 0x7a7fbd6cec10>
+protocol = 0, encoding = None
+
+    @pytest.mark.parametrize("protocol", range(pickle.HIGHEST_PROTOCOL + 1))
+    @pytest.mark.parametrize("encoding", [None, "utf-8"])
+    def test_json_decode_error_is_pickleable(self, protocol, encoding):
+        r = requests.Response()
+        r._content = b'{"value":\n invalid}'
+        r.encoding = encoding
+        with pytest.raises(requests.exceptions.JSONDecodeError) as excinfo:
+            r.json()
+    
+        original = excinfo.value
+>       restored = pickle.loads(pickle.dumps(original, protocol=protocol))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_requests.py:2809: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = JSONDecodeError(), args = ('Expecting value: line 2 column 2 (char 11)',)
+kwargs = {}
+
+    def __init__(self, *args, **kwargs):
+        """
+        Construct the JSONDecodeError instance first with all
+        args. Then use it's args to construct the IOError so that
+        the json specific args aren't used as IOError specific args
+        and the error message from JSONDecodeError is preserved.
+        """
+>       CompatJSONDecodeError.__init__(self, *args)
+E       TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+src/requests/exceptions.py:41: TypeError
+________ TestPreparingURLs.test_json_decode_error_is_pickleable[None-1] ________
+
+self = <tests.test_requests.TestPreparingURLs object at 0x7a7fbd6cec60>
+protocol = 1, encoding = None
+
+    @pytest.mark.parametrize("protocol", range(pickle.HIGHEST_PROTOCOL + 1))
+    @pytest.mark.parametrize("encoding", [None, "utf-8"])
+    def test_json_decode_error_is_pickleable(self, protocol, encoding):
+        r = requests.Response()
+        r._content = b'{"value":\n invalid}'
+        r.encoding = encoding
+        with pytest.raises(requests.exceptions.JSONDecodeError) as excinfo:
+            r.json()
+    
+        original = excinfo.value
+>       restored = pickle.loads(pickle.dumps(original, protocol=protocol))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_requests.py:2809: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = JSONDecodeError(), args = ('Expecting value: line 2 column 2 (char 11)',)
+kwargs = {}
+
+    def __init__(self, *args, **kwargs):
+        """
+        Construct the JSONDecodeError instance first with all
+        args. Then use it's args to construct the IOError so that
+        the json specific args aren't used as IOError specific args
+        and the error message from JSONDecodeError is preserved.
+        """
+>       CompatJSONDecodeError.__init__(self, *args)
+E       TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+src/requests/exceptions.py:41: TypeError
+________ TestPreparingURLs.test_json_decode_error_is_pickleable[None-2] ________
+
+self = <tests.test_requests.TestPreparingURLs object at 0x7a7fbd6cecb0>
+protocol = 2, encoding = None
+
+    @pytest.mark.parametrize("protocol", range(pickle.HIGHEST_PROTOCOL + 1))
+    @pytest.mark.parametrize("encoding", [None, "utf-8"])
+    def test_json_decode_error_is_pickleable(self, protocol, encoding):
+        r = requests.Response()
+        r._content = b'{"value":\n invalid}'
+        r.encoding = encoding
+        with pytest.raises(requests.exceptions.JSONDecodeError) as excinfo:
+            r.json()
+    
+        original = excinfo.value
+>       restored = pickle.loads(pickle.dumps(original, protocol=protocol))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_requests.py:2809: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = JSONDecodeError(), args = ('Expecting value: line 2 column 2 (char 11)',)
+kwargs = {}
+
+    def __init__(self, *args, **kwargs):
+        """
+        Construct the JSONDecodeError instance first with all
+        args. Then use it's args to construct the IOError so that
+        the json specific args aren't used as IOError specific args
+        and the error message from JSONDecodeError is preserved.
+        """
+>       CompatJSONDecodeError.__init__(self, *args)
+E       TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+src/requests/exceptions.py:41: TypeError
+________ TestPreparingURLs.test_json_decode_error_is_pickleable[None-3] ________
+
+self = <tests.test_requests.TestPreparingURLs object at 0x7a7fbd6ced00>
+protocol = 3, encoding = None
+
+    @pytest.mark.parametrize("protocol", range(pickle.HIGHEST_PROTOCOL + 1))
+    @pytest.mark.parametrize("encoding", [None, "utf-8"])
+    def test_json_decode_error_is_pickleable(self, protocol, encoding):
+        r = requests.Response()
+        r._content = b'{"value":\n invalid}'
+        r.encoding = encoding
+        with pytest.raises(requests.exceptions.JSONDecodeError) as excinfo:
+            r.json()
+    
+        original = excinfo.value
+>       restored = pickle.loads(pickle.dumps(original, protocol=protocol))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_requests.py:2809: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = JSONDecodeError(), args = ('Expecting value: line 2 column 2 (char 11)',)
+kwargs = {}
+
+    def __init__(self, *args, **kwargs):
+        """
+        Construct the JSONDecodeError instance first with all
+        args. Then use it's args to construct the IOError so that
+        the json specific args aren't used as IOError specific args
+        and the error message from JSONDecodeError is preserved.
+        """
+>       CompatJSONDecodeError.__init__(self, *args)
+E       TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+src/requests/exceptions.py:41: TypeError
+________ TestPreparingURLs.test_json_decode_error_is_pickleable[None-4] ________
+
+self = <tests.test_requests.TestPreparingURLs object at 0x7a7fbd6ced50>
+protocol = 4, encoding = None
+
+    @pytest.mark.parametrize("protocol", range(pickle.HIGHEST_PROTOCOL + 1))
+    @pytest.mark.parametrize("encoding", [None, "utf-8"])
+    def test_json_decode_error_is_pickleable(self, protocol, encoding):
+        r = requests.Response()
+        r._content = b'{"value":\n invalid}'
+        r.encoding = encoding
+        with pytest.raises(requests.exceptions.JSONDecodeError) as excinfo:
+            r.json()
+    
+        original = excinfo.value
+>       restored = pickle.loads(pickle.dumps(original, protocol=protocol))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_requests.py:2809: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = JSONDecodeError(), args = ('Expecting value: line 2 column 2 (char 11)',)
+kwargs = {}
+
+    def __init__(self, *args, **kwargs):
+        """
+        Construct the JSONDecodeError instance first with all
+        args. Then use it's args to construct the IOError so that
+        the json specific args aren't used as IOError specific args
+        and the error message from JSONDecodeError is preserved.
+        """
+>       CompatJSONDecodeError.__init__(self, *args)
+E       TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+src/requests/exceptions.py:41: TypeError
+________ TestPreparingURLs.test_json_decode_error_is_pickleable[None-5] ________
+
+self = <tests.test_requests.TestPreparingURLs object at 0x7a7fbd6ceda0>
+protocol = 5, encoding = None
+
+    @pytest.mark.parametrize("protocol", range(pickle.HIGHEST_PROTOCOL + 1))
+    @pytest.mark.parametrize("encoding", [None, "utf-8"])
+    def test_json_decode_error_is_pickleable(self, protocol, encoding):
+        r = requests.Response()
+        r._content = b'{"value":\n invalid}'
+        r.encoding = encoding
+        with pytest.raises(requests.exceptions.JSONDecodeError) as excinfo:
+            r.json()
+    
+        original = excinfo.value
+>       restored = pickle.loads(pickle.dumps(original, protocol=protocol))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_requests.py:2809: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = JSONDecodeError(), args = ('Expecting value: line 2 column 2 (char 11)',)
+kwargs = {}
+
+    def __init__(self, *args, **kwargs):
+        """
+        Construct the JSONDecodeError instance first with all
+        args. Then use it's args to construct the IOError so that
+        the json specific args aren't used as IOError specific args
+        and the error message from JSONDecodeError is preserved.
+        """
+>       CompatJSONDecodeError.__init__(self, *args)
+E       TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+src/requests/exceptions.py:41: TypeError
+_______ TestPreparingURLs.test_json_decode_error_is_pickleable[utf-8-0] ________
+
+self = <tests.test_requests.TestPreparingURLs object at 0x7a7fbd6cedf0>
+protocol = 0, encoding = 'utf-8'
+
+    @pytest.mark.parametrize("protocol", range(pickle.HIGHEST_PROTOCOL + 1))
+    @pytest.mark.parametrize("encoding", [None, "utf-8"])
+    def test_json_decode_error_is_pickleable(self, protocol, encoding):
+        r = requests.Response()
+        r._content = b'{"value":\n invalid}'
+        r.encoding = encoding
+        with pytest.raises(requests.exceptions.JSONDecodeError) as excinfo:
+            r.json()
+    
+        original = excinfo.value
+>       restored = pickle.loads(pickle.dumps(original, protocol=protocol))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_requests.py:2809: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = JSONDecodeError(), args = ('Expecting value: line 2 column 2 (char 11)',)
+kwargs = {}
+
+    def __init__(self, *args, **kwargs):
+        """
+        Construct the JSONDecodeError instance first with all
+        args. Then use it's args to construct the IOError so that
+        the json specific args aren't used as IOError specific args
+        and the error message from JSONDecodeError is preserved.
+        """
+>       CompatJSONDecodeError.__init__(self, *args)
+E       TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+src/requests/exceptions.py:41: TypeError
+_______ TestPreparingURLs.test_json_decode_error_is_pickleable[utf-8-1] ________
+
+self = <tests.test_requests.TestPreparingURLs object at 0x7a7fbd6cee40>
+protocol = 1, encoding = 'utf-8'
+
+    @pytest.mark.parametrize("protocol", range(pickle.HIGHEST_PROTOCOL + 1))
+    @pytest.mark.parametrize("encoding", [None, "utf-8"])
+    def test_json_decode_error_is_pickleable(self, protocol, encoding):
+        r = requests.Response()
+        r._content = b'{"value":\n invalid}'
+        r.encoding = encoding
+        with pytest.raises(requests.exceptions.JSONDecodeError) as excinfo:
+            r.json()
+    
+        original = excinfo.value
+>       restored = pickle.loads(pickle.dumps(original, protocol=protocol))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_requests.py:2809: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = JSONDecodeError(), args = ('Expecting value: line 2 column 2 (char 11)',)
+kwargs = {}
+
+    def __init__(self, *args, **kwargs):
+        """
+        Construct the JSONDecodeError instance first with all
+        args. Then use it's args to construct the IOError so that
+        the json specific args aren't used as IOError specific args
+        and the error message from JSONDecodeError is preserved.
+        """
+>       CompatJSONDecodeError.__init__(self, *args)
+E       TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+src/requests/exceptions.py:41: TypeError
+_______ TestPreparingURLs.test_json_decode_error_is_pickleable[utf-8-2] ________
+
+self = <tests.test_requests.TestPreparingURLs object at 0x7a7fbd6cef80>
+protocol = 2, encoding = 'utf-8'
+
+    @pytest.mark.parametrize("protocol", range(pickle.HIGHEST_PROTOCOL + 1))
+    @pytest.mark.parametrize("encoding", [None, "utf-8"])
+    def test_json_decode_error_is_pickleable(self, protocol, encoding):
+        r = requests.Response()
+        r._content = b'{"value":\n invalid}'
+        r.encoding = encoding
+        with pytest.raises(requests.exceptions.JSONDecodeError) as excinfo:
+            r.json()
+    
+        original = excinfo.value
+>       restored = pickle.loads(pickle.dumps(original, protocol=protocol))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_requests.py:2809: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = JSONDecodeError(), args = ('Expecting value: line 2 column 2 (char 11)',)
+kwargs = {}
+
+    def __init__(self, *args, **kwargs):
+        """
+        Construct the JSONDecodeError instance first with all
+        args. Then use it's args to construct the IOError so that
+        the json specific args aren't used as IOError specific args
+        and the error message from JSONDecodeError is preserved.
+        """
+>       CompatJSONDecodeError.__init__(self, *args)
+E       TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+src/requests/exceptions.py:41: TypeError
+_______ TestPreparingURLs.test_json_decode_error_is_pickleable[utf-8-3] ________
+
+self = <tests.test_requests.TestPreparingURLs object at 0x7a7fbd6cef30>
+protocol = 3, encoding = 'utf-8'
+
+    @pytest.mark.parametrize("protocol", range(pickle.HIGHEST_PROTOCOL + 1))
+    @pytest.mark.parametrize("encoding", [None, "utf-8"])
+    def test_json_decode_error_is_pickleable(self, protocol, encoding):
+        r = requests.Response()
+        r._content = b'{"value":\n invalid}'
+        r.encoding = encoding
+        with pytest.raises(requests.exceptions.JSONDecodeError) as excinfo:
+            r.json()
+    
+        original = excinfo.value
+>       restored = pickle.loads(pickle.dumps(original, protocol=protocol))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_requests.py:2809: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = JSONDecodeError(), args = ('Expecting value: line 2 column 2 (char 11)',)
+kwargs = {}
+
+    def __init__(self, *args, **kwargs):
+        """
+        Construct the JSONDecodeError instance first with all
+        args. Then use it's args to construct the IOError so that
+        the json specific args aren't used as IOError specific args
+        and the error message from JSONDecodeError is preserved.
+        """
+>       CompatJSONDecodeError.__init__(self, *args)
+E       TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+src/requests/exceptions.py:41: TypeError
+_______ TestPreparingURLs.test_json_decode_error_is_pickleable[utf-8-4] ________
+
+self = <tests.test_requests.TestPreparingURLs object at 0x7a7fbd6cefd0>
+protocol = 4, encoding = 'utf-8'
+
+    @pytest.mark.parametrize("protocol", range(pickle.HIGHEST_PROTOCOL + 1))
+    @pytest.mark.parametrize("encoding", [None, "utf-8"])
+    def test_json_decode_error_is_pickleable(self, protocol, encoding):
+        r = requests.Response()
+        r._content = b'{"value":\n invalid}'
+        r.encoding = encoding
+        with pytest.raises(requests.exceptions.JSONDecodeError) as excinfo:
+            r.json()
+    
+        original = excinfo.value
+>       restored = pickle.loads(pickle.dumps(original, protocol=protocol))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_requests.py:2809: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = JSONDecodeError(), args = ('Expecting value: line 2 column 2 (char 11)',)
+kwargs = {}
+
+    def __init__(self, *args, **kwargs):
+        """
+        Construct the JSONDecodeError instance first with all
+        args. Then use it's args to construct the IOError so that
+        the json specific args aren't used as IOError specific args
+        and the error message from JSONDecodeError is preserved.
+        """
+>       CompatJSONDecodeError.__init__(self, *args)
+E       TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+src/requests/exceptions.py:41: TypeError
+_______ TestPreparingURLs.test_json_decode_error_is_pickleable[utf-8-5] ________
+
+self = <tests.test_requests.TestPreparingURLs object at 0x7a7fbd6cf020>
+protocol = 5, encoding = 'utf-8'
+
+    @pytest.mark.parametrize("protocol", range(pickle.HIGHEST_PROTOCOL + 1))
+    @pytest.mark.parametrize("encoding", [None, "utf-8"])
+    def test_json_decode_error_is_pickleable(self, protocol, encoding):
+        r = requests.Response()
+        r._content = b'{"value":\n invalid}'
+        r.encoding = encoding
+        with pytest.raises(requests.exceptions.JSONDecodeError) as excinfo:
+            r.json()
+    
+        original = excinfo.value
+>       restored = pickle.loads(pickle.dumps(original, protocol=protocol))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_requests.py:2809: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = JSONDecodeError(), args = ('Expecting value: line 2 column 2 (char 11)',)
+kwargs = {}
+
+    def __init__(self, *args, **kwargs):
+        """
+        Construct the JSONDecodeError instance first with all
+        args. Then use it's args to construct the IOError so that
+        the json specific args aren't used as IOError specific args
+        and the error message from JSONDecodeError is preserved.
+        """
+>       CompatJSONDecodeError.__init__(self, *args)
+E       TypeError: JSONDecodeError.__init__() missing 2 required positional arguments: 'doc' and 'pos'
+
+src/requests/exceptions.py:41: TypeError
+=========================== short test summary info ============================
+FAILED tests/test_requests.py::TestPreparingURLs::test_json_decode_error_is_pickleable[None-0]
+FAILED tests/test_requests.py::TestPreparingURLs::test_json_decode_error_is_pickleable[None-1]
+FAILED tests/test_requests.py::TestPreparingURLs::test_json_decode_error_is_pickleable[None-2]
+FAILED tests/test_requests.py::TestPreparingURLs::test_json_decode_error_is_pickleable[None-3]
+FAILED tests/test_requests.py::TestPreparingURLs::test_json_decode_error_is_pickleable[None-4]
+FAILED tests/test_requests.py::TestPreparingURLs::test_json_decode_error_is_pickleable[None-5]
+FAILED tests/test_requests.py::TestPreparingURLs::test_json_decode_error_is_pickleable[utf-8-0]
+FAILED tests/test_requests.py::TestPreparingURLs::test_json_decode_error_is_pickleable[utf-8-1]
+FAILED tests/test_requests.py::TestPreparingURLs::test_json_decode_error_is_pickleable[utf-8-2]
+FAILED tests/test_requests.py::TestPreparingURLs::test_json_decode_error_is_pickleable[utf-8-3]
+FAILED tests/test_requests.py::TestPreparingURLs::test_json_decode_error_is_pickleable[utf-8-4]
+FAILED tests/test_requests.py::TestPreparingURLs::test_json_decode_error_is_pickleable[utf-8-5]
+12 failed, 322 deselected in 0.35s
+Exit code: 1; expected: 1
+Note: switching to '7a13c041dbef42f9f3feb14110f02626f6892e9a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/my at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-c', 'import sys, requests; from requests.compat import JSONDecodeError; print(sys.version); print(requests.__file__); print(JSONDecodeError.__module__)']
+3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]
+/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/my/src/requests/__init__.py
+json.decoder
+Exit code: 0; expected: 0
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/my at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'unittest', 'discover', '-s', '/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests', '-v']
+test_current_error_metadata_and_catch_hierarchy (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_current_error_metadata_and_catch_hierarchy) ... ok
+test_deepcopy_uses_compatible_reconstruction (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_deepcopy_uses_compatible_reconstruction) ... ok
+test_direct_constructor_round_trip (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_direct_constructor_round_trip) ... ok
+test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) ... ok
+test_valid_json_is_unchanged (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_valid_json_is_unchanged) ... ok
+test_worker_exception_does_not_break_process_pool (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_worker_exception_does_not_break_process_pool) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.089s
+
+OK
+Exit code: 0; expected: 0
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/my at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv-simplejson/bin/python', '-c', 'import sys, requests; from requests.compat import JSONDecodeError; print(sys.version); print(requests.__file__); print(JSONDecodeError.__module__)']
+3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]
+/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/my/src/requests/__init__.py
+simplejson.errors
+Exit code: 0; expected: 0
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/my at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv-simplejson/bin/python', '-m', 'unittest', 'discover', '-s', '/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests', '-v']
+test_current_error_metadata_and_catch_hierarchy (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_current_error_metadata_and_catch_hierarchy) ... ok
+test_deepcopy_uses_compatible_reconstruction (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_deepcopy_uses_compatible_reconstruction) ... ok
+test_direct_constructor_round_trip (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_direct_constructor_round_trip) ... ok
+test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) ... ok
+test_valid_json_is_unchanged (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_valid_json_is_unchanged) ... ok
+test_worker_exception_does_not_break_process_pool (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_worker_exception_does_not_break_process_pool) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.099s
+
+OK
+Exit code: 0; expected: 0
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/my at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'pytest', '-p', 'pytest_httpbin.plugin', 'tests/test_requests.py', 'tests/test_lowlevel.py', '-k', 'json or pickle', '-q', '-o', 'addopts=']
+[2026-10-26 22:39:19,872] WARNING in core: flasgger is not installed; serving the static landing page at / and skipping the Swagger UI and /spec.json.
+............                                                             [100%]
+12 passed, 330 deselected in 5.67s
+Exit code: 0; expected: 0
+Note: switching to '7a13c041dbef42f9f3feb14110f02626f6892e9a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/agent at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-c', 'import sys, requests; from requests.compat import JSONDecodeError; print(sys.version); print(requests.__file__); print(JSONDecodeError.__module__)']
+3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]
+/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/agent/src/requests/__init__.py
+json.decoder
+Exit code: 0; expected: 0
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/agent at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'unittest', 'discover', '-s', '/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests', '-v']
+test_current_error_metadata_and_catch_hierarchy (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_current_error_metadata_and_catch_hierarchy) ... ok
+test_deepcopy_uses_compatible_reconstruction (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_deepcopy_uses_compatible_reconstruction) ... ok
+test_direct_constructor_round_trip (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_direct_constructor_round_trip) ... ok
+test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) ... ok
+test_valid_json_is_unchanged (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_valid_json_is_unchanged) ... ok
+test_worker_exception_does_not_break_process_pool (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_worker_exception_does_not_break_process_pool) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.100s
+
+OK
+Exit code: 0; expected: 0
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/agent at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv-simplejson/bin/python', '-c', 'import sys, requests; from requests.compat import JSONDecodeError; print(sys.version); print(requests.__file__); print(JSONDecodeError.__module__)']
+3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]
+/home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/agent/src/requests/__init__.py
+simplejson.errors
+Exit code: 0; expected: 0
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/agent at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv-simplejson/bin/python', '-m', 'unittest', 'discover', '-s', '/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests', '-v']
+test_current_error_metadata_and_catch_hierarchy (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_current_error_metadata_and_catch_hierarchy) ... ok
+test_deepcopy_uses_compatible_reconstruction (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_deepcopy_uses_compatible_reconstruction) ... ok
+test_direct_constructor_round_trip (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_direct_constructor_round_trip) ... ok
+test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) ... ok
+test_valid_json_is_unchanged (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_valid_json_is_unchanged) ... ok
+test_worker_exception_does_not_break_process_pool (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_worker_exception_does_not_break_process_pool) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.095s
+
+OK
+Exit code: 0; expected: 0
+
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/q5-verify-fgq0eqj_/agent at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'pytest', '-p', 'pytest_httpbin.plugin', 'tests/test_requests.py', 'tests/test_lowlevel.py', '-k', 'json or pickle', '-q', '-o', 'addopts=']
+[2026-10-26 22:39:26,378] WARNING in core: flasgger is not installed; serving the static landing page at / and skipping the Swagger UI and /spec.json.
+........................                                                 [100%]
+24 passed, 330 deselected in 6.17s
+Exit code: 0; expected: 0
+Q5: original fails as expected; both independent repairs pass.

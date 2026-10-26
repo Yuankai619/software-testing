@@ -1,0 +1,9 @@
+UTC: 2026-10-26T14:26:57.391790+00:00
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/requests
+HEAD: 7a13c041dbef42f9f3feb14110f02626f6892e9a
+PYTHONPATH=/home/yuankai/Projects/School/.cache/hw2-upstream/requests/src
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'pytest', 'tests/test_lowlevel.py', '-k', 'digest', '-q', '-o', 'addopts=']
+...                                                                      [100%]
+3 passed, 17 deselected in 4.52s
+Exit code: 0

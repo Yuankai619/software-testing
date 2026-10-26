@@ -1,0 +1,131 @@
+UTC: 2026-10-26T14:28:11.960549+00:00
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my
+HEAD: 7a13c041dbef42f9f3feb14110f02626f6892e9a
+PYTHONPATH=/home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/src
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'pytest', 'tests/test_requests.py', '-k', 'json or pickle', '-q', '-o', 'addopts=']
+EEEEEEE.EEE                                                              [100%]
+==================================== ERRORS ====================================
+___ ERROR at setup of TestRequests.test_request_and_response_are_pickleable ____
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/test_requests.py, line 1478
+      def test_request_and_response_are_pickleable(self, httpbin):
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py, line 25
+  @pytest.fixture
+  def httpbin(httpbin):
+E       recursive dependency involving fixture 'httpbin' detected
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, doctest_namespace, httpbin, httpbin_secure, monkeypatch, nosan_server, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py:25
+______ ERROR at setup of TestRequests.test_prepared_request_is_pickleable ______
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/test_requests.py, line 1490
+      def test_prepared_request_is_pickleable(self, httpbin):
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py, line 25
+  @pytest.fixture
+  def httpbin(httpbin):
+E       recursive dependency involving fixture 'httpbin' detected
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, doctest_namespace, httpbin, httpbin_secure, monkeypatch, nosan_server, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py:25
+_ ERROR at setup of TestRequests.test_prepared_request_with_file_is_pickleable _
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/test_requests.py, line 1504
+      def test_prepared_request_with_file_is_pickleable(self, httpbin):
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py, line 25
+  @pytest.fixture
+  def httpbin(httpbin):
+E       recursive dependency involving fixture 'httpbin' detected
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, doctest_namespace, httpbin, httpbin_secure, monkeypatch, nosan_server, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py:25
+_ ERROR at setup of TestRequests.test_prepared_request_with_hook_is_pickleable _
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/test_requests.py, line 1520
+      def test_prepared_request_with_hook_is_pickleable(self, httpbin):
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py, line 25
+  @pytest.fixture
+  def httpbin(httpbin):
+E       recursive dependency involving fixture 'httpbin' detected
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, doctest_namespace, httpbin, httpbin_secure, monkeypatch, nosan_server, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py:25
+____ ERROR at setup of TestRequests.test_json_param_post_content_type_works ____
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/test_requests.py, line 2047
+      def test_json_param_post_content_type_works(self, httpbin):
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py, line 25
+  @pytest.fixture
+  def httpbin(httpbin):
+E       recursive dependency involving fixture 'httpbin' detected
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, doctest_namespace, httpbin, httpbin_secure, monkeypatch, nosan_server, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py:25
+_ ERROR at setup of TestRequests.test_json_param_post_should_not_override_data_param _
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/test_requests.py, line 2053
+      def test_json_param_post_should_not_override_data_param(self, httpbin):
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py, line 25
+  @pytest.fixture
+  def httpbin(httpbin):
+E       recursive dependency involving fixture 'httpbin' detected
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, doctest_namespace, httpbin, httpbin_secure, monkeypatch, nosan_server, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py:25
+____ ERROR at setup of TestRequests.test_response_json_when_content_is_None ____
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/test_requests.py, line 2116
+      def test_response_json_when_content_is_None(self, httpbin):
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py, line 25
+  @pytest.fixture
+  def httpbin(httpbin):
+E       recursive dependency involving fixture 'httpbin' detected
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, doctest_namespace, httpbin, httpbin_secure, monkeypatch, nosan_server, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py:25
+____________ ERROR at setup of TestPreparingURLs.test_post_json_nan ____________
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/test_requests.py, line 2780
+      def test_post_json_nan(self, httpbin):
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py, line 25
+  @pytest.fixture
+  def httpbin(httpbin):
+E       recursive dependency involving fixture 'httpbin' detected
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, doctest_namespace, httpbin, httpbin_secure, monkeypatch, nosan_server, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py:25
+______ ERROR at setup of TestPreparingURLs.test_json_decode_compatibility ______
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/test_requests.py, line 2785
+      def test_json_decode_compatibility(self, httpbin):
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py, line 25
+  @pytest.fixture
+  def httpbin(httpbin):
+E       recursive dependency involving fixture 'httpbin' detected
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, doctest_namespace, httpbin, httpbin_secure, monkeypatch, nosan_server, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py:25
+____ ERROR at setup of TestPreparingURLs.test_json_decode_persists_doc_attr ____
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/test_requests.py, line 2793
+      def test_json_decode_persists_doc_attr(self, httpbin):
+file /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py, line 25
+  @pytest.fixture
+  def httpbin(httpbin):
+E       recursive dependency involving fixture 'httpbin' detected
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, doctest_namespace, httpbin, httpbin_secure, monkeypatch, nosan_server, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/tests/conftest.py:25
+=========================== short test summary info ============================
+ERROR tests/test_requests.py::TestRequests::test_request_and_response_are_pickleable
+ERROR tests/test_requests.py::TestRequests::test_prepared_request_is_pickleable
+ERROR tests/test_requests.py::TestRequests::test_prepared_request_with_file_is_pickleable
+ERROR tests/test_requests.py::TestRequests::test_prepared_request_with_hook_is_pickleable
+ERROR tests/test_requests.py::TestRequests::test_json_param_post_content_type_works
+ERROR tests/test_requests.py::TestRequests::test_json_param_post_should_not_override_data_param
+ERROR tests/test_requests.py::TestRequests::test_response_json_when_content_is_None
+ERROR tests/test_requests.py::TestPreparingURLs::test_post_json_nan
+ERROR tests/test_requests.py::TestPreparingURLs::test_json_decode_compatibility
+ERROR tests/test_requests.py::TestPreparingURLs::test_json_decode_persists_doc_attr
+1 passed, 311 deselected, 10 errors in 0.16s
+Exit code: 1

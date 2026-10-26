@@ -1,0 +1,98 @@
+Note: switching to '7a13c041dbef42f9f3feb14110f02626f6892e9a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+
+before: /home/yuankai/Projects/School/.cache/hw2-upstream/q4-verify-90pl3fh2/requests at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'unittest', 'discover', '-s', '/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q4/tests', '-v']
+test_00_default_no_qop (test_digest_characterization.DigestCharacterization.test_00_default_no_qop) ... ok
+test_01_default_auth (test_digest_characterization.DigestCharacterization.test_01_default_auth) ... ok
+test_02_default_auth_int,auth (test_digest_characterization.DigestCharacterization.test_02_default_auth_int,auth) ... ok
+test_03_MD5_no_qop (test_digest_characterization.DigestCharacterization.test_03_MD5_no_qop) ... ok
+test_04_MD5_auth (test_digest_characterization.DigestCharacterization.test_04_MD5_auth) ... ok
+test_05_MD5_auth_int,auth (test_digest_characterization.DigestCharacterization.test_05_MD5_auth_int,auth) ... ok
+test_06_md5_sess_no_qop (test_digest_characterization.DigestCharacterization.test_06_md5_sess_no_qop) ... ok
+test_07_md5_sess_auth (test_digest_characterization.DigestCharacterization.test_07_md5_sess_auth) ... ok
+test_08_md5_sess_auth_int,auth (test_digest_characterization.DigestCharacterization.test_08_md5_sess_auth_int,auth) ... ok
+test_09_SHA_no_qop (test_digest_characterization.DigestCharacterization.test_09_SHA_no_qop) ... ok
+test_10_SHA_auth (test_digest_characterization.DigestCharacterization.test_10_SHA_auth) ... ok
+test_11_SHA_auth_int,auth (test_digest_characterization.DigestCharacterization.test_11_SHA_auth_int,auth) ... ok
+test_12_sha_256_no_qop (test_digest_characterization.DigestCharacterization.test_12_sha_256_no_qop) ... ok
+test_13_sha_256_auth (test_digest_characterization.DigestCharacterization.test_13_sha_256_auth) ... ok
+test_14_sha_256_auth_int,auth (test_digest_characterization.DigestCharacterization.test_14_sha_256_auth_int,auth) ... ok
+test_15_SHA_512_no_qop (test_digest_characterization.DigestCharacterization.test_15_SHA_512_no_qop) ... ok
+test_16_SHA_512_auth (test_digest_characterization.DigestCharacterization.test_16_SHA_512_auth) ... ok
+test_17_SHA_512_auth_int,auth (test_digest_characterization.DigestCharacterization.test_17_SHA_512_auth_int,auth) ... ok
+test_18_unicode_credentials (test_digest_characterization.DigestCharacterization.test_18_unicode_credentials) ... ok
+test_19_empty_path_query_fragment (test_digest_characterization.DigestCharacterization.test_19_empty_path_query_fragment) ... ok
+test_20_empty_qop (test_digest_characterization.DigestCharacterization.test_20_empty_qop) ... ok
+test_21_opaque (test_digest_characterization.DigestCharacterization.test_21_opaque) ... ok
+test_22_empty_algorithm (test_digest_characterization.DigestCharacterization.test_22_empty_algorithm) ... ok
+test_23_unknown_algorithm (test_digest_characterization.DigestCharacterization.test_23_unknown_algorithm) ... ok
+test_24_qop_auth_int_only (test_digest_characterization.DigestCharacterization.test_24_qop_auth_int_only) ... ok
+test_25_qop_space_not_trimmed (test_digest_characterization.DigestCharacterization.test_25_qop_space_not_trimmed) ... ok
+test_26_same_then_new_nonce (test_digest_characterization.DigestCharacterization.test_26_same_then_new_nonce) ... ok
+test_27_md5_sess_without_qop (test_digest_characterization.DigestCharacterization.test_27_md5_sess_without_qop) ... ok
+test_28_post_with_query (test_digest_characterization.DigestCharacterization.test_28_post_with_query) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.006s
+
+OK
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'pytest', 'tests/test_lowlevel.py', '-k', 'digest', '-q', '-o', 'addopts=']
+...                                                                      [100%]
+3 passed, 17 deselected in 4.54s
+
+after: /home/yuankai/Projects/School/.cache/hw2-upstream/q4-verify-90pl3fh2/requests at 7a13c041dbef42f9f3feb14110f02626f6892e9a
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'unittest', 'discover', '-s', '/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q4/tests', '-v']
+test_00_default_no_qop (test_digest_characterization.DigestCharacterization.test_00_default_no_qop) ... ok
+test_01_default_auth (test_digest_characterization.DigestCharacterization.test_01_default_auth) ... ok
+test_02_default_auth_int,auth (test_digest_characterization.DigestCharacterization.test_02_default_auth_int,auth) ... ok
+test_03_MD5_no_qop (test_digest_characterization.DigestCharacterization.test_03_MD5_no_qop) ... ok
+test_04_MD5_auth (test_digest_characterization.DigestCharacterization.test_04_MD5_auth) ... ok
+test_05_MD5_auth_int,auth (test_digest_characterization.DigestCharacterization.test_05_MD5_auth_int,auth) ... ok
+test_06_md5_sess_no_qop (test_digest_characterization.DigestCharacterization.test_06_md5_sess_no_qop) ... ok
+test_07_md5_sess_auth (test_digest_characterization.DigestCharacterization.test_07_md5_sess_auth) ... ok
+test_08_md5_sess_auth_int,auth (test_digest_characterization.DigestCharacterization.test_08_md5_sess_auth_int,auth) ... ok
+test_09_SHA_no_qop (test_digest_characterization.DigestCharacterization.test_09_SHA_no_qop) ... ok
+test_10_SHA_auth (test_digest_characterization.DigestCharacterization.test_10_SHA_auth) ... ok
+test_11_SHA_auth_int,auth (test_digest_characterization.DigestCharacterization.test_11_SHA_auth_int,auth) ... ok
+test_12_sha_256_no_qop (test_digest_characterization.DigestCharacterization.test_12_sha_256_no_qop) ... ok
+test_13_sha_256_auth (test_digest_characterization.DigestCharacterization.test_13_sha_256_auth) ... ok
+test_14_sha_256_auth_int,auth (test_digest_characterization.DigestCharacterization.test_14_sha_256_auth_int,auth) ... ok
+test_15_SHA_512_no_qop (test_digest_characterization.DigestCharacterization.test_15_SHA_512_no_qop) ... ok
+test_16_SHA_512_auth (test_digest_characterization.DigestCharacterization.test_16_SHA_512_auth) ... ok
+test_17_SHA_512_auth_int,auth (test_digest_characterization.DigestCharacterization.test_17_SHA_512_auth_int,auth) ... ok
+test_18_unicode_credentials (test_digest_characterization.DigestCharacterization.test_18_unicode_credentials) ... ok
+test_19_empty_path_query_fragment (test_digest_characterization.DigestCharacterization.test_19_empty_path_query_fragment) ... ok
+test_20_empty_qop (test_digest_characterization.DigestCharacterization.test_20_empty_qop) ... ok
+test_21_opaque (test_digest_characterization.DigestCharacterization.test_21_opaque) ... ok
+test_22_empty_algorithm (test_digest_characterization.DigestCharacterization.test_22_empty_algorithm) ... ok
+test_23_unknown_algorithm (test_digest_characterization.DigestCharacterization.test_23_unknown_algorithm) ... ok
+test_24_qop_auth_int_only (test_digest_characterization.DigestCharacterization.test_24_qop_auth_int_only) ... ok
+test_25_qop_space_not_trimmed (test_digest_characterization.DigestCharacterization.test_25_qop_space_not_trimmed) ... ok
+test_26_same_then_new_nonce (test_digest_characterization.DigestCharacterization.test_26_same_then_new_nonce) ... ok
+test_27_md5_sess_without_qop (test_digest_characterization.DigestCharacterization.test_27_md5_sess_without_qop) ... ok
+test_28_post_with_query (test_digest_characterization.DigestCharacterization.test_28_post_with_query) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.006s
+
+OK
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'pytest', 'tests/test_lowlevel.py', '-k', 'digest', '-q', '-o', 'addopts=']
+...                                                                      [100%]
+3 passed, 17 deselected in 4.52s
+Q4: original and refactored behavior agree; upstream digest tests pass.

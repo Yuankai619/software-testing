@@ -1,0 +1,54 @@
+# 小弟任務單：HW2 Q4（既有系統重構）與 Q5（既有系統修 bug＋與 AI agent 比較）
+
+你是 software-testing 的開發小弟（agent 名 `school-dev-hw2-q45`，看板卡片 `K2`），由 orch（另一個 Claude session）派來。你只負責這一件事，在自己的 worktree 裡做完。回覆用繁體中文；程式碼、commit、繳交文件用英文。
+
+## 任務
+先讀 `hw2/requirement.txt`（題目全文）與 `/home/yuankai/Projects/School/.orch/hw2-decisions.md`。只做 **Question 4 和 Question 5**，目標是拿滿分。
+
+**選系統**：挑一個真正的大型、活躍的開源 Python 專案（純 Python、`pip install -e .` 就能跑測試的，例如 requests、attrs、click、more-itertools 等級；自己判斷）。clone 到 `/home/yuankai/Projects/School/.cache/hw2-upstream/<專案>`（repo 外，不要把整個專案 commit 進來）。固定一個 commit hash 並寫進文件。不要對上游開 PR、issue 或留言。
+
+**Q4（重構）**：在那個系統裡找一段真的值得重構的程式（說明為什麼）。先寫 characterization tests 捕捉相關行為、在原始碼上全綠；重構；再跑一次全綠，也跑上游自己的相關測試。繳交物放 `hw2/q4/`：`tests/`（你寫的測試）、`refactor.patch`（`git diff` 產生）、`evidence/`（重構前後的真實測試輸出）、`report.md`（系統與 commit、選這段的理由、測試捕捉了哪些行為、重構內容、結果）。
+
+**Q5（修 fault）**：找一個真實存在過的 bug（建議從上游 issue tracker／changelog 找一個已修好的，checkout 到修好之前的 commit；或自己找到一個現存 bug）。
+1. 你自己：找出要改的程式，先寫測試捕捉現行行為，至少一個測試要失敗、證明你找到 fault；修好；全部通過。
+2. 再從原始有 bug 的程式碼（乾淨的 checkout），開一個**全新的** AI coding agent session 請它修同一個 bug：用 `codex exec`（全新 session，不帶你的 context），提示只描述症狀，不告訴它你怎麼修。完整保存：工具名稱、模型、版本（`codex --version`）、每一個 prompt 原文、agent 的完整回應（含它跑的指令與輸出）。
+3. 報告它有沒有先寫重現 fault 的測試再改程式（照它的實際紀錄判斷），比較它的修法和你的。
+繳交物放 `hw2/q5/`：`tests/`、`my-fix.patch`、`agent-fix.patch`、`evidence/`、`report.md`、`ai-usage-log.md`（題目要求的 AI usage log：Q5 用了哪些 AI、每個 prompt 原文、完整回應）。
+
+**Q4 也要 AI usage log**：你本身就是 AI agent，Q4 是你做的；在 `hw2/q4/ai-usage-log.md` 照實寫工具、模型、版本，以及 orch 給你的任務（本檔路徑即可）與主要步驟摘要。不要捏造任何沒發生的事。
+
+不做：其他題、截圖、GitHub push。
+
+## 開工
+1. 確認你在自己的 worktree、自己的 branch：
+   `[ "$(git rev-parse --path-format=absolute --git-dir)" != "$(git rev-parse --path-format=absolute --git-common-dir)" ] && git symbolic-ref --short HEAD`
+   要印出你的 branch。沒印出來就什麼都不要改，回報 `blocked` 等 orch。
+
+## 流程（每一步做完都回報）
+1. 開發：Q4、Q5。
+2. Code review 一輪：`codex review --base main`。逐條判斷，成立就修，不成立記理由。
+3. 自我精簡：繳交文件要清楚、不灌水。
+4. Security 自審：clone 的上游程式碼只在 `.cache` 裡跑測試；不要執行來路不明的安裝腳本；log 裡不能有 token。
+5. 全部你寫的測試跑一次（原始碼上應失敗的照預期失敗、修好後全綠），回報 done。
+
+沒有 remote，**不要 push、不要開 PR**。完成時 `--result` 填你的 branch 名與 worktree 絕對路徑。
+
+## 回報（orch 只靠這個知道你做到哪）
+```
+/home/yuankai/.claude/skills/orch/scripts/report.sh <stage|blocked|question|done> "<白話一句>" --card K2 [--stage dev] [--result <路徑>] [--needs 決定|看|無]
+```
+- **做完一定要寫 `done`**（附 `--result` 和 `--needs`）。
+- 白話一句要讓人一眼看懂。
+- 在你自己的 worktree 維護 `.orch/status.md`（`stage:`、`summary:`、`pr:`，加 `## log`）。`.orch/` 不 commit。
+
+## 提問
+要決定的事：寫進 worktree 的 `.orch/questions.md`（問題／選 A／選 B／我建議），跑 `report.sh question "<一句話>" --card K2`，結束這一輪等 orch。小事自己判斷，記在 log。
+
+## 先問，不要自己做
+- merge、push、打 tag、改 main
+- 在 GitHub（含上游專案）或任何外部服務留言、開 issue／PR、發訊息；刪除 `.cache` 以外的任何東西
+- 不 commit、不印出密鑰與 token
+- 額度用完：回報 `blocked "額度用完"`，orch 會幫你換帳號
+
+## 同時在跑的其他工作（注意衝突）
+K1 `school-dev-hw2-q1`：動 `hw2/calc/`、`hw2/q1/`。你不要碰這兩個資料夾。
