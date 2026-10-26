@@ -516,3 +516,200 @@ No refactoring or additional decisions. No tests changed, special zero-divisor h
 ````text
 (empty)
 ````
+
+## 05-modulo-zero-test
+
+### Exact prompt
+
+````text
+Cycle 1 green review passed: only calculator.py changed, all 6 tests passed, and I committed the implementation separately as 60f1856. Main's CI configuration was then merged into this feature branch at the orchestrator's request; do not touch the other question directories or configuration.
+
+Cycle 2 is the modulo-by-zero contract. Write exactly ONE new failing unittest method in hw2/calc/test_calculator_q6.py defining this behavior for representative positive, negative, and zero dividends. If the contract is unresolved, ask me to choose before encoding an unsupported expectation. Explain any choice you make. Do not implement anything, edit any committed test, add multiple methods, or commit. Run the complete calculator suite, report its result and whether the new test genuinely failed, then STOP for review. All power behavior remains for later cycles.
+
+````
+
+### Full emitted responses and tool events
+
+````json
+{
+  "type": "thread.started",
+  "thread_id": "01a1789e-5c60-7a30-ad1d-76609a6da601"
+}
+````
+
+````json
+{
+  "type": "turn.started"
+}
+````
+
+What should `modulo(a, 0)` do for positive, negative, and zero dividends?
+
+- Raise `ValueError("Cannot modulo by zero")`, consistent with the calculator’s division API.
+- Raise Python’s native `ZeroDivisionError`.
+- Use another exception/message you specify.
+
+The contract is unresolved, so I haven’t added a test or changed any files.
+
+````json
+{
+  "type": "turn.completed",
+  "usage": {
+    "input_tokens": 396377,
+    "cached_input_tokens": 348288,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1551,
+    "reasoning_output_tokens": 72
+  }
+}
+````
+
+### CLI stderr
+
+````text
+(empty)
+````
+
+## 06-modulo-zero-decision-test
+
+### Exact prompt
+
+````text
+You correctly asked before choosing. The user's required decision is: modulo(a, 0) raises ValueError for all integer dividends. I approve your proposed fixed message "Cannot modulo by zero" for this API (the message is a reviewer-approved detail, not an unasked agent decision).
+
+Now write exactly ONE new failing test method for that zero-divisor contract in test_calculator_q6.py, covering positive, negative, and zero dividends. Checking this approved fixed message is allowed. Keep all committed tests and all production code unchanged. Run the complete calculator suite to show the current native ZeroDivisionError does not satisfy this contract, report the result, and STOP for my review and test commit.
+
+````
+
+### Full emitted responses and tool events
+
+````json
+{
+  "type": "thread.started",
+  "thread_id": "01a1789e-5c60-7a30-ad1d-76609a6da601"
+}
+````
+
+````json
+{
+  "type": "turn.started"
+}
+````
+
+I’ll add one test method checking the approved `ValueError("Cannot modulo by zero")` contract for positive, negative, and zero dividends, then run the full suite without changing production code.
+
+
+````json
+{
+  "type": "item.started",
+  "item": {
+    "id": "item_1",
+    "type": "command_execution",
+    "command": "/bin/bash -lc 'cat hw2/calc/test_calculator_q6.py'",
+    "aggregated_output": "",
+    "exit_code": null,
+    "status": "in_progress"
+  }
+}
+````
+
+````json
+{
+  "type": "item.completed",
+  "item": {
+    "id": "item_1",
+    "type": "command_execution",
+    "command": "/bin/bash -lc 'cat hw2/calc/test_calculator_q6.py'",
+    "aggregated_output": "import unittest\n\nfrom calculator import Calculator\n\n\nclass TestCalculatorQ6(unittest.TestCase):\n    def test_modulo_with_nonzero_divisor(self):\n        calc = Calculator()\n        for dividend, divisor, expected in (\n            (7, 3, 1),\n            (3, 7, 3),\n            (6, 3, 0),\n            (0, 3, 0),\n            (-7, 3, 2),\n            (7, -3, -2),\n            (-7, -3, -1),\n        ):\n            with self.subTest(dividend=dividend, divisor=divisor):\n                self.assertEqual(calc.modulo(dividend, divisor), expected)\n",
+    "exit_code": 0,
+    "status": "completed"
+  }
+}
+````
+
+````json
+{
+  "type": "item.started",
+  "item": {
+    "id": "item_2",
+    "type": "file_change",
+    "changes": [
+      {
+        "path": "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py",
+        "kind": "update"
+      }
+    ],
+    "status": "in_progress"
+  }
+}
+````
+
+````json
+{
+  "type": "item.completed",
+  "item": {
+    "id": "item_2",
+    "type": "file_change",
+    "changes": [
+      {
+        "path": "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py",
+        "kind": "update"
+      }
+    ],
+    "status": "completed"
+  }
+}
+````
+
+````json
+{
+  "type": "item.started",
+  "item": {
+    "id": "item_3",
+    "type": "command_execution",
+    "command": "/bin/bash -lc 'PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s hw2/calc -v'",
+    "aggregated_output": "",
+    "exit_code": null,
+    "status": "in_progress"
+  }
+}
+````
+
+````json
+{
+  "type": "item.completed",
+  "item": {
+    "id": "item_3",
+    "type": "command_execution",
+    "command": "/bin/bash -lc 'PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s hw2/calc -v'",
+    "aggregated_output": "test_add (test_calculator.TestCalculator.test_add) ... ok\ntest_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok\ntest_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok\ntest_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok\ntest_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok\ntest_modulo_by_zero_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_modulo_by_zero_raises_value_error) ... \n  test_modulo_by_zero_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_modulo_by_zero_raises_value_error) (dividend=7) ... ERROR\n  test_modulo_by_zero_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_modulo_by_zero_raises_value_error) (dividend=-7) ... ERROR\n  test_modulo_by_zero_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_modulo_by_zero_raises_value_error) (dividend=0) ... ERROR\ntest_modulo_with_nonzero_divisor (test_calculator_q6.TestCalculatorQ6.test_modulo_with_nonzero_divisor) ... ok\n\n======================================================================\nERROR: test_modulo_by_zero_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_modulo_by_zero_raises_value_error) (dividend=7)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py\", line 26, in test_modulo_by_zero_raises_value_error\n    calc.modulo(dividend, 0)\n    ~~~~~~~~~~~^^^^^^^^^^^^^\n  File \"/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/calculator.py\", line 17, in modulo\n    return a % b\n           ~~^~~\nZeroDivisionError: division by zero\n\n======================================================================\nERROR: test_modulo_by_zero_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_modulo_by_zero_raises_value_error) (dividend=-7)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py\", line 26, in test_modulo_by_zero_raises_value_error\n    calc.modulo(dividend, 0)\n    ~~~~~~~~~~~^^^^^^^^^^^^^\n  File \"/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/calculator.py\", line 17, in modulo\n    return a % b\n           ~~^~~\nZeroDivisionError: division by zero\n\n======================================================================\nERROR: test_modulo_by_zero_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_modulo_by_zero_raises_value_error) (dividend=0)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py\", line 26, in test_modulo_by_zero_raises_value_error\n    calc.modulo(dividend, 0)\n    ~~~~~~~~~~~^^^^^^^^^^^^^\n  File \"/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/calculator.py\", line 17, in modulo\n    return a % b\n           ~~^~~\nZeroDivisionError: division by zero\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nFAILED (errors=3)\n",
+    "exit_code": 1,
+    "status": "failed"
+  }
+}
+````
+
+Added exactly one new method, `test_modulo_by_zero_raises_value_error`, covering dividends `7`, `-7`, and `0` with the approved exception and message.
+
+Full suite: **7 tests run; 6 passed; new method produced 3 subtest errors**. It genuinely fails because production raises native `ZeroDivisionError`, not the required `ValueError`.
+
+Production code and committed tests remain unchanged. No commits made. Stopping for review and test commit.
+
+````json
+{
+  "type": "turn.completed",
+  "usage": {
+    "input_tokens": 520702,
+    "cached_input_tokens": 470912,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1937,
+    "reasoning_output_tokens": 72
+  }
+}
+````
+
+### CLI stderr
+
+````text
+(empty)
+````

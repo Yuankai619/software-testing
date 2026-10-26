@@ -17,3 +17,10 @@ class TestCalculatorQ6(unittest.TestCase):
         ):
             with self.subTest(dividend=dividend, divisor=divisor):
                 self.assertEqual(calc.modulo(dividend, divisor), expected)
+
+    def test_modulo_by_zero_raises_value_error(self):
+        calc = Calculator()
+        for dividend in (7, -7, 0):
+            with self.subTest(dividend=dividend):
+                with self.assertRaisesRegex(ValueError, "^Cannot modulo by zero$"):
+                    calc.modulo(dividend, 0)

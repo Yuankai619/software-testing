@@ -9,3 +9,10 @@ Reviewer: Codex, model gpt-6.1-sol (CLI 0.164.0); not Yuankai. Notes are written
 - Independently ran the entire suite: 6 methods, 7 subtest errors because `modulo` is absent; all 5 Q1 methods pass. Saved actual output and source hashes in `evidence/cycle-1-red.*`. Production and Q1 tests were unchanged.
 - Approved without test edits. No observed TDD-rule violation. Only nonzero-divisor modulo implementation is authorized after this test commit. Zero-divisor handling and all power code remain unauthorized.
 - Green review: the agent added only `modulo(self, a, b): return a % b`; all 6 test methods pass. No test changes, premature power code, special zero-divisor handling, or refactor. Implementation approved for a separate feat commit.
+
+## Cycle 2: modulo by zero
+
+- The agent asked for the exception contract before writing anything. The reviewer supplied the user's `ValueError` decision and explicitly approved the agent's proposed fixed message `Cannot modulo by zero`.
+- Reviewed `test_modulo_by_zero_raises_value_error`: exactly one new method tests the single zero-divisor exception contract with positive, negative, and zero dividends. Anchored message matching verifies the approved API detail; no unrelated behavior or weaker assertions were added.
+- Independent red: 7 methods, three subtest errors from native `ZeroDivisionError` instead of the specified `ValueError`; previous 6 methods pass. Production and every previously committed test are unchanged.
+- Approved unchanged for a test-only commit before zero-divisor implementation. No TDD-rule violation; this decision was asked and answered rather than assumed.
