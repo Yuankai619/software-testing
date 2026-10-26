@@ -1,0 +1,157 @@
+$ cd hw2/calc && PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+test_modulo_by_zero_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_modulo_by_zero_raises_value_error) ... ok
+test_modulo_with_nonzero_divisor (test_calculator_q6.TestCalculatorQ6.test_modulo_with_nonzero_divisor) ... ok
+test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) ... 
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=2, exponent=3) ... FAIL
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=3, exponent=4) ... FAIL
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=5, exponent=1) ... FAIL
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=-2, exponent=3) ... FAIL
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=-2, exponent=4) ... FAIL
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=0, exponent=3) ... FAIL
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=5, exponent=0) ... FAIL
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=-5, exponent=0) ... FAIL
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=0, exponent=0) ... FAIL
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=2, exponent=-1) ... FAIL
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=2, exponent=-3) ... FAIL
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=-2, exponent=-3) ... FAIL
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=-2, exponent=-2) ... FAIL
+  test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=1, exponent=-4) ... FAIL
+test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) ... ok
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=2, exponent=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != 8
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=3, exponent=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != 81
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=5, exponent=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != 5
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=-2, exponent=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != -8
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=-2, exponent=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != 16
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=0, exponent=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != 0
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=5, exponent=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != 1
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=-5, exponent=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != 1
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=0, exponent=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != 1
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=2, exponent=-1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != 0.5
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=2, exponent=-3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != 0.125
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=-2, exponent=-3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != -0.125
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=-2, exponent=-2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != 0.25
+
+======================================================================
+FAIL: test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) (base=1, exponent=-4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 57, in test_power_valid_integer_operands
+    self.assertEqual(result, expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: None != 1.0
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+FAILED (failures=14)
+
+Exit code: 1

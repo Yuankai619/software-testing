@@ -1,0 +1,3 @@
+Cycle 4 red review passed. Exactly one method specifies the valid integer exponentiation rule through 14 literal examples, including 0**0 == 1 and negative-exponent value AND float type. Independent red has 14 failures from None results and all eight earlier methods pass. I committed the reviewed test and red evidence as fc7f34e before authorizing implementation.
+
+Implement the smallest general numerical exponentiation operation after the existing invalid-domain guard. Preserve that guard and every committed test. Do not special-case the test inputs, add tests, refactor unrelated code, or commit. Run the full calculator suite and STOP for my independent green review.

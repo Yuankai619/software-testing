@@ -1,0 +1,9 @@
+243976b test: cycle 1 define signed modulo for nonzero divisors: one added test; previous tests and implementation unchanged.
+60f1856 feat: cycle 1 implement signed modulo: earlier test commit exists; tests unchanged; real green output saved.
+ffb1041 test: cycle 2 require ValueError for modulo by zero: one added test; previous tests and implementation unchanged.
+0ce2eec feat: cycle 2 reject modulo by zero with ValueError: earlier test commit exists; tests unchanged; real green output saved.
+a5480fe test: cycle 3 define invalid zero-base negative powers: one added test; previous tests and implementation unchanged.
+8584cb9 feat: cycle 3 reject zero raised to a negative power: earlier test commit exists; tests unchanged; real green output saved.
+fc7f34e test: cycle 4 define valid integer exponentiation: one added test; previous tests and implementation unchanged.
+4839860 feat: cycle 4 implement general integer exponentiation: earlier test commit exists; tests unchanged; real green output saved.
+PASS: 4 complete test-before-implementation cycles; Q1 test file byte-for-byte unchanged in every commit; captured source hashes match each test/feat commit.

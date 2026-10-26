@@ -1,0 +1,3 @@
+Cycle 2 test review APPROVED unchanged. I captured actual red output (3 subtest errors due to ZeroDivisionError) and committed your new test as ffb1041 before authorizing implementation. The one exception contract covers positive/negative/zero dividends and is strong enough.
+
+Modify ONLY calculator.py to satisfy the reviewed ValueError("Cannot modulo by zero") contract, preserving cycle 1's general remainder calculation. Do not edit tests, add tests or power code, or commit. Run the entire calculator suite, summarize the change and any refactoring, then STOP for green review and a separate feat commit.

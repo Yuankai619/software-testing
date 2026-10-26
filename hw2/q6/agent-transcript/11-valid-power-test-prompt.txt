@@ -1,0 +1,5 @@
+Cycle 3 independent green review passed: 8 methods pass, only the approved invalid-domain guard exists, and no tests changed. I committed the implementation separately as 8584cb9.
+
+Cycle 4: write exactly ONE new failing test method specifying the single valid numerical exponentiation rule for integer operands. Include representative positive exponents, negative-base sign/parity, zero base with positive exponent, zero exponent including the user's power(0, 0) == 1, and negative exponents for nonzero bases (including power(2, -1) == 0.5). The negative-exponent cases must check both the expected numerical value and float return type. Use literal expected values independent of the implementation; subtests for this one rule are appropriate. The invalid zero/negative rule already has its own committed test and should remain unchanged.
+
+Only add this one failing test method. Do not implement general numerical power, alter any committed test, refactor, or commit. Run the entire suite and STOP for review. Ask before editing if any required contract is unresolved.
