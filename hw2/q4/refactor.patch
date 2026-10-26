@@ -1,0 +1,70 @@
+diff --git a/src/requests/auth.py b/src/requests/auth.py
+index 4a7ce6dc..4b53bc8f 100644
+--- a/src/requests/auth.py
++++ b/src/requests/auth.py
+@@ -133,51 +133,24 @@ class HTTPDigestAuth(AuthBase):
+         qop = self._thread_local.chal.get("qop")
+         algorithm = self._thread_local.chal.get("algorithm")
+         opaque = self._thread_local.chal.get("opaque")
+-        hash_utf8 = None
+-
+-        if algorithm is None:
+-            _algorithm = "MD5"
+-        else:
+-            _algorithm = algorithm.upper()
+-        # lambdas assume digest modules are imported at the top level
+-        if _algorithm == "MD5" or _algorithm == "MD5-SESS":
+-
+-            def md5_utf8(x):
+-                if isinstance(x, str):
+-                    x = x.encode("utf-8")
+-                return hashlib.md5(x).hexdigest()
+-
+-            hash_utf8 = md5_utf8
+-        elif _algorithm == "SHA":
+-
+-            def sha_utf8(x):
+-                if isinstance(x, str):
+-                    x = x.encode("utf-8")
+-                return hashlib.sha1(x).hexdigest()
+-
+-            hash_utf8 = sha_utf8
+-        elif _algorithm == "SHA-256":
+-
+-            def sha256_utf8(x):
+-                if isinstance(x, str):
+-                    x = x.encode("utf-8")
+-                return hashlib.sha256(x).hexdigest()
+-
+-            hash_utf8 = sha256_utf8
+-        elif _algorithm == "SHA-512":
+-
+-            def sha512_utf8(x):
+-                if isinstance(x, str):
+-                    x = x.encode("utf-8")
+-                return hashlib.sha512(x).hexdigest()
++        _algorithm = "MD5" if algorithm is None else algorithm.upper()
++        hash_constructor = {
++            "MD5": hashlib.md5,
++            "MD5-SESS": hashlib.md5,
++            "SHA": hashlib.sha1,
++            "SHA-256": hashlib.sha256,
++            "SHA-512": hashlib.sha512,
++        }.get(_algorithm)
++        if hash_constructor is None:
++            return None
+ 
+-            hash_utf8 = sha512_utf8
++        def hash_utf8(value):
++            if isinstance(value, str):
++                value = value.encode("utf-8")
++            return hash_constructor(value).hexdigest()
+ 
+         KD = lambda s, d: hash_utf8(f"{s}:{d}")  # noqa:E731
+ 
+-        if hash_utf8 is None:
+-            return None
+-
+         # XXX not implemented yet
+         entdig = None
+         p_parsed = urlparse(url)
