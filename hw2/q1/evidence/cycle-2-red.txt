@@ -1,0 +1,17 @@
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ERROR
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+
+======================================================================
+ERROR: test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q1/hw2/calc/test_calculator.py", line 25, in test_multiply_integers
+    self.assertEqual(calc.multiply(7, 3), 21)
+                     ^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'multiply'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=1)
