@@ -39,4 +39,3 @@ Exit status: 0
 $ .venv/bin/ruff check hw2/calc
 All checks passed!
 Exit status: 0
-

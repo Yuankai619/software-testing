@@ -4,6 +4,7 @@
 
 The coordinating coding assistant prepared the workflow, injected/reverted controlled faults, collected GitHub evidence, and wrote these reports. Its task was the user-provided Q2/Q3 assignment, not a blind repair. The independent repair experiment below was a separate Codex CLI process with no parent conversation. Model and version are observed facts, not inferred from a product name.
 
+- Coordinator: OpenAI Codex CLI `0.164.0`, model `gpt-6.1-sol`, session `01a1789d-014d-7501-9cf4-e380e8a6ab67`.
 - Independent repair: OpenAI Codex CLI `0.164.0`, model `gpt-6.1-sol`, session `01a178a1-07a4-7752-ac6c-87cd1ee710f1`.
 - Model evidence: [selected persisted turn-context metadata](agent-transcript/model-context.json).
 - Exact invocation, starting commit, clean status, and environment-retry reason: [metadata.json](agent-transcript/metadata.json).
@@ -36,7 +37,15 @@ The agent repaired source, not tests. The evidence includes its inability to act
 
 ## Required code review
 
-The required `codex review --base main` is performed after development. Its complete output and generated prompt will be saved in `agent-transcript/` with the final review disposition.
+OpenAI Codex CLI `0.164.0`, model `gpt-6.1-sol`, reviewed head `91febef` against `main` with `codex review --base main`. There was no custom prompt. The CLI-generated review prompt, verbatim ([raw text](agent-transcript/review-prompt.txt)):
+
+```text
+Review the code changes against the base branch 'main'. The merge base commit for this comparison is a4ef434976fedbd87dfccd2055956c440e78bbca. Run `git diff a4ef434976fedbd87dfccd2055956c440e78bbca` to inspect the changes relative to main. Provide prioritized, actionable findings.
+```
+
+The review returned no findings and judged the patch correct. No findings needed acceptance or rejection. [Complete CLI output](agent-transcript/review.txt) includes its commands, outputs, and final response; [original completed review events](agent-transcript/review-events.jsonl) preserve the generated prompt, tool outputs, and structured judgment. Private reasoning/system context is omitted. [Review metadata](agent-transcript/review-metadata.json) records the model, version, base, and head.
+
+A later coordinator check found that the generic `coverage.xml` ignore pattern also hid the downloaded evidence file. The report artifact was explicitly staged; this did not change the workflow, tests, calculator, or verification settings.
 
 ## Coordination assignment
 
@@ -47,3 +56,5 @@ The user's direct instruction (verbatim):
 ```
 
 The referenced assignment and common rules are preserved verbatim in [coordination-assignment.md](agent-transcript/coordination-assignment.md) and [common-rules.md](agent-transcript/common-rules.md). These were supplied only to the coordinator, not to the independent repair session. This appendix contains the complete emitted repair/review responses; it does not claim to export the coordinating assistant's private internal reasoning or platform system instructions.
+
+The coordinator's [raw visible transcript](agent-transcript/coordinator.jsonl) and [readable visible transcript](agent-transcript/coordinator-response.md) capture the direct user prompt, emitted messages, commands, and tool output through the final evidence audit. Platform/developer instructions, environment boilerplate, and private reasoning are excluded. The snapshot ends before the final handoff commit; later commit/CI results are recorded in the worktree status file and final handoff.
