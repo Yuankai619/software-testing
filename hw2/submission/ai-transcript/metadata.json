@@ -1,0 +1,11 @@
+[
+  {
+    "session_id": "01a178cf-d612-7980-ace9-01b44d8cc746",
+    "cli_version": "0.164.0",
+    "models": [
+      "gpt-6.1-sol"
+    ],
+    "source_file": "rollout-2026-10-26T23-24-09-01a178cf-d612-7980-ace9-01b44d8cc746.jsonl",
+    "snapshot_last_timestamp": "2026-10-26T15:35:03.978Z"
+  }
+]

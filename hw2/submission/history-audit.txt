@@ -1,0 +1,17 @@
+Finalization history audit; each assertion checked against real Git objects.
+
+PASS 4a37dda -> ceedfb9: one new test method test_subtract_integers; earlier tests unchanged; red production unchanged; green tests unchanged; red is ancestor of green.
+PASS bff3221 -> b97df3d: one new test method test_multiply_integers; earlier tests unchanged; red production unchanged; green tests unchanged; red is ancestor of green.
+PASS 00acc47 -> d42eac3: one new test method test_divide_returns_float; earlier tests unchanged; red production unchanged; green tests unchanged; red is ancestor of green.
+PASS 8a14507 -> 82ba76a: one new test method test_divide_by_zero_raises_value_error; earlier tests unchanged; red production unchanged; green tests unchanged; red is ancestor of green.
+PASS 243976b -> 60f1856: one new test method test_modulo_with_nonzero_divisor; earlier tests unchanged; red production unchanged; green tests unchanged; red is ancestor of green.
+PASS ffb1041 -> 0ce2eec: one new test method test_modulo_by_zero_raises_value_error; earlier tests unchanged; red production unchanged; green tests unchanged; red is ancestor of green.
+PASS a5480fe -> 8584cb9: one new test method test_power_zero_base_negative_exponent_raises_value_error; earlier tests unchanged; red production unchanged; green tests unchanged; red is ancestor of green.
+PASS fc7f34e -> 4839860: one new test method test_power_valid_integer_operands; earlier tests unchanged; red production unchanged; green tests unchanged; red is ancestor of green.
+
+PASS Q1 test bytes unchanged since 82ba76a.
+PASS Q6 test bytes unchanged since 4839860.
+PASS finalization has no net source/test change in hw2/calc relative to main.
+SHA256 hw2/calc/test_calculator.py: 3b70ea883d3b184d7430e59b0486f362784d2aca5db7f3493b81680df6a56229
+SHA256 hw2/calc/test_calculator_q6.py: 9728d244985c3f7b32f9c3a301fef11121301aab12b27961fcd0800fb55fe2c9
+SHA256 hw2/calc/calculator.py: f181f15c600e3b9181b186e131b77fdb40564e3745d1746530d084294f8a563a

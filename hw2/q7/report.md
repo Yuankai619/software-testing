@@ -1,5 +1,7 @@
 # Question 7: reconstructing Calc from tests alone
 
+References below to “unchanged main Calc” describe the Q1-only Calc snapshot used in this experiment, retained in `evidence/main_calculator.py`. The current final Calc also includes Q6; finalization reruns the properties against it separately. See [the AI usage index](ai-usage-log.md) and [final submission](../submission/README.md).
+
 ## Experiment and provenance
 
 The new session received only Q1's `test_calculator.py`, copied from main commit

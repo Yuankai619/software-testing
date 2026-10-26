@@ -2,7 +2,9 @@
 
 ## Scope and reproduction
 
-This submission implements Question 1 only, using Python 3.14.4 and the standard-library `unittest` framework. The public class is `Calculator` in `hw2/calc/calculator.py`. The original starter files remain unchanged. Although the supplied `hw2/Calc.py` already contains the requested operations, the new implementation began with only the starter's `add` behavior and its regression test, committed as `8a905ca`.
+This narrative records the historical Question 1 experiment, using Python 3.14.4 and the standard-library `unittest` framework. The public class is `Calculator` in `hw2/calc/calculator.py`; the [current final Calc](../calc/calculator.py) also includes Q6's modulo and power. The original starter files remain unchanged. Although the supplied `hw2/Calc.py` already contains the requested operations, the new implementation began with only the starter's `add` behavior and its regression test, committed as `8a905ca`.
+
+**Authorship and assignment limitation:** Codex (model gpt-6.1-sol, CLI 0.164.0) wrote Q1's tests, implementation, and narrative. No unaided human implementation is claimed. The attached PDF explicitly requires Q1 without an AI coding agent; that sentence is absent from `requirement.txt`. This existing experiment does not satisfy that PDF instruction. The finalization audit discloses the mismatch rather than rewriting its history. See [the recovered AI usage log](ai-usage-log.md) and [submission checklist](../submission/checklist.md).
 
 Run the complete suite from the repository root:
 
@@ -125,7 +127,7 @@ if __name__ == "__main__":
 
 ## Final Calculator
 
-Complete contents of `hw2/calc/calculator.py`:
+Historical contents of `hw2/calc/calculator.py` at the Q1 implementation endpoint `82ba76a` (the current final file additionally implements Q6):
 
 ```python
 class Calculator:

@@ -1,0 +1,27 @@
+[
+  {
+    "session_id": "01a1789c-adc9-7a11-9aa9-cab813369b9a",
+    "cli_version": "0.164.0",
+    "models": [
+      "gpt-6.1-sol"
+    ],
+    "source_file": "rollout-2026-10-26T22-28-16-01a1789c-adc9-7a11-9aa9-cab813369b9a.jsonl",
+    "snapshot_last_timestamp": "2026-10-26T15:23:16.382Z"
+  },
+  {
+    "session_id": "01a178c4-1986-76a2-97ae-bd2534978ca2",
+    "cli_version": "0.164.0",
+    "models": [
+      "codex-auto-review"
+    ],
+    "source_file": "rollout-2026-10-26T23-11-19-01a178c4-1986-76a2-97ae-bd2534978ca2.jsonl",
+    "snapshot_last_timestamp": "2026-10-26T15:21:21.732Z"
+  },
+  {
+    "session_id": "01a178ca-d880-7460-9e96-83734dad02e0",
+    "cli_version": "0.164.0",
+    "models": [],
+    "source_file": "rollout-2026-10-26T23-18-42-01a178ca-d880-7460-9e96-83734dad02e0.jsonl",
+    "snapshot_last_timestamp": "2026-10-26T15:19:08.996Z"
+  }
+]

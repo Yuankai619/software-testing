@@ -1,0 +1,23 @@
+hw2/submission/README.md
+hw2/submission/checklist.md
+hw2/q1/narrative.md
+hw2/q2/report.md
+hw2/q3/report.md
+hw2/q4/report.md
+hw2/q5/report.md
+hw2/q6/narrative.md
+hw2/q6/review-notes.md
+hw2/q7/report.md
+hw2/q1/ai-usage-log.md
+hw2/q2/ai-usage-log.md
+hw2/q3/ai-usage-log.md
+hw2/q4/ai-usage-log.md
+hw2/q5/ai-usage-log.md
+hw2/q6/ai-usage-log.md
+hw2/q7/ai-usage-log.md
+hw2/submission/ai-usage-log.md
+hw2/submission/test-listings.md
+hw2/submission/review-notes.md
+
+Additional print appendices: all-tests-pass.png, all-tests-pass.txt, main-actions.txt, history-audit.txt, git-log.txt
+Raw full transcript appendices remain separate linked files; original JSONL is authoritative.
