@@ -32,3 +32,4 @@ Reviewer: Codex, model gpt-6.1-sol (CLI 0.164.0); not Yuankai. Notes are written
 - The user's required (0, 0) -> 1 and (2, -1) -> 0.5 decisions are encoded before numerical implementation. Existing exception behavior and committed tests are unchanged.
 - Independent red: 9 methods, 14 failing subtests because the guard-only method returns None; all previous 8 methods pass. Saved actual output and hashes. Approved unchanged for a test-only commit, then numerical implementation.
 - No observed TDD-rule violation or additional unasked API decision; example selection is within the already approved contract.
+- Green review: only `return a ** b` was added after the unchanged guard, providing a general rule without input-specific branches. All 9 methods pass independently, including negative-exponent float assertions. No test edit, refactor, or observed violation. Approved for a separate feat commit.

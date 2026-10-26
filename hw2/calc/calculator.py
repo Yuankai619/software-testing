@@ -21,3 +21,4 @@ class Calculator:
     def power(self, a, b):
         if a == 0 and b < 0:
             raise ValueError("Cannot raise zero to a negative power")
+        return a ** b
