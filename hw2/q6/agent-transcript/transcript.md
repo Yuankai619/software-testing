@@ -857,3 +857,200 @@ No refactoring, test edits, power code, or commits. Stopping for green review.
 ````text
 (empty)
 ````
+
+## 08-power-invalid-test
+
+### Exact prompt
+
+````text
+Cycle 2 green review passed: only the approved modulo zero-divisor guard was added, all 7 tests passed, no tests changed, and I committed the implementation separately as 0ce2eec.
+
+Next we will handle power in two cycles so that all special decisions precede their relevant implementation: cycle 3 tests only the invalid domain of a zero base with a negative integer exponent; cycle 4 will test valid numerical exponentiation, including power(0, 0) and negative exponents for nonzero bases, BEFORE any general numeric exponentiation code is written. A guard-only intermediate power method is acceptable between these cycles; do not implement any numerical power operation during cycle 3.
+
+Before editing, identify any still-unresolved power contracts and ask me to choose if necessary. For this cycle write exactly ONE failing test method for power(0, negative integer), using representative negative exponents. Do not invent an unresolved exception contract silently. Do not implement any production code or stub, edit existing committed tests, add multiple methods, or commit. If you need a decision, stop and ask before editing. Otherwise write the one test, run the full suite, and STOP for review.
+
+````
+
+### Full emitted responses and tool events
+
+````json
+{
+  "type": "thread.started",
+  "thread_id": "01a1789e-5c60-7a30-ad1d-76609a6da601"
+}
+````
+
+````json
+{
+  "type": "turn.started"
+}
+````
+
+What exception and message should `power(0, negative_integer)` raise? I propose `ValueError("Cannot raise zero to a negative power")`, consistent with the calculator’s other invalid-input contracts.
+
+For cycle 4, `power(0, 0)` and negative-exponent results for nonzero bases also remain unresolved.
+
+No files changed. I’ll wait for your decision before writing the cycle 3 test.
+
+````json
+{
+  "type": "turn.completed",
+  "usage": {
+    "input_tokens": 692584,
+    "cached_input_tokens": 626944,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2307,
+    "reasoning_output_tokens": 72
+  }
+}
+````
+
+### CLI stderr
+
+````text
+(empty)
+````
+
+## 09-power-contract-answer
+
+### Exact prompt
+
+````text
+The user has chosen these power contracts: power(0, negative integer) raises ValueError; power(0, 0) equals 1; negative integer exponents for nonzero integer bases return float, for example power(2, -1) equals 0.5. I approve your proposed fixed message for the invalid case: "Cannot raise zero to a negative power". Your question and these answers will be recorded; they are not unasked assumptions.
+
+For cycle 3 ONLY, write exactly ONE new failing unittest method for the zero-base/negative-integer-exponent ValueError and approved message, using representative negative exponents. Do not implement or stub power, add other test methods, edit any committed test, or commit. Run the whole calculator suite and STOP for my review. The valid numeric cases, including 0**0 and negative exponents on nonzero bases, belong to cycle 4 before any general exponentiation code.
+
+````
+
+### Full emitted responses and tool events
+
+````json
+{
+  "type": "thread.started",
+  "thread_id": "01a1789e-5c60-7a30-ad1d-76609a6da601"
+}
+````
+
+````json
+{
+  "type": "turn.started"
+}
+````
+
+I’ll add one test method for the approved zero-base, negative-exponent exception and message, then run the full suite and stop. Numeric power cases remain for cycle 4.
+
+
+````json
+{
+  "type": "item.started",
+  "item": {
+    "id": "item_1",
+    "type": "command_execution",
+    "command": "/bin/bash -lc 'cat hw2/calc/test_calculator_q6.py'",
+    "aggregated_output": "",
+    "exit_code": null,
+    "status": "in_progress"
+  }
+}
+````
+
+````json
+{
+  "type": "item.completed",
+  "item": {
+    "id": "item_1",
+    "type": "command_execution",
+    "command": "/bin/bash -lc 'cat hw2/calc/test_calculator_q6.py'",
+    "aggregated_output": "import unittest\n\nfrom calculator import Calculator\n\n\nclass TestCalculatorQ6(unittest.TestCase):\n    def test_modulo_with_nonzero_divisor(self):\n        calc = Calculator()\n        for dividend, divisor, expected in (\n            (7, 3, 1),\n            (3, 7, 3),\n            (6, 3, 0),\n            (0, 3, 0),\n            (-7, 3, 2),\n            (7, -3, -2),\n            (-7, -3, -1),\n        ):\n            with self.subTest(dividend=dividend, divisor=divisor):\n                self.assertEqual(calc.modulo(dividend, divisor), expected)\n\n    def test_modulo_by_zero_raises_value_error(self):\n        calc = Calculator()\n        for dividend in (7, -7, 0):\n            with self.subTest(dividend=dividend):\n                with self.assertRaisesRegex(ValueError, \"^Cannot modulo by zero$\"):\n                    calc.modulo(dividend, 0)\n",
+    "exit_code": 0,
+    "status": "completed"
+  }
+}
+````
+
+````json
+{
+  "type": "item.started",
+  "item": {
+    "id": "item_2",
+    "type": "file_change",
+    "changes": [
+      {
+        "path": "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py",
+        "kind": "update"
+      }
+    ],
+    "status": "in_progress"
+  }
+}
+````
+
+````json
+{
+  "type": "item.completed",
+  "item": {
+    "id": "item_2",
+    "type": "file_change",
+    "changes": [
+      {
+        "path": "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py",
+        "kind": "update"
+      }
+    ],
+    "status": "completed"
+  }
+}
+````
+
+````json
+{
+  "type": "item.started",
+  "item": {
+    "id": "item_3",
+    "type": "command_execution",
+    "command": "/bin/bash -lc 'PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s hw2/calc -v'",
+    "aggregated_output": "",
+    "exit_code": null,
+    "status": "in_progress"
+  }
+}
+````
+
+````json
+{
+  "type": "item.completed",
+  "item": {
+    "id": "item_3",
+    "type": "command_execution",
+    "command": "/bin/bash -lc 'PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s hw2/calc -v'",
+    "aggregated_output": "test_add (test_calculator.TestCalculator.test_add) ... ok\ntest_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok\ntest_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok\ntest_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok\ntest_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok\ntest_modulo_by_zero_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_modulo_by_zero_raises_value_error) ... ok\ntest_modulo_with_nonzero_divisor (test_calculator_q6.TestCalculatorQ6.test_modulo_with_nonzero_divisor) ... ok\ntest_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) ... \n  test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) (exponent=-1) ... ERROR\n  test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) (exponent=-2) ... ERROR\n  test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) (exponent=-5) ... ERROR\n\n======================================================================\nERROR: test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) (exponent=-1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py\", line 35, in test_power_zero_base_negative_exponent_raises_value_error\n    calc.power(0, exponent)\n    ^^^^^^^^^^\nAttributeError: 'Calculator' object has no attribute 'power'\n\n======================================================================\nERROR: test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) (exponent=-2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py\", line 35, in test_power_zero_base_negative_exponent_raises_value_error\n    calc.power(0, exponent)\n    ^^^^^^^^^^\nAttributeError: 'Calculator' object has no attribute 'power'\n\n======================================================================\nERROR: test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) (exponent=-5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py\", line 35, in test_power_zero_base_negative_exponent_raises_value_error\n    calc.power(0, exponent)\n    ^^^^^^^^^^\nAttributeError: 'Calculator' object has no attribute 'power'\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nFAILED (errors=3)\n",
+    "exit_code": 1,
+    "status": "failed"
+  }
+}
+````
+
+Added exactly one test method for `power(0, exponent)` with exponents `-1`, `-2`, and `-5`, requiring the approved `ValueError` and exact message.
+
+Full suite: **8 tests run; 7 passed; 3 subtest errors** because `Calculator.power` does not exist. The new test genuinely fails.
+
+No production code, committed tests, or commits changed. Stopping for review.
+
+````json
+{
+  "type": "turn.completed",
+  "usage": {
+    "input_tokens": 825644,
+    "cached_input_tokens": 757760,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2688,
+    "reasoning_output_tokens": 72
+  }
+}
+````
+
+### CLI stderr
+
+````text
+(empty)
+````

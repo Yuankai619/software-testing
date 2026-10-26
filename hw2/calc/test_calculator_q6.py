@@ -24,3 +24,12 @@ class TestCalculatorQ6(unittest.TestCase):
             with self.subTest(dividend=dividend):
                 with self.assertRaisesRegex(ValueError, "^Cannot modulo by zero$"):
                     calc.modulo(dividend, 0)
+
+    def test_power_zero_base_negative_exponent_raises_value_error(self):
+        calc = Calculator()
+        for exponent in (-1, -2, -5):
+            with self.subTest(exponent=exponent):
+                with self.assertRaisesRegex(
+                    ValueError, "^Cannot raise zero to a negative power$"
+                ):
+                    calc.power(0, exponent)

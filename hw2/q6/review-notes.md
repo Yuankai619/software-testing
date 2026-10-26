@@ -17,3 +17,10 @@ Reviewer: Codex, model gpt-6.1-sol (CLI 0.164.0); not Yuankai. Notes are written
 - Independent red: 7 methods, three subtest errors from native `ZeroDivisionError` instead of the specified `ValueError`; previous 6 methods pass. Production and every previously committed test are unchanged.
 - Approved unchanged for a test-only commit before zero-divisor implementation. No TDD-rule violation; this decision was asked and answered rather than assumed.
 - Green review: only a `b == 0` guard raising the approved fixed `ValueError` was added before `%`. All 7 methods pass. No test edit, power implementation, refactor, or unasked behavioral choice. Approved for its separate feat commit.
+
+## Cycle 3: zero base with negative exponent
+
+- The agent asked for both the exception and message before editing; the reviewer supplied the user's ValueError requirement and approved `Cannot raise zero to a negative power`. The reviewer also answered the deferred 0**0 and nonzero-base negative-exponent choices for the next cycle.
+- Reviewed exactly one new method, `test_power_zero_base_negative_exponent_raises_value_error`, with exponents -1, -2, and -5. Anchored ValueError/message assertions express one invalid-domain rule. Production and all committed tests are unchanged.
+- Independent red: 8 methods, three AttributeError subtest errors because power is absent; all previous 7 methods pass. Actual output and source hashes are saved. Approved unchanged for a test commit.
+- No observed TDD-rule violation or unasked power decision. After this commit only the invalid-domain guard is authorized; the numerical operation remains for cycle 4.

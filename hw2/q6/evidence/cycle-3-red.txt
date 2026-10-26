@@ -1,0 +1,46 @@
+$ cd hw2/calc && PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+test_modulo_by_zero_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_modulo_by_zero_raises_value_error) ... ok
+test_modulo_with_nonzero_divisor (test_calculator_q6.TestCalculatorQ6.test_modulo_with_nonzero_divisor) ... ok
+test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) ... 
+  test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) (exponent=-1) ... ERROR
+  test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) (exponent=-2) ... ERROR
+  test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) (exponent=-5) ... ERROR
+
+======================================================================
+ERROR: test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) (exponent=-1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 35, in test_power_zero_base_negative_exponent_raises_value_error
+    calc.power(0, exponent)
+    ^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'power'
+
+======================================================================
+ERROR: test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) (exponent=-2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 35, in test_power_zero_base_negative_exponent_raises_value_error
+    calc.power(0, exponent)
+    ^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'power'
+
+======================================================================
+ERROR: test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) (exponent=-5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/test_calculator_q6.py", line 35, in test_power_zero_base_negative_exponent_raises_value_error
+    calc.power(0, exponent)
+    ^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'power'
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+FAILED (errors=3)
+
+Exit code: 1
