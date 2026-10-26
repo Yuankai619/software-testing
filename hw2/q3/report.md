@@ -1,5 +1,7 @@
 # Question 3: Coverage and static analysis in CI
 
+This report's five-test, eleven-statement coverage figures describe the historical Q3 handoff. The [final integration output](../submission/all-tests-pass.txt) covers nine Q1/Q6 methods and nineteen statements. AI use is indexed in [ai-usage-log.md](ai-usage-log.md).
+
 ## Configuration and rationale
 
 The same Calculator CI workflow installs exact versions from root `requirements-ci.txt`: coverage.py 7.17.0 and Ruff 0.17.2. The root `pyproject.toml` enables branch measurement, limits measured production code to `hw2/calc`, omits `test_*.py` from the coverage denominator, displays missing lines, and enforces 100% combined statement/branch coverage. Tests still run through unittest discovery, so all existing Q1 tests remain the oracle.

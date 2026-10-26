@@ -4,6 +4,8 @@
 
 The reviewer is **Codex**, model **gpt-6.1-sol**, running in the interactive Codex environment with CLI **0.164.0**. Yuankai delegated the review and commit role to Codex; this document does not claim that Yuankai personally reviewed the tests. The separate coding agent is **Codex CLI 0.164.0**, model **gpt-6.1-sol**, session `01a1789e-5c60-7a30-ad1d-76609a6da601`. It began as a fresh `codex exec --json` session with no reviewer conversation and is continued with its explicit session ID. Model and version were verified from local session metadata and `codex --version`.
 
+**Compliance limitation:** the assignment says “You review each test.” The user expressly substituted a Codex reviewer, so the recorded process does not demonstrate personal human review. No instructor approval of that substitution is recorded. The test-before-implementation history and actual delegated review remain auditable; see [the final checklist](../submission/checklist.md) and [AI usage index](ai-usage-log.md).
+
 The reviewer authors prompts, review notes, commits, test evidence, and this narrative. All Q6 automated tests and production changes are authored by the separate coding agent. The Q1 test file remains unchanged. Python is **3.14.4**, with standard-library `unittest` and integer operands as in Q1. Run from the repository root:
 
 ```sh

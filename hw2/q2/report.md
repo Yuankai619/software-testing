@@ -1,5 +1,7 @@
 # Question 2: CI failure and blind agent repair
 
+This report records the Q2 handoff before Q6 integration. References to five tests, unchanged source, and a later integration owner's checks describe that historical snapshot. The [final submission](../submission/README.md) separately verifies all nine integrated Q1/Q6 test methods and includes the latest main CI evidence.
+
 ## CI setup
 
 `.github/workflows/calculator.yml` runs on every branch push and pull request, with read-only repository permissions. It checks out versioned source and tests, installs CPython 3.14 with setup-python, and discovers unittest tests in `hw2/calc`. GitHub provided Python 3.14.8; no fallback was needed. The local interpreter was Python 3.14.4. The later Q3 steps retain the same five tests under coverage.

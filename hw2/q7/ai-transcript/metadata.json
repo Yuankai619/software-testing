@@ -1,0 +1,18 @@
+[
+  {
+    "session_id": "01a1789c-d6ed-71e0-91b4-03319dc8d3ee",
+    "cli_version": "0.164.0",
+    "models": [
+      "gpt-6.1-sol"
+    ],
+    "source_file": "rollout-2026-10-26T22-28-26-01a1789c-d6ed-71e0-91b4-03319dc8d3ee.jsonl",
+    "snapshot_last_timestamp": "2026-10-26T14:55:17.976Z"
+  },
+  {
+    "session_id": "01a178b1-69ca-7d93-8781-d6bd3b56f93d",
+    "cli_version": "0.164.0",
+    "models": [],
+    "source_file": "rollout-2026-10-26T22-50-55-01a178b1-69ca-7d93-8781-d6bd3b56f93d.jsonl",
+    "snapshot_last_timestamp": "2026-10-26T14:51:43.869Z"
+  }
+]

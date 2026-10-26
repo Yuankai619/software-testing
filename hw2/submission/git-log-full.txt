@@ -1,0 +1,579 @@
+commit 6f9eeebf1ed9fca90b25ec863230dc4ae315cdad
+Merge: e222172 34590b2
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 23:23:44 2026 +0800
+
+    Merge Q6: agentic TDD for modulo and power
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01BHRnQgPs3bagiJyxBRN9ET
+
+commit 34590b2368307d9c3ae572f2315d1e83f58bb7fd
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 23:21:13 2026 +0800
+
+    docs: record Q6 TDD review and final verification evidence
+
+ hw2/q6/evidence/code-review.txt     |   5 +
+ hw2/q6/evidence/final-ci-checks.txt |  36 +++++
+ hw2/q6/evidence/final-tests.html    |  20 +++
+ hw2/q6/evidence/final-tests.json    |  10 ++
+ hw2/q6/evidence/final-tests.png     | Bin 0 -> 98840 bytes
+ hw2/q6/evidence/final-tests.txt     |  17 ++
+ hw2/q6/evidence/git-log.txt         |  37 +++++
+ hw2/q6/evidence/history-audit.txt   |   9 ++
+ hw2/q6/narrative.md                 | 302 ++++++++++++++++++++++++++++++++++++
+ 9 files changed, 436 insertions(+)
+
+commit 4839860441ec28aa0ce2704ed294941c70bf8555
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 23:18:21 2026 +0800
+
+    feat: cycle 4 implement general integer exponentiation
+
+ hw2/calc/calculator.py                             |   1 +
+ .../12-valid-power-implementation-prompt.txt       |   3 +
+ .../12-valid-power-implementation.jsonl            |  11 ++
+ .../12-valid-power-implementation.stderr.txt       |   0
+ hw2/q6/agent-transcript/launches.jsonl             |   1 +
+ hw2/q6/agent-transcript/session.jsonl              |  11 ++
+ hw2/q6/agent-transcript/transcript.md              | 144 +++++++++++++++++++++
+ hw2/q6/evidence/cycle-4-green.json                 |  10 ++
+ hw2/q6/evidence/cycle-4-green.txt                  |  17 +++
+ hw2/q6/review-notes.md                             |   1 +
+ 10 files changed, 199 insertions(+)
+
+commit fc7f34eb28f5e07844f899ec06712fb94847c4b9
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 23:17:40 2026 +0800
+
+    test: cycle 4 define valid integer exponentiation
+
+ hw2/calc/test_calculator_q6.py                     |  24 ++++
+ .../11-valid-power-test-prompt.txt                 |   5 +
+ hw2/q6/agent-transcript/11-valid-power-test.jsonl  |  11 ++
+ .../11-valid-power-test.stderr.txt                 |   0
+ hw2/q6/agent-transcript/launches.jsonl             |   1 +
+ hw2/q6/agent-transcript/session.jsonl              |  11 ++
+ hw2/q6/agent-transcript/transcript.md              | 146 +++++++++++++++++++
+ hw2/q6/evidence/cycle-4-red.json                   |  10 ++
+ hw2/q6/evidence/cycle-4-red.txt                    | 157 +++++++++++++++++++++
+ hw2/q6/review-notes.md                             |   7 +
+ 10 files changed, 372 insertions(+)
+
+commit 8584cb95349f792d8ff971c4e85d8811e58c03a2
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 23:13:09 2026 +0800
+
+    feat: cycle 3 reject zero raised to a negative power
+
+ hw2/calc/calculator.py                             |   4 +
+ .../10-power-guard-implementation-prompt.txt       |   3 +
+ .../10-power-guard-implementation.jsonl            |  11 ++
+ .../10-power-guard-implementation.stderr.txt       |   0
+ hw2/q6/agent-transcript/launches.jsonl             |   1 +
+ hw2/q6/agent-transcript/session.jsonl              |  11 ++
+ hw2/q6/agent-transcript/transcript.md              | 147 +++++++++++++++++++++
+ hw2/q6/evidence/cycle-3-green.json                 |  10 ++
+ hw2/q6/evidence/cycle-3-green.txt                  |  16 +++
+ hw2/q6/review-notes.md                             |   1 +
+ 10 files changed, 204 insertions(+)
+
+commit a5480fec3059f7d1cd9ec15acf7846f272ff2ecf
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 23:12:12 2026 +0800
+
+    test: cycle 3 define invalid zero-base negative powers
+
+ hw2/calc/test_calculator_q6.py                     |   9 +
+ .../08-power-invalid-test-prompt.txt               |   5 +
+ .../agent-transcript/08-power-invalid-test.jsonl   |   4 +
+ .../08-power-invalid-test.stderr.txt               |   0
+ .../09-power-contract-answer-prompt.txt            |   3 +
+ .../09-power-contract-answer.jsonl                 |  11 ++
+ .../09-power-contract-answer.stderr.txt            |   0
+ hw2/q6/agent-transcript/launches.jsonl             |   2 +
+ hw2/q6/agent-transcript/session.jsonl              |  15 ++
+ hw2/q6/agent-transcript/transcript.md              | 197 +++++++++++++++++++++
+ hw2/q6/evidence/cycle-3-red.json                   |  10 ++
+ hw2/q6/evidence/cycle-3-red.txt                    |  46 +++++
+ hw2/q6/review-notes.md                             |   7 +
+ 13 files changed, 309 insertions(+)
+
+commit 0ce2eec962732c16eed1455b1b23c29ebbb3403d
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 23:07:32 2026 +0800
+
+    feat: cycle 2 reject modulo by zero with ValueError
+
+ hw2/calc/calculator.py                             |   2 +
+ .../07-modulo-zero-implementation-prompt.txt       |   3 +
+ .../07-modulo-zero-implementation.jsonl            |  11 ++
+ .../07-modulo-zero-implementation.stderr.txt       |   0
+ hw2/q6/agent-transcript/launches.jsonl             |   1 +
+ hw2/q6/agent-transcript/session.jsonl              |  11 ++
+ hw2/q6/agent-transcript/transcript.md              | 144 +++++++++++++++++++++
+ hw2/q6/evidence/cycle-2-green.json                 |  10 ++
+ hw2/q6/evidence/cycle-2-green.txt                  |  15 +++
+ hw2/q6/review-notes.md                             |   1 +
+ 10 files changed, 198 insertions(+)
+
+commit ffb1041fa590bf20f6a155b16a1cdd04d95e5059
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 23:01:47 2026 +0800
+
+    test: cycle 2 require ValueError for modulo by zero
+
+ hw2/calc/test_calculator_q6.py                     |   7 +
+ .../05-modulo-zero-test-prompt.txt                 |   3 +
+ hw2/q6/agent-transcript/05-modulo-zero-test.jsonl  |   4 +
+ .../05-modulo-zero-test.stderr.txt                 |   0
+ .../06-modulo-zero-decision-test-prompt.txt        |   3 +
+ .../06-modulo-zero-decision-test.jsonl             |  11 ++
+ .../06-modulo-zero-decision-test.stderr.txt        |   0
+ hw2/q6/agent-transcript/launches.jsonl             |   2 +
+ hw2/q6/agent-transcript/session.jsonl              |  15 ++
+ hw2/q6/agent-transcript/transcript.md              | 197 +++++++++++++++++++++
+ hw2/q6/evidence/cycle-2-red.json                   |  10 ++
+ hw2/q6/evidence/cycle-2-red.txt                    |  54 ++++++
+ hw2/q6/review-notes.md                             |   7 +
+ 13 files changed, 313 insertions(+)
+
+commit a0172a2c10042a8bd7d2df7dcbe6ead3cee7ff82
+Merge: 60f1856 e222172
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:59:05 2026 +0800
+
+    merge: incorporate main calculator CI checks
+
+commit 60f1856b7f92725001f1945780e3e9a128406834
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:59:05 2026 +0800
+
+    feat: cycle 1 implement signed modulo
+
+ hw2/calc/calculator.py                             |   3 +
+ .../04-modulo-implementation-prompt.txt            |   3 +
+ .../04-modulo-implementation.jsonl                 |  13 ++
+ .../04-modulo-implementation.stderr.txt            |   0
+ hw2/q6/agent-transcript/launches.jsonl             |   4 +
+ hw2/q6/agent-transcript/session.jsonl              |  13 ++
+ hw2/q6/agent-transcript/transcript.md              | 177 +++++++++++++++++++++
+ hw2/q6/evidence/cycle-1-green.json                 |  10 ++
+ hw2/q6/evidence/cycle-1-green.txt                  |  14 ++
+ hw2/q6/review-notes.md                             |   1 +
+ 10 files changed, 238 insertions(+)
+
+commit 243976bff5b89c0a6ac501f10a6ce0edf654ac1b
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:57:59 2026 +0800
+
+    test: cycle 1 define signed modulo for nonzero divisors
+
+ hw2/calc/test_calculator_q6.py                     |  19 ++
+ hw2/q6/agent-transcript/01-modulo-test-prompt.txt  |   5 +
+ hw2/q6/agent-transcript/01-modulo-test.jsonl       |   9 +
+ hw2/q6/agent-transcript/01-modulo-test.stderr.txt  |   0
+ .../02-retry-modulo-test-prompt.txt                |   1 +
+ hw2/q6/agent-transcript/02-retry-modulo-test.jsonl |   6 +
+ .../02-retry-modulo-test.stderr.txt                |   0
+ .../03-retry-modulo-test-prompt.txt                |   1 +
+ hw2/q6/agent-transcript/03-retry-modulo-test.jsonl |  12 +
+ .../03-retry-modulo-test.stderr.txt                |   0
+ hw2/q6/agent-transcript/session.jsonl              |  27 ++
+ hw2/q6/agent-transcript/tool-info.json             |  17 +
+ hw2/q6/agent-transcript/transcript.md              | 341 +++++++++++++++++++++
+ hw2/q6/evidence/cycle-1-red.json                   |  10 +
+ hw2/q6/evidence/cycle-1-red.txt                    |  84 +++++
+ hw2/q6/review-notes.md                             |  10 +
+ 16 files changed, 542 insertions(+)
+
+commit e2221722920490ca46d7c0c2bea175880174b5cb
+Merge: bdbfb18 7f6cdf8
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:55:59 2026 +0800
+
+    Merge Q7: tests-only Calc and metamorphic properties
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01BHRnQgPs3bagiJyxBRN9ET
+
+commit 7f6cdf8d4d26cf31a95564e7ef765c07b6890ce4
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:53:33 2026 +0800
+
+    test(hw2): validate tests-only Calc with metamorphic properties
+
+ hw2/q7/agent-transcript/attempt-1-exit-code.txt    |    1 +
+ hw2/q7/agent-transcript/attempt-1-metadata.json    |   19 +
+ hw2/q7/agent-transcript/attempt-1-session.jsonl    |    9 +
+ .../agent-transcript/attempt-1-session.stderr.txt  |    1 +
+ hw2/q7/agent-transcript/attempt-2-exit-code.txt    |    1 +
+ hw2/q7/agent-transcript/attempt-2-metadata.json    |   20 +
+ hw2/q7/agent-transcript/attempt-2-session.jsonl    |    9 +
+ .../agent-transcript/attempt-2-session.stderr.txt  |    1 +
+ hw2/q7/agent-transcript/exit-code.txt              |    1 +
+ hw2/q7/agent-transcript/metadata.json              |   29 +
+ hw2/q7/agent-transcript/prompt.txt                 |    1 +
+ hw2/q7/agent-transcript/session.jsonl              |   15 +
+ hw2/q7/agent-transcript/session.stderr.txt         |    1 +
+ hw2/q7/agent-transcript/transcript.md              |  587 +++++++
+ hw2/q7/agent_calc/calculator.py                    |   16 +
+ hw2/q7/evidence/check_sensitivity.py               |   67 +
+ hw2/q7/evidence/ci-local.txt                       |   45 +
+ hw2/q7/evidence/code-review.txt                    | 1853 ++++++++++++++++++++
+ hw2/q7/evidence/coverage.xml                       |   30 +
+ hw2/q7/evidence/integrity.json                     |   10 +
+ hw2/q7/evidence/main_calculator.py                 |   14 +
+ hw2/q7/evidence/properties-agent.txt               |   21 +
+ hw2/q7/evidence/properties-main.txt                |   21 +
+ hw2/q7/evidence/q1-agent.txt                       |   15 +
+ hw2/q7/evidence/q1-main.txt                        |   15 +
+ hw2/q7/evidence/q1_test_calculator.py              |   63 +
+ hw2/q7/evidence/sensitivity.txt                    |   10 +
+ hw2/q7/evidence/verify.py                          |   53 +
+ hw2/q7/report.md                                   |  155 ++
+ hw2/q7/test_properties.py                          |  154 ++
+ 30 files changed, 3237 insertions(+)
+
+commit bdbfb18c966e50ab259c0cdd2a5cc6d23a6f1370
+Merge: 0587d03 888ee91
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:49:06 2026 +0800
+
+    Merge Q4/Q5: refactoring and fault repair in Requests
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01BHRnQgPs3bagiJyxBRN9ET
+
+commit 888ee91ef75c041fcdd133190f8b3ed5121ac665
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:48:11 2026 +0800
+
+    Complete HW2 Q4 refactoring and Q5 fault repair experiments
+
+ hw2/q4/.gitignore                                |    1 +
+ hw2/q4/ai-usage-log.md                           |   16 +
+ hw2/q4/evidence/after-characterization.txt       |   41 +
+ hw2/q4/evidence/after-upstream.txt               |    9 +
+ hw2/q4/evidence/before-characterization.txt      |   41 +
+ hw2/q4/evidence/before-upstream.txt              |    9 +
+ hw2/q4/evidence/codex-review.txt                 | 4939 ++++++++++++++++++++++
+ hw2/q4/evidence/final-verification.txt           |   98 +
+ hw2/q4/evidence/requirements-lock.txt            |   29 +
+ hw2/q4/evidence/security-audit.txt               |   10 +
+ hw2/q4/refactor.patch                            |   70 +
+ hw2/q4/report.md                                 |   47 +
+ hw2/q4/reproduce.py                              |   39 +
+ hw2/q4/review.md                                 |   36 +
+ hw2/q4/tests/digest_golden.json                  |  372 ++
+ hw2/q4/tests/test_digest_characterization.py     |   48 +
+ hw2/q5/.gitignore                                |    1 +
+ hw2/q5/agent-fix.patch                           |   47 +
+ hw2/q5/ai-usage-log.md                           |   27 +
+ hw2/q5/evidence/agent-attempt-1.jsonl            |    0
+ hw2/q5/evidence/agent-attempt-1.stderr.txt       |    2 +
+ hw2/q5/evidence/agent-attempt-2.jsonl            |   11 +
+ hw2/q5/evidence/agent-attempt-2.stderr.txt       |    1 +
+ hw2/q5/evidence/agent-attempt-3.jsonl            |    9 +
+ hw2/q5/evidence/agent-attempt-3.stderr.txt       |    0
+ hw2/q5/evidence/agent-independent-check.txt      |   18 +
+ hw2/q5/evidence/agent-invocation.txt             |   17 +
+ hw2/q5/evidence/agent-prompt.txt                 |    5 +
+ hw2/q5/evidence/agent-session.jsonl              |   24 +
+ hw2/q5/evidence/agent-session.stderr.txt         |    0
+ hw2/q5/evidence/agent-simplejson-check.txt       |   18 +
+ hw2/q5/evidence/agent-upstream.txt               |   10 +
+ hw2/q5/evidence/assignment-prompt.txt            |   54 +
+ hw2/q5/evidence/codex-version.txt                |    2 +
+ hw2/q5/evidence/final-verification.txt           | 1654 ++++++++
+ hw2/q5/evidence/my-after.txt                     |   18 +
+ hw2/q5/evidence/my-before.txt                    |  526 +++
+ hw2/q5/evidence/my-upstream.txt                  |   10 +
+ hw2/q5/evidence/primary-session.jsonl            |  104 +
+ hw2/q5/evidence/requirements-simplejson-lock.txt |   11 +
+ hw2/q5/evidence/simplejson-after.txt             |   18 +
+ hw2/q5/evidence/simplejson-before.txt            |  526 +++
+ hw2/q5/evidence/upstream-missing-fixture.txt     |  131 +
+ hw2/q5/my-fix.patch                              |   15 +
+ hw2/q5/report.md                                 |   64 +
+ hw2/q5/reproduce.py                              |   57 +
+ hw2/q5/tests/test_json_exception_pickle.py       |   82 +
+ 47 files changed, 9267 insertions(+)
+
+commit 0587d03c888ceee44f27124470b51bf15ff64859
+Merge: a4ef434 364067b
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:47:01 2026 +0800
+
+    Merge Q2/Q3: CI, coverage, lint, build-break experiments
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01BHRnQgPs3bagiJyxBRN9ET
+
+commit 364067b686625568244f1cb9424abf8bb4dfdb78
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:45:07 2026 +0800
+
+    docs(hw2): archive review, AI audit trail, and final coverage artifact
+
+ hw2/q2/agent-transcript/coordinator-response.md | 2367 ++++++++++++++++++++
+ hw2/q2/agent-transcript/coordinator.jsonl       |  116 +
+ hw2/q2/agent-transcript/review-events.jsonl     |    7 +
+ hw2/q2/agent-transcript/review-metadata.json    |   11 +
+ hw2/q2/agent-transcript/review-prompt.txt       |    1 +
+ hw2/q2/agent-transcript/review.txt              | 2649 +++++++++++++++++++++++
+ hw2/q2/ai-usage-log.md                          |   13 +-
+ hw2/q3/evidence/coverage.xml                    |   30 +
+ hw2/q3/evidence/final-local-checks.txt          |    1 -
+ 9 files changed, 5193 insertions(+), 2 deletions(-)
+
+commit 91febef6a284484e574cf7c50ea7c212984f4be9
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:41:28 2026 +0800
+
+    docs(hw2): record CI experiments, blind repair transcripts, and verification evidence
+
+ hw2/q2/agent-transcript/common-rules.md            |  44 +++
+ hw2/q2/agent-transcript/coordination-assignment.md |  23 ++
+ hw2/q2/agent-transcript/metadata.json              |  14 +
+ hw2/q2/agent-transcript/model-context.json         |  10 +
+ hw2/q2/agent-transcript/prompt.txt                 |   1 +
+ hw2/q2/agent-transcript/repair-response.md         | 434 +++++++++++++++++++++
+ hw2/q2/agent-transcript/repair-resume.jsonl        |  18 +
+ hw2/q2/agent-transcript/repair-resume.stderr.txt   |   0
+ hw2/q2/agent-transcript/repair.diff                |  13 +
+ hw2/q2/agent-transcript/repair.jsonl               |   9 +
+ hw2/q2/agent-transcript/repair.stderr.txt          |   1 +
+ hw2/q2/agent-transcript/resume-prompt.txt          |   1 +
+ hw2/q2/ai-usage-log.md                             |  49 +++
+ hw2/q2/evidence/01-baseline.json                   |   9 +
+ hw2/q2/evidence/01-baseline.log                    | 160 ++++++++
+ hw2/q2/evidence/02-manual-red.json                 |   9 +
+ hw2/q2/evidence/02-manual-red.log                  | 167 ++++++++
+ hw2/q2/evidence/03-manual-green.json               |   9 +
+ hw2/q2/evidence/03-manual-green.log                | 160 ++++++++
+ hw2/q2/evidence/04-agent-red.json                  |   9 +
+ hw2/q2/evidence/04-agent-red.log                   | 167 ++++++++
+ hw2/q2/evidence/05-agent-green.json                |   9 +
+ hw2/q2/evidence/05-agent-green.log                 | 160 ++++++++
+ hw2/q2/evidence/all-ci-runs.json                   |   1 +
+ hw2/q2/evidence/baseline-tests.txt                 |  10 +
+ hw2/q2/evidence/failure-excerpts.txt               |  12 +
+ hw2/q2/report.md                                   |  39 ++
+ hw2/q3/evidence/06-static-red.json                 |   9 +
+ hw2/q3/evidence/06-static-red.log                  | 265 +++++++++++++
+ hw2/q3/evidence/07-static-green.json               |   9 +
+ hw2/q3/evidence/07-static-green.log                | 255 ++++++++++++
+ hw2/q3/evidence/failure-excerpts.txt               |   7 +
+ hw2/q3/evidence/final-local-checks.txt             |  42 ++
+ hw2/q3/report.md                                   |  24 ++
+ 34 files changed, 2149 insertions(+)
+
+commit 53477b46de17b9c3f7d9fca8de5537f6c55d450b
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:40:40 2026 +0800
+
+    fix(q3): remove unused import without weakening verification gates
+
+ hw2/calc/calculator.py | 3 ---
+ 1 file changed, 3 deletions(-)
+
+commit 3e30db0bac333c95d86c5569a348531479c7c03d
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:39:36 2026 +0800
+
+    experiment(q3): enforce coverage and lint with an intentional unused import
+
+ .github/workflows/calculator.yml | 20 ++++++++++++++++++--
+ .gitignore                       |  1 +
+ hw2/calc/calculator.py           |  3 +++
+ pyproject.toml                   | 14 ++++++++++++++
+ requirements-ci.txt              |  2 ++
+ 5 files changed, 38 insertions(+), 2 deletions(-)
+
+commit b3b10eba0d4690a65e316ec14655566cca667f4a
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:38:56 2026 +0800
+
+    fix(q2): restore subtraction using independently verified agent repair
+
+ hw2/calc/calculator.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 5e42bbcaeaf90b33ea2bab6e996c6c2e32cb2d45
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:32:15 2026 +0800
+
+    experiment(q2): repeat subtraction fault for blind agent repair
+
+ hw2/calc/calculator.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 4fe8364a213a18c51d8a8d065973c0ed7f997432
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:31:32 2026 +0800
+
+    Revert "experiment(q2): introduce subtraction fault for manual recovery"
+    
+    This reverts commit b51677c2307f8096255ba5168f4468967592dd19.
+
+ hw2/calc/calculator.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b51677c2307f8096255ba5168f4468967592dd19
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:30:58 2026 +0800
+
+    experiment(q2): introduce subtraction fault for manual recovery
+
+ hw2/calc/calculator.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit cf5017114c4b1c180cd588defd8c115bfca42b0f
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:30:04 2026 +0800
+
+    ci: run calculator unittest on every push and pull request
+
+ .github/workflows/calculator.yml | 19 +++++++++++++++++++
+ .gitignore                       |  7 +++++++
+ 2 files changed, 26 insertions(+)
+
+commit a4ef434976fedbd87dfccd2055956c440e78bbca
+Merge: 934a95e 5e19e41
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:26:37 2026 +0800
+
+    Merge Q1: TDD subtract, multiply, divide
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01BHRnQgPs3bagiJyxBRN9ET
+
+commit 5e19e416892ed6d6cd3d2e99a59ce15b3ed6f207
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:25:39 2026 +0800
+
+    docs: record cycle review and final passing verification
+
+ hw2/q1/evidence/final-tests.txt | 10 ++++++++++
+ hw2/q1/narrative.md             | 10 ++++++++++
+ 2 files changed, 20 insertions(+)
+
+commit 98faad2a64bd8d74e21ab8be31fb18252f2644d7
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:23:59 2026 +0800
+
+    docs: describe cycles 1-4 with evidence and commit history
+
+ hw2/q1/narrative.md | 167 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 167 insertions(+)
+
+commit 82ba76a1de98384fcb95858c0d12196239f5c3aa
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:22:55 2026 +0800
+
+    feat: cycle 4 reject division by zero with ValueError
+
+ hw2/calc/calculator.py            |  2 ++
+ hw2/q1/evidence/cycle-4-green.txt | 10 ++++++++++
+ 2 files changed, 12 insertions(+)
+
+commit 8a14507a3dc387a54d1b4a21ece1f8d45b52b743
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:22:53 2026 +0800
+
+    test: cycle 4 require ValueError for division by zero
+
+ hw2/calc/test_calculator.py     |  9 +++++++++
+ hw2/q1/evidence/cycle-4-red.txt | 22 ++++++++++++++++++++++
+ 2 files changed, 31 insertions(+)
+
+commit d42eac3e30177578023301bd5f9dd1e12fd1ebdc
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:22:39 2026 +0800
+
+    feat: cycle 3 implement true division
+
+ hw2/calc/calculator.py            | 3 +++
+ hw2/q1/evidence/cycle-3-green.txt | 9 +++++++++
+ 2 files changed, 12 insertions(+)
+
+commit 00acc470ddede6ad9711b919ad51d5fbcaf88df1
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:22:36 2026 +0800
+
+    test: cycle 3 define true division with float results
+
+ hw2/calc/test_calculator.py     | 17 +++++++++++++++++
+ hw2/q1/evidence/cycle-3-red.txt | 18 ++++++++++++++++++
+ 2 files changed, 35 insertions(+)
+
+commit b97df3dabb4115b4c7bbe47349338bd2448932f2
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:22:19 2026 +0800
+
+    feat: cycle 2 implement integer multiplication
+
+ hw2/calc/calculator.py            | 3 +++
+ hw2/q1/evidence/cycle-2-green.txt | 8 ++++++++
+ 2 files changed, 11 insertions(+)
+
+commit bff3221e287fa674d5db37f746d949b7b7914a38
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:22:17 2026 +0800
+
+    test: cycle 2 define integer multiplication and boundaries
+
+ hw2/calc/test_calculator.py     | 12 ++++++++++++
+ hw2/q1/evidence/cycle-2-red.txt | 17 +++++++++++++++++
+ 2 files changed, 29 insertions(+)
+
+commit ceedfb9527db70bc3509d50b7f8317543b42462a
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:22:04 2026 +0800
+
+    feat: cycle 1 implement integer subtraction
+
+ hw2/calc/calculator.py            | 3 +++
+ hw2/q1/evidence/cycle-1-green.txt | 7 +++++++
+ 2 files changed, 10 insertions(+)
+
+commit 4a37dda639d89e5f220348d93662b088570eede8
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:22:01 2026 +0800
+
+    test: cycle 1 define integer subtraction and boundaries
+
+ hw2/calc/test_calculator.py     | 12 ++++++++++++
+ hw2/q1/evidence/cycle-1-red.txt | 16 ++++++++++++++++
+ 2 files changed, 28 insertions(+)
+
+commit 8a905ca937545dc5c9669306c5b844869ed2fa37
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 22:21:47 2026 +0800
+
+    feat: cycle 0 establish add-only calculator baseline
+
+ hw2/calc/.gitignore         |  1 +
+ hw2/calc/calculator.py      |  3 +++
+ hw2/calc/test_calculator.py | 13 +++++++++++++
+ 3 files changed, 17 insertions(+)
+
+commit 934a95e0ceafdd3ac58e34dd2a3dbfcfa56d7acb
+Author: Yuankai <Yuankai_@outlook.com>
+Date:   Mon Oct 26 20:14:14 2026 +0800
+
+    chore: initial commit with hw2 files
+    
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01BHRnQgPs3bagiJyxBRN9ET
+
+ hw2/Calc.java              |  12 ++++++++
+ hw2/Calc.js                |  22 ++++++++++++++
+ hw2/Calc.py                |  14 +++++++++
+ hw2/CalcTDD (AI agent).pdf | Bin 0 -> 101317 bytes
+ hw2/CalcTest.java          |  15 +++++++++
+ hw2/CalcTest.py            |  11 +++++++
+ hw2/requirement.txt        |  74 +++++++++++++++++++++++++++++++++++++++++++++
+ 7 files changed, 148 insertions(+)
