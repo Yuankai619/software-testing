@@ -25,3 +25,10 @@ Reviewer: Codex, model gpt-6.1-sol (CLI 0.164.0); not Yuankai. Notes are written
 - Independent red: 8 methods, three AttributeError subtest errors because power is absent; all previous 7 methods pass. Actual output and source hashes are saved. Approved unchanged for a test commit.
 - No observed TDD-rule violation or unasked power decision. After this commit only the invalid-domain guard is authorized; the numerical operation remains for cycle 4.
 - Green review: only the zero-base/negative-exponent guard was added; valid inputs temporarily fall through without numerical implementation, as expressly authorized. All 8 methods pass independently. No committed test edit, general exponentiation, refactor, or observed violation. Approved for a separate feat commit.
+
+## Cycle 4: valid integer exponentiation
+
+- Reviewed exactly one new method, `test_power_valid_integer_operands`, with 14 literal expected examples of one numerical rule. It covers positive powers, negative-base odd/even parity, zero base with positive exponent, positive/negative/zero bases at exponent zero, and nonzero bases with negative exponents. All five negative-exponent examples also assert float type; the (1, -4) case distinguishes an equal integer value from the required float. All expected fractions are exactly representable in binary.
+- The user's required (0, 0) -> 1 and (2, -1) -> 0.5 decisions are encoded before numerical implementation. Existing exception behavior and committed tests are unchanged.
+- Independent red: 9 methods, 14 failing subtests because the guard-only method returns None; all previous 8 methods pass. Saved actual output and hashes. Approved unchanged for a test-only commit, then numerical implementation.
+- No observed TDD-rule violation or additional unasked API decision; example selection is within the already approved contract.

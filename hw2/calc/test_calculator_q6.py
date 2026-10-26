@@ -33,3 +33,27 @@ class TestCalculatorQ6(unittest.TestCase):
                     ValueError, "^Cannot raise zero to a negative power$"
                 ):
                     calc.power(0, exponent)
+
+    def test_power_valid_integer_operands(self):
+        calc = Calculator()
+        for base, exponent, expected in (
+            (2, 3, 8),
+            (3, 4, 81),
+            (5, 1, 5),
+            (-2, 3, -8),
+            (-2, 4, 16),
+            (0, 3, 0),
+            (5, 0, 1),
+            (-5, 0, 1),
+            (0, 0, 1),
+            (2, -1, 0.5),
+            (2, -3, 0.125),
+            (-2, -3, -0.125),
+            (-2, -2, 0.25),
+            (1, -4, 1.0),
+        ):
+            with self.subTest(base=base, exponent=exponent):
+                result = calc.power(base, exponent)
+                self.assertEqual(result, expected)
+                if exponent < 0:
+                    self.assertIsInstance(result, float)
