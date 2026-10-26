@@ -16,3 +16,4 @@ Reviewer: Codex, model gpt-6.1-sol (CLI 0.164.0); not Yuankai. Notes are written
 - Reviewed `test_modulo_by_zero_raises_value_error`: exactly one new method tests the single zero-divisor exception contract with positive, negative, and zero dividends. Anchored message matching verifies the approved API detail; no unrelated behavior or weaker assertions were added.
 - Independent red: 7 methods, three subtest errors from native `ZeroDivisionError` instead of the specified `ValueError`; previous 6 methods pass. Production and every previously committed test are unchanged.
 - Approved unchanged for a test-only commit before zero-divisor implementation. No TDD-rule violation; this decision was asked and answered rather than assumed.
+- Green review: only a `b == 0` guard raising the approved fixed `ValueError` was added before `%`. All 7 methods pass. No test edit, power implementation, refactor, or unasked behavioral choice. Approved for its separate feat commit.

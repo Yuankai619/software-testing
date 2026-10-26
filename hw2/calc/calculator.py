@@ -14,4 +14,6 @@ class Calculator:
         return a / b
 
     def modulo(self, a, b):
+        if b == 0:
+            raise ValueError("Cannot modulo by zero")
         return a % b
