@@ -1054,3 +1054,150 @@ No production code, committed tests, or commits changed. Stopping for review.
 ````text
 (empty)
 ````
+
+## 10-power-guard-implementation
+
+### Exact prompt
+
+````text
+Cycle 3 red review passed. Exactly one method was added, all seven earlier methods pass, and the new subtests fail because power is absent. I committed the reviewed test and actual red evidence as a5480fe before authorizing implementation.
+
+Implement ONLY the invalid-domain guard that raises the approved ValueError/message for zero base and a negative exponent. As discussed, an intermediate power method containing only that guard is acceptable; valid numerical cases are deliberately unspecified until cycle 4, and the general exponentiation operation must not be written yet. Do not alter any test, implement numerical power, refactor unrelated code, or commit. Run the full suite and STOP for my independent green review.
+
+````
+
+### Full emitted responses and tool events
+
+````json
+{
+  "type": "thread.started",
+  "thread_id": "01a1789e-5c60-7a30-ad1d-76609a6da601"
+}
+````
+
+````json
+{
+  "type": "turn.started"
+}
+````
+
+I’ll add a `power` method containing only the approved invalid-domain guard, then run the full suite and stop for review.
+
+
+````json
+{
+  "type": "item.started",
+  "item": {
+    "id": "item_1",
+    "type": "command_execution",
+    "command": "/bin/bash -lc 'cat hw2/calc/calculator.py'",
+    "aggregated_output": "",
+    "exit_code": null,
+    "status": "in_progress"
+  }
+}
+````
+
+````json
+{
+  "type": "item.completed",
+  "item": {
+    "id": "item_1",
+    "type": "command_execution",
+    "command": "/bin/bash -lc 'cat hw2/calc/calculator.py'",
+    "aggregated_output": "class Calculator:\n    def add(self, a, b):\n        return a + b\n\n    def subtract(self, a, b):\n        return a - b\n\n    def multiply(self, a, b):\n        return a * b\n\n    def divide(self, a, b):\n        if b == 0:\n            raise ValueError(\"Cannot divide by zero\")\n        return a / b\n\n    def modulo(self, a, b):\n        if b == 0:\n            raise ValueError(\"Cannot modulo by zero\")\n        return a % b\n",
+    "exit_code": 0,
+    "status": "completed"
+  }
+}
+````
+
+````json
+{
+  "type": "item.started",
+  "item": {
+    "id": "item_2",
+    "type": "file_change",
+    "changes": [
+      {
+        "path": "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/calculator.py",
+        "kind": "update"
+      }
+    ],
+    "status": "in_progress"
+  }
+}
+````
+
+````json
+{
+  "type": "item.completed",
+  "item": {
+    "id": "item_2",
+    "type": "file_change",
+    "changes": [
+      {
+        "path": "/home/yuankai/.herdr/worktrees/software-testing/hw2-q6/hw2/calc/calculator.py",
+        "kind": "update"
+      }
+    ],
+    "status": "completed"
+  }
+}
+````
+
+````json
+{
+  "type": "item.started",
+  "item": {
+    "id": "item_3",
+    "type": "command_execution",
+    "command": "/bin/bash -lc 'PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s hw2/calc -v'",
+    "aggregated_output": "",
+    "exit_code": null,
+    "status": "in_progress"
+  }
+}
+````
+
+````json
+{
+  "type": "item.completed",
+  "item": {
+    "id": "item_3",
+    "type": "command_execution",
+    "command": "/bin/bash -lc 'PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s hw2/calc -v'",
+    "aggregated_output": "test_add (test_calculator.TestCalculator.test_add) ... ok\ntest_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok\ntest_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok\ntest_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok\ntest_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok\ntest_modulo_by_zero_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_modulo_by_zero_raises_value_error) ... ok\ntest_modulo_with_nonzero_divisor (test_calculator_q6.TestCalculatorQ6.test_modulo_with_nonzero_divisor) ... ok\ntest_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.000s\n\nOK\n",
+    "exit_code": 0,
+    "status": "completed"
+  }
+}
+````
+
+Changed only `calculator.py`, adding `power` with the guard:
+
+```python
+if a == 0 and b < 0:
+    raise ValueError("Cannot raise zero to a negative power")
+```
+
+Full suite: **8 tests passed**. No numerical exponentiation, test edits, unrelated refactoring, or commits. Stopping for green review.
+
+````json
+{
+  "type": "turn.completed",
+  "usage": {
+    "input_tokens": 962831,
+    "cached_input_tokens": 891904,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2978,
+    "reasoning_output_tokens": 72
+  }
+}
+````
+
+### CLI stderr
+
+````text
+(empty)
+````
