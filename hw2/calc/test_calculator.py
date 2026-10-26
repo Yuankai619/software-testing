@@ -32,6 +32,23 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calc.multiply(0, 0), 0)
         self.assertEqual(calc.multiply(7, 1), 7)
 
+    def test_divide_returns_float(self):
+        calc = Calculator()
+        exact = calc.divide(6, 3)
+        self.assertIsInstance(exact, float)
+        self.assertEqual(exact, 2.0)
+        fraction = calc.divide(7, 2)
+        self.assertIsInstance(fraction, float)
+        self.assertEqual(fraction, 3.5)
+        self.assertEqual(calc.divide(-7, 2), -3.5)
+        self.assertEqual(calc.divide(7, -2), -3.5)
+        self.assertEqual(calc.divide(-7, -2), 3.5)
+        zero = calc.divide(0, 7)
+        self.assertIsInstance(zero, float)
+        self.assertEqual(zero, 0.0)
+        self.assertEqual(calc.divide(0, -7), 0.0)
+        self.assertEqual(calc.divide(7, 1), 7.0)
+
 
 if __name__ == "__main__":
     unittest.main()
