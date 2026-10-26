@@ -1,0 +1,15 @@
+$ /usr/bin/python3 -B -c 'import runpy, sys; sys.path.insert(0, sys.argv.pop(1)); sys.argv[0] = sys.argv.pop(1); runpy.run_path(sys.argv[0], run_name='"'"'__main__'"'"')' /home/yuankai/.herdr/worktrees/software-testing/hw2-q7/hw2/q7/agent_calc /home/yuankai/.herdr/worktrees/software-testing/hw2-q7/hw2/q7/evidence/q1_test_calculator.py -v
+Working directory: /home/yuankai/.herdr/worktrees/software-testing/hw2-q7
+
+test_add (__main__.TestCalculator.test_add) ... ok
+test_divide_by_zero_raises_value_error (__main__.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+test_divide_returns_float (__main__.TestCalculator.test_divide_returns_float) ... ok
+test_multiply_integers (__main__.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (__main__.TestCalculator.test_subtract_integers) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+
+Exit code: 0

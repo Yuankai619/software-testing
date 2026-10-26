@@ -1,0 +1,10 @@
+{
+  "source_main_commit": "a4ef434976fedbd87dfccd2055956c440e78bbca",
+  "main_calculator_sha256": "38e19b261e6f3aa429633dc16ef5ae34158a46d00ad7f1e85ad1f407e354f881",
+  "worktree_main_matches_source": true,
+  "agent_calculator_sha256": "3a1f0a07d059a3dac241bdebd99806c463763506a86a1c4a41c2cdf72b7f59e5",
+  "agent_copy_matches_generated": true,
+  "q1_test_sha256": "3b70ea883d3b184d7430e59b0486f362784d2aca5db7f3493b81680df6a56229",
+  "isolated_q1_test_unchanged": true,
+  "final_integration_main_commit": "bdbfb18c966e50ab259c0cdd2a5cc6d23a6f1370"
+}
