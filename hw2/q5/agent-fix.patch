@@ -1,0 +1,47 @@
+diff --git a/src/requests/exceptions.py b/src/requests/exceptions.py
+index e1cedf88..1891307a 100644
+--- a/src/requests/exceptions.py
++++ b/src/requests/exceptions.py
+@@ -41,6 +41,11 @@ class JSONDecodeError(InvalidJSONError, CompatJSONDecodeError):
+         CompatJSONDecodeError.__init__(self, *args)
+         InvalidJSONError.__init__(self, *self.args, **kwargs)
+ 
++    def __reduce__(self):
++        # IOError's reducer wins in the MRO, but the JSON decoder needs
++        # the message, document, and position to reconstruct the exception.
++        return CompatJSONDecodeError.__reduce__(self)
++
+ 
+ class HTTPError(RequestException):
+     """An HTTP error occurred."""
+diff --git a/tests/test_requests.py b/tests/test_requests.py
+index 34796dc7..eb8628e9 100644
+--- a/tests/test_requests.py
++++ b/tests/test_requests.py
+@@ -2796,6 +2796,26 @@ class TestPreparingURLs:
+             r.json()
+         assert excinfo.value.doc == r.text
+ 
++    @pytest.mark.parametrize("protocol", range(pickle.HIGHEST_PROTOCOL + 1))
++    @pytest.mark.parametrize("encoding", [None, "utf-8"])
++    def test_json_decode_error_is_pickleable(self, protocol, encoding):
++        r = requests.Response()
++        r._content = b'{"value":\n invalid}'
++        r.encoding = encoding
++        with pytest.raises(requests.exceptions.JSONDecodeError) as excinfo:
++            r.json()
++
++        original = excinfo.value
++        restored = pickle.loads(pickle.dumps(original, protocol=protocol))
++
++        assert type(restored) is requests.exceptions.JSONDecodeError
++        assert isinstance(restored, RequestException)
++        assert isinstance(restored, JSONDecodeError)
++        assert restored.args == original.args
++        assert str(restored) == str(original)
++        for attr in ("msg", "doc", "pos", "lineno", "colno"):
++            assert getattr(restored, attr) == getattr(original, attr)
++
+     def test_status_code_425(self):
+         r1 = requests.codes.get("TOO_EARLY")
+         r2 = requests.codes.get("too_early")

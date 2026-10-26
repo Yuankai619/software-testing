@@ -1,0 +1,12 @@
+=== 02-manual-red.log ===
+calculator	Run calculator unit tests	2026-10-26T14:31:10.2128130Z FAIL: test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers)
+calculator	Run calculator unit tests	2026-10-26T14:31:10.2157098Z AssertionError: 10 != 4
+calculator	Run calculator unit tests	2026-10-26T14:31:10.2161555Z Ran 5 tests in 0.002s
+calculator	Run calculator unit tests	2026-10-26T14:31:10.2162954Z FAILED (failures=1)
+calculator	Run calculator unit tests	2026-10-26T14:31:10.2177167Z ##[error]Process completed with exit code 1.
+=== 04-agent-red.log ===
+calculator	Run calculator unit tests	2026-10-26T14:32:27.5603440Z FAIL: test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers)
+calculator	Run calculator unit tests	2026-10-26T14:32:27.5621368Z AssertionError: 10 != 4
+calculator	Run calculator unit tests	2026-10-26T14:32:27.5624353Z Ran 5 tests in 0.001s
+calculator	Run calculator unit tests	2026-10-26T14:32:27.5625461Z FAILED (failures=1)
+calculator	Run calculator unit tests	2026-10-26T14:32:27.5736642Z ##[error]Process completed with exit code 1.

@@ -1,0 +1,18 @@
+UTC: 2026-10-26T14:28:11.620028+00:00
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my
+HEAD: 7a13c041dbef42f9f3feb14110f02626f6892e9a
+PYTHONPATH=/home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-my/src
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'unittest', 'discover', '-s', '/home/yuankai/.herdr/worktrees/software-testing/hw2-q45/hw2/q5/tests', '-v']
+test_current_error_metadata_and_catch_hierarchy (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_current_error_metadata_and_catch_hierarchy) ... ok
+test_deepcopy_uses_compatible_reconstruction (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_deepcopy_uses_compatible_reconstruction) ... ok
+test_direct_constructor_round_trip (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_direct_constructor_round_trip) ... ok
+test_response_errors_round_trip_all_pickle_protocols (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_response_errors_round_trip_all_pickle_protocols) ... ok
+test_valid_json_is_unchanged (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_valid_json_is_unchanged) ... ok
+test_worker_exception_does_not_break_process_pool (test_json_exception_pickle.JSONDecodeErrorPickleTests.test_worker_exception_does_not_break_process_pool) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.119s
+
+OK
+Exit code: 0

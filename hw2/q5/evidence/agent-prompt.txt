@@ -1,0 +1,5 @@
+Repair the following bug in this Requests checkout.
+
+Symptom: when a Response contains invalid JSON, the JSON decoding exception raised by Response.json() cannot survive a pickle.dumps / pickle.loads round trip: deserialization raises TypeError about missing constructor arguments. This also causes exceptions returned by worker processes to break a ProcessPoolExecutor. The exception should remain catchable as Requests' JSON decoding exception and preserve the JSON error message, document, and position after serialization.
+
+Work independently using only this checkout. Do not read Git history, other checkouts, assignment artifacts, or online fixes. Do not access the network, install packages, commit, or send anything externally. Make the repair and verify it locally. Use /home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python (Python 3.14); set PYTHONPATH=$PWD/src so imports resolve to this checkout rather than the editable install in another directory. Pytest and its mock plugin are already available. In your final answer explain the change and what you ran.

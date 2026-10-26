@@ -1,0 +1,35 @@
+name: Calculator CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  calculator:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - name: Install verification tools
+        run: python -m pip install -r requirements-ci.txt
+      - name: Run calculator unit tests with branch coverage
+        run: python -m coverage run -m unittest discover -s hw2/calc -v
+      - name: Enforce full calculator coverage
+        run: python -m coverage report
+      - name: Export coverage XML
+        if: always()
+        run: python -m coverage xml
+      - name: Static analysis
+        run: python -m ruff check hw2/calc
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: calculator-coverage
+          path: coverage.xml
+          if-no-files-found: warn

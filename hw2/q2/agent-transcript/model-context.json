@@ -1,0 +1,10 @@
+{
+  "source": "Codex persisted turn_context for session 01a178a1-07a4-7752-ac6c-87cd1ee710f1",
+  "model": "gpt-6.1-sol",
+  "cwd": "/home/yuankai/Projects/School/.cache/hw2-q2-agent",
+  "approval_policy": "never",
+  "sandbox_policy": {
+    "type": "workspace-write",
+    "network_access": false
+  }
+}

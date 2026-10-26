@@ -1,0 +1,21 @@
+$ /usr/bin/python3 -B /home/yuankai/.herdr/worktrees/software-testing/hw2-q7/hw2/q7/test_properties.py --calculator /home/yuankai/.herdr/worktrees/software-testing/hw2-q7/hw2/calc/calculator.py
+Working directory: /home/yuankai/.herdr/worktrees/software-testing/hw2-q7
+
+Calculator: /home/yuankai/.herdr/worktrees/software-testing/hw2-q7/hw2/calc/calculator.py
+seed=20261026; boundary triples=121; random triples=512; total triples=633; rel_tol=1e-12; abs_tol=1e-09
+test_add_commutativity_and_associativity (__main__.CalculatorProperties.test_add_commutativity_and_associativity) ... ok
+test_add_subtract_round_trip (__main__.CalculatorProperties.test_add_subtract_round_trip) ... ok
+test_add_translation (__main__.CalculatorProperties.test_add_translation) ... ok
+test_divide_multiply_round_trip (__main__.CalculatorProperties.test_divide_multiply_round_trip) ... ok
+test_divide_scale_and_sign (__main__.CalculatorProperties.test_divide_scale_and_sign) ... ok
+test_divide_zero_always_raises_value_error (__main__.CalculatorProperties.test_divide_zero_always_raises_value_error) ... ok
+test_multiply_commutativity_and_identity (__main__.CalculatorProperties.test_multiply_commutativity_and_identity) ... ok
+test_multiply_distributes_over_add (__main__.CalculatorProperties.test_multiply_distributes_over_add) ... ok
+test_subtract_antisymmetry_and_translation (__main__.CalculatorProperties.test_subtract_antisymmetry_and_translation) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.028s
+
+OK
+
+Exit code: 0

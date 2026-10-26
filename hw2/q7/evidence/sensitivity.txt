@@ -1,0 +1,10 @@
+$ /usr/bin/python3 -B /home/yuankai/.herdr/worktrees/software-testing/hw2-q7/hw2/q7/evidence/check_sensitivity.py
+Working directory: /home/yuankai/.herdr/worktrees/software-testing/hw2-q7
+
+add: Q1 tests=5, failures=0, errors=0; property methods=9, failing subtests=1784, errors=0
+subtract: Q1 tests=5, failures=0, errors=0; property methods=9, failing subtests=669, errors=0
+multiply: Q1 tests=5, failures=0, errors=0; property methods=9, failing subtests=1132, errors=0
+divide: Q1 tests=5, failures=0, errors=0; property methods=9, failing subtests=5234, errors=0
+All four deliberate Q1-passing mutants were rejected by the properties.
+
+Exit code: 0

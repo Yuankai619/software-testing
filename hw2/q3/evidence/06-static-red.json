@@ -1,0 +1,9 @@
+{
+  "conclusion": "failure",
+  "createdAt": "2026-10-26T14:39:41Z",
+  "databaseId": 40341675283,
+  "headSha": "3e30db0bac333c95d86c5569a348531479c7c03d",
+  "status": "completed",
+  "url": "https://github.com/Yuankai619/software-testing/actions/runs/40341675283",
+  "workflowName": "Calculator CI"
+}

@@ -1,0 +1,17 @@
+CLI: codex-cli 0.164.0
+Model for successful session: gpt-6.1-sol (explicit --model argument).
+Fresh session: codex exec; not resume/fork; --ephemeral; no parent conversation supplied.
+Successful thread ID: 01a1789c-aea2-7261-a0a6-c969d298e2af
+Source at launch: clean checkout of 7a13c041dbef42f9f3feb14110f02626f6892e9a.
+Prompt for every attempt: agent-prompt.txt, unchanged.
+
+Successful invocation (attempt 4):
+CODEX_HOME=/home/yuankai/Projects/School/.cache/hw2-upstream/codex-home TMPDIR=/home/yuankai/Projects/School/.cache/hw2-upstream/codex-tmp codex exec --ephemeral --json --color never -m gpt-6.1-sol -s workspace-write -C /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-agent - < agent-prompt.txt > agent-session.jsonl 2> agent-session.stderr.txt
+The outer tool granted escalation for launch; the child retained its workspace-write sandbox. No sandbox-bypass option was used.
+
+Attempt 1: same codex exec command without explicit model, CODEX_HOME/TMPDIR overrides; failed during initialization (read-only default home). No model response or file change.
+Attempt 2: CODEX_HOME=/tmp/hw2-q45-codex-home, no explicit model; launched a fresh session but every command failed on socket-directory permissions. Default model identity was not exposed in JSONL; do not infer it.
+Attempt 3: same invocation as success, but inside the outer sandbox; fresh gpt-6.1-sol session, shell commands failed on socket-directory permissions. No file change.
+Attempt 4: launched outside the outer sandbox with automatic approval, allowing its own sandbox to initialize; full transcript saved.
+
+Authentication was supplied locally through a protected Codex home. No credential values are included in the deliverables.

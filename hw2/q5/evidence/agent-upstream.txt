@@ -1,0 +1,10 @@
+UTC: 2026-10-26T14:29:38.178341+00:00
+Source: /home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-agent
+HEAD: 7a13c041dbef42f9f3feb14110f02626f6892e9a
+PYTHONPATH=/home/yuankai/Projects/School/.cache/hw2-upstream/requests-q5-agent/src
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Command: ['/home/yuankai/Projects/School/.cache/hw2-upstream/venv/bin/python', '-m', 'pytest', '-p', 'pytest_httpbin.plugin', 'tests/test_requests.py', 'tests/test_lowlevel.py', '-k', 'json or pickle', '-q', '-o', 'addopts=']
+[2026-10-26 22:29:38,319] WARNING in core: flasgger is not installed; serving the static landing page at / and skipping the Swagger UI and /spec.json.
+........................                                                 [100%]
+24 passed, 330 deselected in 6.08s
+Exit code: 0
