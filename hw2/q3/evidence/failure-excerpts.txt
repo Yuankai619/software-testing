@@ -1,0 +1,7 @@
+=== 06-static-red.log ===
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:39:51.8689297Z Ran 5 tests in 0.001s
+calculator	Enforce full calculator coverage	2026-10-26T14:39:52.0064210Z hw2/calc/calculator.py      12      0      2      0   100%
+calculator	Enforce full calculator coverage	2026-10-26T14:39:52.0066848Z TOTAL                       12      0      2      0   100%
+calculator	Static analysis	2026-10-26T14:39:52.1951858Z F401 [*] `os` imported but unused
+calculator	Static analysis	2026-10-26T14:39:52.1962155Z Found 1 error.
+calculator	Static analysis	2026-10-26T14:39:52.1973729Z ##[error]Process completed with exit code 1.

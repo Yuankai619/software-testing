@@ -1,0 +1,42 @@
+$ .venv/bin/python --version
+Python 3.14.4
+Exit status: 0
+
+$ .venv/bin/python -m coverage --version
+Coverage.py, version 7.17.0 with C extension
+Full documentation is at https://coverage.readthedocs.io/en/7.17.0
+Exit status: 0
+
+$ .venv/bin/ruff --version
+ruff 0.17.2
+Exit status: 0
+
+$ .venv/bin/python -m coverage run -m unittest discover -s hw2/calc -v
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+Exit status: 0
+
+$ .venv/bin/python -m coverage report
+Name                     Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------
+hw2/calc/calculator.py      11      0      2      0   100%
+--------------------------------------------------------------------
+TOTAL                       11      0      2      0   100%
+Exit status: 0
+
+$ .venv/bin/python -m coverage xml
+Wrote XML report to coverage.xml
+Exit status: 0
+
+$ .venv/bin/ruff check hw2/calc
+All checks passed!
+Exit status: 0
+

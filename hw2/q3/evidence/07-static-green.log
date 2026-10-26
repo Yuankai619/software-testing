@@ -1,0 +1,255 @@
+calculator	Set up job	﻿2026-10-26T14:40:49.4129962Z Current runner version: '2.338.0'
+calculator	Set up job	2026-10-26T14:40:49.4165285Z ##[group]Runner Image Provisioner
+calculator	Set up job	2026-10-26T14:40:49.4166215Z Hosted Compute Agent
+calculator	Set up job	2026-10-26T14:40:49.4166710Z Version: 20261021.618
+calculator	Set up job	2026-10-26T14:40:49.4167329Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+calculator	Set up job	2026-10-26T14:40:49.4167982Z Build Date: 2026-10-21T00:45:21Z
+calculator	Set up job	2026-10-26T14:40:49.4168538Z Worker ID: {db9f080d-9170-469f-8cfc-93b33fc58f7f}
+calculator	Set up job	2026-10-26T14:40:49.4169209Z Region: southcentralus
+calculator	Set up job	2026-10-26T14:40:49.4169696Z Cloud: Azure
+calculator	Set up job	2026-10-26T14:40:49.4170347Z ##[endgroup]
+calculator	Set up job	2026-10-26T14:40:49.4172015Z ##[group]Operating System
+calculator	Set up job	2026-10-26T14:40:49.4172548Z Ubuntu
+calculator	Set up job	2026-10-26T14:40:49.4173055Z 24.04.5
+calculator	Set up job	2026-10-26T14:40:49.4173470Z LTS
+calculator	Set up job	2026-10-26T14:40:49.4173985Z ##[endgroup]
+calculator	Set up job	2026-10-26T14:40:49.4174468Z ##[group]Runner Image
+calculator	Set up job	2026-10-26T14:40:49.4174953Z Image: ubuntu-24.04
+calculator	Set up job	2026-10-26T14:40:49.4175451Z Version: 20261012.334.1
+calculator	Set up job	2026-10-26T14:40:49.4176344Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+calculator	Set up job	2026-10-26T14:40:49.4177911Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+calculator	Set up job	2026-10-26T14:40:49.4178744Z ##[endgroup]
+calculator	Set up job	2026-10-26T14:40:49.4179768Z ##[group]GITHUB_TOKEN Permissions
+calculator	Set up job	2026-10-26T14:40:49.4181919Z Contents: read
+calculator	Set up job	2026-10-26T14:40:49.4183167Z Metadata: read
+calculator	Set up job	2026-10-26T14:40:49.4183618Z ##[endgroup]
+calculator	Set up job	2026-10-26T14:40:49.4185492Z Secret source: Actions
+calculator	Set up job	2026-10-26T14:40:49.4186399Z Cache mode: write
+calculator	Set up job	2026-10-26T14:40:49.4187311Z Prepare workflow directory
+calculator	Set up job	2026-10-26T14:40:49.4506198Z Prepare all required actions
+calculator	Set up job	2026-10-26T14:40:49.4550077Z Getting action download info
+calculator	Set up job	2026-10-26T14:40:49.7274786Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+calculator	Set up job	2026-10-26T14:40:49.8444163Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+calculator	Set up job	2026-10-26T14:40:49.9941199Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+calculator	Set up job	2026-10-26T14:40:50.2732031Z Complete job name: calculator
+calculator	Run actions/checkout@v4	﻿2026-10-26T14:40:50.3259663Z ##[group]Run actions/checkout@v4
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3260336Z with:
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3260620Z   repository: Yuankai619/software-testing
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3262839Z   token: ***
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3263063Z   ssh-strict: true
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3263297Z   ssh-user: git
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3263535Z   persist-credentials: true
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3263930Z   clean: true
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3264282Z   sparse-checkout-cone-mode: true
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3264695Z   fetch-depth: 1
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3265028Z   fetch-tags: false
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3265363Z   show-progress: true
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3265708Z   lfs: false
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3266027Z   submodules: false
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3266430Z   set-safe-directory: true
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3266885Z   allow-unsafe-pr-checkout: false
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.3267612Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.4721035Z Syncing repository: Yuankai619/software-testing
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5345753Z ##[group]Getting Git version info
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5348271Z Working directory is '/home/runner/work/software-testing/software-testing'
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5350968Z [command]/usr/bin/git version
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5352120Z git version 2.55.0
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5355966Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5360971Z Temporarily overriding HOME='/home/runner/work/_temp/591292d7-1376-4be8-ad21-5974178c82d5' before making global git config changes
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5362096Z Adding repository directory to the temporary git global config as a safe directory
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5363100Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/software-testing/software-testing
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5364547Z Deleting the contents of '/home/runner/work/software-testing/software-testing'
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5365717Z ##[group]Initializing the repository
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5366585Z [command]/usr/bin/git init /home/runner/work/software-testing/software-testing
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5367741Z hint: Using 'master' as the name for the initial branch. This default branch name
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5368594Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5369579Z hint: to use in all of your new repositories, which will suppress this warning,
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5370394Z hint: call:
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5370720Z hint:
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5371146Z hint: 	git config --global init.defaultBranch <name>
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5371646Z hint:
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5372100Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5372856Z hint: 'development'. The just-created branch can be renamed via this command:
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5373456Z hint:
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5373781Z hint: 	git branch -m <name>
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5374160Z hint:
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5374664Z hint: Disable this message with "git config set advice.defaultBranchName false"
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5375673Z Initialized empty Git repository in /home/runner/work/software-testing/software-testing/.git/
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5377151Z [command]/usr/bin/git remote add origin https://github.com/Yuankai619/software-testing
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5378672Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5379278Z ##[group]Disabling automatic garbage collection
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5379800Z [command]/usr/bin/git config --local gc.auto 0
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5381105Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5381667Z ##[group]Setting up auth
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5382209Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5383951Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5410876Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5442322Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5654821Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5667789Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5863244Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5900699Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5901734Z ##[group]Fetching the repository
+calculator	Run actions/checkout@v4	2026-10-26T14:40:50.5908713Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +53477b46de17b9c3f7d9fca8de5537f6c55d450b:refs/remotes/origin/feat/hw2-q23
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.0998315Z From https://github.com/Yuankai619/software-testing
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.1003455Z  * [new ref]         53477b46de17b9c3f7d9fca8de5537f6c55d450b -> origin/feat/hw2-q23
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.1007533Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.1008861Z ##[group]Determining the checkout info
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.1010534Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.1014583Z [command]/usr/bin/git sparse-checkout disable
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.1059929Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.1089617Z ##[group]Checking out the ref
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.1093848Z [command]/usr/bin/git checkout --progress --force -B feat/hw2-q23 refs/remotes/origin/feat/hw2-q23
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.1155360Z Switched to a new branch 'feat/hw2-q23'
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.1162699Z branch 'feat/hw2-q23' set up to track 'origin/feat/hw2-q23'.
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.1167903Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.1251639Z [command]/usr/bin/git log -1 --format=%H
+calculator	Run actions/checkout@v4	2026-10-26T14:40:51.1268111Z 53477b46de17b9c3f7d9fca8de5537f6c55d450b
+calculator	Run actions/setup-python@v5	﻿2026-10-26T14:40:51.1540434Z ##[group]Run actions/setup-python@v5
+calculator	Run actions/setup-python@v5	2026-10-26T14:40:51.1541202Z with:
+calculator	Run actions/setup-python@v5	2026-10-26T14:40:51.1541726Z   python-version: 3.14
+calculator	Run actions/setup-python@v5	2026-10-26T14:40:51.1542506Z   check-latest: false
+calculator	Run actions/setup-python@v5	2026-10-26T14:40:51.1548383Z   token: ***
+calculator	Run actions/setup-python@v5	2026-10-26T14:40:51.1548942Z   update-environment: true
+calculator	Run actions/setup-python@v5	2026-10-26T14:40:51.1549587Z   allow-prereleases: false
+calculator	Run actions/setup-python@v5	2026-10-26T14:40:51.1550299Z   freethreaded: false
+calculator	Run actions/setup-python@v5	2026-10-26T14:40:51.1550868Z ##[endgroup]
+calculator	Run actions/setup-python@v5	2026-10-26T14:40:51.2538127Z ##[group]Installed versions
+calculator	Run actions/setup-python@v5	2026-10-26T14:40:51.2606159Z (node:1936) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+calculator	Run actions/setup-python@v5	2026-10-26T14:40:51.2623597Z Successfully set up CPython (3.14.8)
+calculator	Run actions/setup-python@v5	2026-10-26T14:40:51.2625353Z (Use `node --trace-deprecation ...` to show where the warning was created)
+calculator	Run actions/setup-python@v5	2026-10-26T14:40:51.2627465Z ##[endgroup]
+calculator	Install verification tools	﻿2026-10-26T14:40:51.2883528Z ##[group]Run python -m pip install -r requirements-ci.txt
+calculator	Install verification tools	2026-10-26T14:40:51.2885253Z [36;1mpython -m pip install -r requirements-ci.txt[0m
+calculator	Install verification tools	2026-10-26T14:40:51.3596485Z shell: /usr/bin/bash -e {0}
+calculator	Install verification tools	2026-10-26T14:40:51.3597301Z env:
+calculator	Install verification tools	2026-10-26T14:40:51.3597978Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Install verification tools	2026-10-26T14:40:51.3599065Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib/pkgconfig
+calculator	Install verification tools	2026-10-26T14:40:51.3600240Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Install verification tools	2026-10-26T14:40:51.3601198Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Install verification tools	2026-10-26T14:40:51.3602158Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Install verification tools	2026-10-26T14:40:51.3603127Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib
+calculator	Install verification tools	2026-10-26T14:40:51.3603950Z ##[endgroup]
+calculator	Install verification tools	2026-10-26T14:40:54.5739241Z Collecting coverage==7.17.0 (from -r requirements-ci.txt (line 1))
+calculator	Install verification tools	2026-10-26T14:40:54.6621314Z   Downloading coverage-7.17.0-cp314-cp314-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.1 kB)
+calculator	Install verification tools	2026-10-26T14:40:54.8472415Z Collecting ruff==0.17.2 (from -r requirements-ci.txt (line 2))
+calculator	Install verification tools	2026-10-26T14:40:54.8595135Z   Downloading ruff-0.17.2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+calculator	Install verification tools	2026-10-26T14:40:54.8895571Z Downloading coverage-7.17.0-cp314-cp314-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (261 kB)
+calculator	Install verification tools	2026-10-26T14:40:54.9512171Z Downloading ruff-0.17.2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.5 MB)
+calculator	Install verification tools	2026-10-26T14:40:55.1818962Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 47.1 MB/s  0:00:00
+calculator	Install verification tools	2026-10-26T14:40:55.3088589Z Installing collected packages: ruff, coverage
+calculator	Install verification tools	2026-10-26T14:40:55.4905446Z 
+calculator	Install verification tools	2026-10-26T14:40:55.4905517Z 
+calculator	Install verification tools	2026-10-26T14:40:55.4906593Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+calculator	Install verification tools	2026-10-26T14:40:55.4906958Z Successfully installed coverage-7.17.0 ruff-0.17.2
+calculator	Install verification tools	2026-10-26T14:40:55.4921119Z [notice] To update, run: pip install --upgrade pip
+calculator	Run calculator unit tests with branch coverage	﻿2026-10-26T14:40:55.5870627Z ##[group]Run python -m coverage run -m unittest discover -s hw2/calc -v
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.5870986Z [36;1mpython -m coverage run -m unittest discover -s hw2/calc -v[0m
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.5922076Z shell: /usr/bin/bash -e {0}
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.5922250Z env:
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.5922397Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.5922621Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib/pkgconfig
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.5922837Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.5923036Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.5923232Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.5923433Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.5923607Z ##[endgroup]
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.9467621Z test_add (test_calculator.TestCalculator.test_add) ... ok
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.9471266Z test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.9472242Z test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.9490802Z test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.9495329Z test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.9503836Z 
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.9504239Z ----------------------------------------------------------------------
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.9520748Z Ran 5 tests in 0.001s
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.9530408Z 
+calculator	Run calculator unit tests with branch coverage	2026-10-26T14:40:55.9540601Z OK
+calculator	Enforce full calculator coverage	﻿2026-10-26T14:40:55.9692795Z ##[group]Run python -m coverage report
+calculator	Enforce full calculator coverage	2026-10-26T14:40:55.9693130Z [36;1mpython -m coverage report[0m
+calculator	Enforce full calculator coverage	2026-10-26T14:40:55.9760633Z shell: /usr/bin/bash -e {0}
+calculator	Enforce full calculator coverage	2026-10-26T14:40:55.9760857Z env:
+calculator	Enforce full calculator coverage	2026-10-26T14:40:55.9761080Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Enforce full calculator coverage	2026-10-26T14:40:55.9761452Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib/pkgconfig
+calculator	Enforce full calculator coverage	2026-10-26T14:40:55.9761812Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Enforce full calculator coverage	2026-10-26T14:40:55.9762142Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Enforce full calculator coverage	2026-10-26T14:40:55.9762464Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Enforce full calculator coverage	2026-10-26T14:40:55.9762798Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib
+calculator	Enforce full calculator coverage	2026-10-26T14:40:55.9763071Z ##[endgroup]
+calculator	Enforce full calculator coverage	2026-10-26T14:40:56.0472453Z Name                     Stmts   Miss Branch BrPart  Cover   Missing
+calculator	Enforce full calculator coverage	2026-10-26T14:40:56.0473168Z --------------------------------------------------------------------
+calculator	Enforce full calculator coverage	2026-10-26T14:40:56.0473772Z hw2/calc/calculator.py      11      0      2      0   100%
+calculator	Enforce full calculator coverage	2026-10-26T14:40:56.0474466Z --------------------------------------------------------------------
+calculator	Enforce full calculator coverage	2026-10-26T14:40:56.0474977Z TOTAL                       11      0      2      0   100%
+calculator	Export coverage XML	﻿2026-10-26T14:40:56.0633407Z ##[group]Run python -m coverage xml
+calculator	Export coverage XML	2026-10-26T14:40:56.0633608Z [36;1mpython -m coverage xml[0m
+calculator	Export coverage XML	2026-10-26T14:40:56.0683033Z shell: /usr/bin/bash -e {0}
+calculator	Export coverage XML	2026-10-26T14:40:56.0683171Z env:
+calculator	Export coverage XML	2026-10-26T14:40:56.0683315Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Export coverage XML	2026-10-26T14:40:56.0683545Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib/pkgconfig
+calculator	Export coverage XML	2026-10-26T14:40:56.0683780Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Export coverage XML	2026-10-26T14:40:56.0683980Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Export coverage XML	2026-10-26T14:40:56.0684181Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Export coverage XML	2026-10-26T14:40:56.0684383Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib
+calculator	Export coverage XML	2026-10-26T14:40:56.0684553Z ##[endgroup]
+calculator	Export coverage XML	2026-10-26T14:40:56.1365859Z Wrote XML report to coverage.xml
+calculator	Static analysis	﻿2026-10-26T14:40:56.1507650Z ##[group]Run python -m ruff check hw2/calc
+calculator	Static analysis	2026-10-26T14:40:56.1507863Z [36;1mpython -m ruff check hw2/calc[0m
+calculator	Static analysis	2026-10-26T14:40:56.1557145Z shell: /usr/bin/bash -e {0}
+calculator	Static analysis	2026-10-26T14:40:56.1557284Z env:
+calculator	Static analysis	2026-10-26T14:40:56.1557429Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Static analysis	2026-10-26T14:40:56.1557658Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib/pkgconfig
+calculator	Static analysis	2026-10-26T14:40:56.1557881Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Static analysis	2026-10-26T14:40:56.1558095Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Static analysis	2026-10-26T14:40:56.1558294Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Static analysis	2026-10-26T14:40:56.1558492Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib
+calculator	Static analysis	2026-10-26T14:40:56.1558661Z ##[endgroup]
+calculator	Static analysis	2026-10-26T14:40:56.1821651Z All checks passed!
+calculator	Upload coverage report	﻿2026-10-26T14:40:56.1866064Z ##[group]Run actions/upload-artifact@v4
+calculator	Upload coverage report	2026-10-26T14:40:56.1866222Z with:
+calculator	Upload coverage report	2026-10-26T14:40:56.1866342Z   name: calculator-coverage
+calculator	Upload coverage report	2026-10-26T14:40:56.1866468Z   path: coverage.xml
+calculator	Upload coverage report	2026-10-26T14:40:56.1866586Z   if-no-files-found: warn
+calculator	Upload coverage report	2026-10-26T14:40:56.1866714Z   compression-level: 6
+calculator	Upload coverage report	2026-10-26T14:40:56.1866829Z   overwrite: false
+calculator	Upload coverage report	2026-10-26T14:40:56.1866945Z   include-hidden-files: false
+calculator	Upload coverage report	2026-10-26T14:40:56.1867069Z env:
+calculator	Upload coverage report	2026-10-26T14:40:56.1867206Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Upload coverage report	2026-10-26T14:40:56.1867428Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib/pkgconfig
+calculator	Upload coverage report	2026-10-26T14:40:56.1867644Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Upload coverage report	2026-10-26T14:40:56.1867976Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Upload coverage report	2026-10-26T14:40:56.1868174Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Upload coverage report	2026-10-26T14:40:56.1868370Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib
+calculator	Upload coverage report	2026-10-26T14:40:56.1868541Z ##[endgroup]
+calculator	Upload coverage report	2026-10-26T14:40:56.3250275Z (node:1980) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+calculator	Upload coverage report	2026-10-26T14:40:56.3258567Z (Use `node --trace-deprecation ...` to show where the warning was created)
+calculator	Upload coverage report	2026-10-26T14:40:56.3311767Z With the provided path, there will be 1 file uploaded
+calculator	Upload coverage report	2026-10-26T14:40:56.3312807Z Artifact name is valid!
+calculator	Upload coverage report	2026-10-26T14:40:56.3313167Z Root directory input is valid!
+calculator	Upload coverage report	2026-10-26T14:40:56.6190888Z Beginning upload of artifact content to blob storage
+calculator	Upload coverage report	2026-10-26T14:40:56.6298683Z (node:1980) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+calculator	Upload coverage report	2026-10-26T14:40:56.7825702Z Uploaded bytes 581
+calculator	Upload coverage report	2026-10-26T14:40:56.8303106Z Finished uploading artifact content to blob storage!
+calculator	Upload coverage report	2026-10-26T14:40:56.8320952Z SHA256 digest of uploaded artifact zip is 50a8b33d2adb4b196fa4d25fbf90af0e4b062a967987de96f0c2b453b6e0d2da
+calculator	Upload coverage report	2026-10-26T14:40:56.8321770Z Finalizing artifact upload
+calculator	Upload coverage report	2026-10-26T14:40:57.3134444Z Artifact calculator-coverage.zip successfully finalized. Artifact ID 12658779200
+calculator	Upload coverage report	2026-10-26T14:40:57.3135086Z Artifact calculator-coverage has been successfully uploaded! Final size is 581 bytes. Artifact ID is 12658779200
+calculator	Upload coverage report	2026-10-26T14:40:57.3135776Z Artifact download URL: https://github.com/Yuankai619/software-testing/actions/runs/40341850392/artifacts/12658779200
+calculator	Post Run actions/setup-python@v5	﻿2026-10-26T14:40:57.3278358Z Post job cleanup.
+calculator	Post Run actions/setup-python@v5	2026-10-26T14:40:57.4122171Z (node:1992) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+calculator	Post Run actions/setup-python@v5	2026-10-26T14:40:57.4122965Z (Use `node --trace-deprecation ...` to show where the warning was created)
+calculator	Post Run actions/checkout@v4	﻿2026-10-26T14:40:57.4249380Z Post job cleanup.
+calculator	Post Run actions/checkout@v4	2026-10-26T14:40:57.4992529Z [command]/usr/bin/git version
+calculator	Post Run actions/checkout@v4	2026-10-26T14:40:57.5006715Z git version 2.55.0
+calculator	Post Run actions/checkout@v4	2026-10-26T14:40:57.5038385Z Temporarily overriding HOME='/home/runner/work/_temp/e84d5ed8-9b72-4a07-9447-97596ba87311' before making global git config changes
+calculator	Post Run actions/checkout@v4	2026-10-26T14:40:57.5039150Z Adding repository directory to the temporary git global config as a safe directory
+calculator	Post Run actions/checkout@v4	2026-10-26T14:40:57.5040065Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/software-testing/software-testing
+calculator	Post Run actions/checkout@v4	2026-10-26T14:40:57.5068877Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+calculator	Post Run actions/checkout@v4	2026-10-26T14:40:57.5112693Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+calculator	Post Run actions/checkout@v4	2026-10-26T14:40:57.5821505Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+calculator	Post Run actions/checkout@v4	2026-10-26T14:40:57.5822364Z http.https://github.com/.extraheader
+calculator	Post Run actions/checkout@v4	2026-10-26T14:40:57.5824148Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+calculator	Post Run actions/checkout@v4	2026-10-26T14:40:57.5958932Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+calculator	Post Run actions/checkout@v4	2026-10-26T14:40:57.6192560Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+calculator	Post Run actions/checkout@v4	2026-10-26T14:40:57.6194422Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+calculator	Complete job	﻿2026-10-26T14:40:57.6634487Z Cleaning up orphan processes
+calculator	Complete job	2026-10-26T14:40:57.6823524Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

@@ -1,0 +1,160 @@
+calculator	Set up job	﻿2026-10-26T14:31:41.3186191Z Current runner version: '2.338.0'
+calculator	Set up job	2026-10-26T14:31:41.3208470Z ##[group]Runner Image Provisioner
+calculator	Set up job	2026-10-26T14:31:41.3209264Z Hosted Compute Agent
+calculator	Set up job	2026-10-26T14:31:41.3209754Z Version: 20261021.618
+calculator	Set up job	2026-10-26T14:31:41.3210350Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+calculator	Set up job	2026-10-26T14:31:41.3210976Z Build Date: 2026-10-21T00:45:21Z
+calculator	Set up job	2026-10-26T14:31:41.3211768Z Worker ID: {60cc0fe6-ca35-40d3-af6d-f6724fdfa2b3}
+calculator	Set up job	2026-10-26T14:31:41.3212422Z Region: westus3
+calculator	Set up job	2026-10-26T14:31:41.3212880Z Cloud: Azure
+calculator	Set up job	2026-10-26T14:31:41.3213396Z ##[endgroup]
+calculator	Set up job	2026-10-26T14:31:41.3214459Z ##[group]Operating System
+calculator	Set up job	2026-10-26T14:31:41.3215017Z Ubuntu
+calculator	Set up job	2026-10-26T14:31:41.3215511Z 24.04.5
+calculator	Set up job	2026-10-26T14:31:41.3215949Z LTS
+calculator	Set up job	2026-10-26T14:31:41.3216426Z ##[endgroup]
+calculator	Set up job	2026-10-26T14:31:41.3216895Z ##[group]Runner Image
+calculator	Set up job	2026-10-26T14:31:41.3217467Z Image: ubuntu-24.04
+calculator	Set up job	2026-10-26T14:31:41.3218009Z Version: 20261012.334.1
+calculator	Set up job	2026-10-26T14:31:41.3218950Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+calculator	Set up job	2026-10-26T14:31:41.3220466Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+calculator	Set up job	2026-10-26T14:31:41.3221495Z ##[endgroup]
+calculator	Set up job	2026-10-26T14:31:41.3222473Z ##[group]GITHUB_TOKEN Permissions
+calculator	Set up job	2026-10-26T14:31:41.3224308Z Contents: read
+calculator	Set up job	2026-10-26T14:31:41.3224820Z Metadata: read
+calculator	Set up job	2026-10-26T14:31:41.3225290Z ##[endgroup]
+calculator	Set up job	2026-10-26T14:31:41.3227037Z Secret source: Actions
+calculator	Set up job	2026-10-26T14:31:41.3227610Z Cache mode: write
+calculator	Set up job	2026-10-26T14:31:41.3228358Z Prepare workflow directory
+calculator	Set up job	2026-10-26T14:31:41.3452502Z Prepare all required actions
+calculator	Set up job	2026-10-26T14:31:41.3489866Z Getting action download info
+calculator	Set up job	2026-10-26T14:31:41.7203014Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+calculator	Set up job	2026-10-26T14:31:42.1194594Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+calculator	Set up job	2026-10-26T14:31:42.3499901Z Complete job name: calculator
+calculator	Run actions/checkout@v4	﻿2026-10-26T14:31:42.3956040Z ##[group]Run actions/checkout@v4
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3956516Z with:
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3956780Z   repository: Yuankai619/software-testing
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3959009Z   token: ***
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3959260Z   ssh-strict: true
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3959508Z   ssh-user: git
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3959764Z   persist-credentials: true
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3960042Z   clean: true
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3960301Z   sparse-checkout-cone-mode: true
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3960598Z   fetch-depth: 1
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3960842Z   fetch-tags: false
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3961100Z   show-progress: true
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3961613Z   lfs: false
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3961904Z   submodules: false
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3962166Z   set-safe-directory: true
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3962457Z   allow-unsafe-pr-checkout: false
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.3962860Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.4790038Z Syncing repository: Yuankai619/software-testing
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.4810111Z ##[group]Getting Git version info
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.4814492Z Working directory is '/home/runner/work/software-testing/software-testing'
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.4815687Z [command]/usr/bin/git version
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.4839578Z git version 2.55.0
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.4862873Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.4879600Z Temporarily overriding HOME='/home/runner/work/_temp/51591f68-e382-4764-ab36-4d3abe8500e1' before making global git config changes
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.4882224Z Adding repository directory to the temporary git global config as a safe directory
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.4883464Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/software-testing/software-testing
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.4962720Z Deleting the contents of '/home/runner/work/software-testing/software-testing'
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.4969575Z ##[group]Initializing the repository
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.4981709Z [command]/usr/bin/git init /home/runner/work/software-testing/software-testing
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5081526Z hint: Using 'master' as the name for the initial branch. This default branch name
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5106825Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5133035Z hint: to use in all of your new repositories, which will suppress this warning,
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5153743Z hint: call:
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5182991Z hint:
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5185075Z hint: 	git config --global init.defaultBranch <name>
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5186962Z hint:
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5187630Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5188590Z hint: 'development'. The just-created branch can be renamed via this command:
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5189411Z hint:
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5189975Z hint: 	git branch -m <name>
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5190505Z hint:
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5191161Z hint: Disable this message with "git config set advice.defaultBranchName false"
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5192886Z Initialized empty Git repository in /home/runner/work/software-testing/software-testing/.git/
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5195043Z [command]/usr/bin/git remote add origin https://github.com/Yuankai619/software-testing
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5352379Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5353289Z ##[group]Disabling automatic garbage collection
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5354001Z [command]/usr/bin/git config --local gc.auto 0
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5407260Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5407756Z ##[group]Setting up auth
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5408387Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5443932Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5719891Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5752740Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5943148Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.5977104Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.6172276Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.6217534Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.6218218Z ##[group]Fetching the repository
+calculator	Run actions/checkout@v4	2026-10-26T14:31:42.6219105Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4fe8364a213a18c51d8a8d065973c0ed7f997432:refs/remotes/origin/feat/hw2-q23
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2492612Z From https://github.com/Yuankai619/software-testing
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2512485Z  * [new ref]         4fe8364a213a18c51d8a8d065973c0ed7f997432 -> origin/feat/hw2-q23
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2514850Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2515628Z ##[group]Determining the checkout info
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2516542Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2517296Z [command]/usr/bin/git sparse-checkout disable
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2600577Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2685596Z ##[group]Checking out the ref
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2686853Z [command]/usr/bin/git checkout --progress --force -B feat/hw2-q23 refs/remotes/origin/feat/hw2-q23
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2699227Z Switched to a new branch 'feat/hw2-q23'
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2705116Z branch 'feat/hw2-q23' set up to track 'origin/feat/hw2-q23'.
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2711143Z ##[endgroup]
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2752442Z [command]/usr/bin/git log -1 --format=%H
+calculator	Run actions/checkout@v4	2026-10-26T14:31:43.2771274Z 4fe8364a213a18c51d8a8d065973c0ed7f997432
+calculator	Run actions/setup-python@v5	﻿2026-10-26T14:31:43.3049611Z ##[group]Run actions/setup-python@v5
+calculator	Run actions/setup-python@v5	2026-10-26T14:31:43.3050162Z with:
+calculator	Run actions/setup-python@v5	2026-10-26T14:31:43.3050472Z   python-version: 3.14
+calculator	Run actions/setup-python@v5	2026-10-26T14:31:43.3050863Z   check-latest: false
+calculator	Run actions/setup-python@v5	2026-10-26T14:31:43.3056913Z   token: ***
+calculator	Run actions/setup-python@v5	2026-10-26T14:31:43.3057256Z   update-environment: true
+calculator	Run actions/setup-python@v5	2026-10-26T14:31:43.3057847Z   allow-prereleases: false
+calculator	Run actions/setup-python@v5	2026-10-26T14:31:43.3058266Z   freethreaded: false
+calculator	Run actions/setup-python@v5	2026-10-26T14:31:43.3058620Z ##[endgroup]
+calculator	Run actions/setup-python@v5	2026-10-26T14:31:43.4295469Z (node:1933) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+calculator	Run actions/setup-python@v5	2026-10-26T14:31:43.4297773Z (Use `node --trace-deprecation ...` to show where the warning was created)
+calculator	Run actions/setup-python@v5	2026-10-26T14:31:43.4301165Z ##[group]Installed versions
+calculator	Run actions/setup-python@v5	2026-10-26T14:31:43.4314549Z Successfully set up CPython (3.14.8)
+calculator	Run actions/setup-python@v5	2026-10-26T14:31:43.4315651Z ##[endgroup]
+calculator	Run calculator unit tests	﻿2026-10-26T14:31:43.4489789Z ##[group]Run python -m unittest discover -s hw2/calc -v
+calculator	Run calculator unit tests	2026-10-26T14:31:43.4491126Z [36;1mpython -m unittest discover -s hw2/calc -v[0m
+calculator	Run calculator unit tests	2026-10-26T14:31:43.4864333Z shell: /usr/bin/bash -e {0}
+calculator	Run calculator unit tests	2026-10-26T14:31:43.4864813Z env:
+calculator	Run calculator unit tests	2026-10-26T14:31:43.4865258Z   pythonLocation: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Run calculator unit tests	2026-10-26T14:31:43.4866085Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib/pkgconfig
+calculator	Run calculator unit tests	2026-10-26T14:31:43.4866927Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Run calculator unit tests	2026-10-26T14:31:43.4867655Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Run calculator unit tests	2026-10-26T14:31:43.4868389Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.14.8/x64
+calculator	Run calculator unit tests	2026-10-26T14:31:43.4869125Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.14.8/x64/lib
+calculator	Run calculator unit tests	2026-10-26T14:31:43.4869735Z ##[endgroup]
+calculator	Run calculator unit tests	2026-10-26T14:31:44.4475827Z test_add (test_calculator.TestCalculator.test_add) ... ok
+calculator	Run calculator unit tests	2026-10-26T14:31:44.4477806Z test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+calculator	Run calculator unit tests	2026-10-26T14:31:44.4479401Z test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+calculator	Run calculator unit tests	2026-10-26T14:31:44.4481036Z test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+calculator	Run calculator unit tests	2026-10-26T14:31:44.4482950Z test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+calculator	Run calculator unit tests	2026-10-26T14:31:44.4484297Z 
+calculator	Run calculator unit tests	2026-10-26T14:31:44.4485010Z ----------------------------------------------------------------------
+calculator	Run calculator unit tests	2026-10-26T14:31:44.4485948Z Ran 5 tests in 0.000s
+calculator	Run calculator unit tests	2026-10-26T14:31:44.4486623Z 
+calculator	Run calculator unit tests	2026-10-26T14:31:44.4488217Z OK
+calculator	Post Run actions/setup-python@v5	﻿2026-10-26T14:31:44.4911485Z Post job cleanup.
+calculator	Post Run actions/setup-python@v5	2026-10-26T14:31:44.5724104Z (node:1944) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+calculator	Post Run actions/setup-python@v5	2026-10-26T14:31:44.5726190Z (Use `node --trace-deprecation ...` to show where the warning was created)
+calculator	Post Run actions/checkout@v4	﻿2026-10-26T14:31:44.5995521Z Post job cleanup.
+calculator	Post Run actions/checkout@v4	2026-10-26T14:31:44.6635172Z [command]/usr/bin/git version
+calculator	Post Run actions/checkout@v4	2026-10-26T14:31:44.6683579Z git version 2.55.0
+calculator	Post Run actions/checkout@v4	2026-10-26T14:31:44.6738137Z Temporarily overriding HOME='/home/runner/work/_temp/4e3fe7ba-e230-45d4-b739-4e184bc2eda5' before making global git config changes
+calculator	Post Run actions/checkout@v4	2026-10-26T14:31:44.6739742Z Adding repository directory to the temporary git global config as a safe directory
+calculator	Post Run actions/checkout@v4	2026-10-26T14:31:44.6741218Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/software-testing/software-testing
+calculator	Post Run actions/checkout@v4	2026-10-26T14:31:44.6775834Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+calculator	Post Run actions/checkout@v4	2026-10-26T14:31:44.6868101Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+calculator	Post Run actions/checkout@v4	2026-10-26T14:31:44.7143970Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+calculator	Post Run actions/checkout@v4	2026-10-26T14:31:44.7212301Z http.https://github.com/.extraheader
+calculator	Post Run actions/checkout@v4	2026-10-26T14:31:44.7245013Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+calculator	Post Run actions/checkout@v4	2026-10-26T14:31:44.7289124Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+calculator	Post Run actions/checkout@v4	2026-10-26T14:31:44.7522366Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+calculator	Post Run actions/checkout@v4	2026-10-26T14:31:44.7564175Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+calculator	Complete job	﻿2026-10-26T14:31:44.7875196Z Cleaning up orphan processes
+calculator	Complete job	2026-10-26T14:31:44.8089978Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
