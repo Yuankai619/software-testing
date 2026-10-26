@@ -1,0 +1,37 @@
+$ git log --oneline
+4839860 feat: cycle 4 implement general integer exponentiation
+fc7f34e test: cycle 4 define valid integer exponentiation
+8584cb9 feat: cycle 3 reject zero raised to a negative power
+a5480fe test: cycle 3 define invalid zero-base negative powers
+0ce2eec feat: cycle 2 reject modulo by zero with ValueError
+ffb1041 test: cycle 2 require ValueError for modulo by zero
+a0172a2 merge: incorporate main calculator CI checks
+60f1856 feat: cycle 1 implement signed modulo
+243976b test: cycle 1 define signed modulo for nonzero divisors
+e222172 Merge Q7: tests-only Calc and metamorphic properties
+7f6cdf8 test(hw2): validate tests-only Calc with metamorphic properties
+bdbfb18 Merge Q4/Q5: refactoring and fault repair in Requests
+888ee91 Complete HW2 Q4 refactoring and Q5 fault repair experiments
+0587d03 Merge Q2/Q3: CI, coverage, lint, build-break experiments
+364067b docs(hw2): archive review, AI audit trail, and final coverage artifact
+91febef docs(hw2): record CI experiments, blind repair transcripts, and verification evidence
+53477b4 fix(q3): remove unused import without weakening verification gates
+3e30db0 experiment(q3): enforce coverage and lint with an intentional unused import
+b3b10eb fix(q2): restore subtraction using independently verified agent repair
+5e42bbc experiment(q2): repeat subtraction fault for blind agent repair
+4fe8364 Revert "experiment(q2): introduce subtraction fault for manual recovery"
+b51677c experiment(q2): introduce subtraction fault for manual recovery
+cf50171 ci: run calculator unittest on every push and pull request
+a4ef434 Merge Q1: TDD subtract, multiply, divide
+5e19e41 docs: record cycle review and final passing verification
+98faad2 docs: describe cycles 1-4 with evidence and commit history
+82ba76a feat: cycle 4 reject division by zero with ValueError
+8a14507 test: cycle 4 require ValueError for division by zero
+d42eac3 feat: cycle 3 implement true division
+00acc47 test: cycle 3 define true division with float results
+b97df3d feat: cycle 2 implement integer multiplication
+bff3221 test: cycle 2 define integer multiplication and boundaries
+ceedfb9 feat: cycle 1 implement integer subtraction
+4a37dda test: cycle 1 define integer subtraction and boundaries
+8a905ca feat: cycle 0 establish add-only calculator baseline
+934a95e chore: initial commit with hw2 files

@@ -1,0 +1,36 @@
+$ /home/yuankai/.herdr/worktrees/software-testing/hw2-q6/.venv/bin/python -m coverage run -m unittest discover -s hw2/calc -v
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+test_modulo_by_zero_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_modulo_by_zero_raises_value_error) ... ok
+test_modulo_with_nonzero_divisor (test_calculator_q6.TestCalculatorQ6.test_modulo_with_nonzero_divisor) ... ok
+test_power_valid_integer_operands (test_calculator_q6.TestCalculatorQ6.test_power_valid_integer_operands) ... ok
+test_power_zero_base_negative_exponent_raises_value_error (test_calculator_q6.TestCalculatorQ6.test_power_zero_base_negative_exponent_raises_value_error) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK
+
+Exit code: 0
+
+$ /home/yuankai/.herdr/worktrees/software-testing/hw2-q6/.venv/bin/python -m coverage report
+Name                     Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------
+hw2/calc/calculator.py      19      0      6      0   100%
+--------------------------------------------------------------------
+TOTAL                       19      0      6      0   100%
+
+Exit code: 0
+
+$ /home/yuankai/.herdr/worktrees/software-testing/hw2-q6/.venv/bin/python -m coverage xml
+Wrote XML report to coverage.xml
+
+Exit code: 0
+
+$ /home/yuankai/.herdr/worktrees/software-testing/hw2-q6/.venv/bin/python -m ruff check hw2/calc
+All checks passed!
+
+Exit code: 0
