@@ -4,8 +4,8 @@ Slides for the mid-term tool-study report "Who Checks the Agent? Testing a Tool-
 
 | File | What it is |
 | --- | --- |
-| `midterm-talk.pdf` | The 15 slides, exported as PDF |
-| `script-zh.md` | Speaker script in Chinese, about 10 minutes |
+| `midterm-talk.pdf` | The 14 slides, exported as PDF |
+| `script-zh.md` | Speaker script in Chinese, about 9.5 minutes |
 | `who-checks-the-agent/index.tsx` | Slide source for [OpenSlide](https://github.com/open-slide/open-slide) |
 
 ## Open the slides in OpenSlide

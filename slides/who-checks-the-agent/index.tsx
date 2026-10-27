@@ -364,7 +364,7 @@ const Finding = ({ x, big, children }: { x: number; big: string; children: React
 );
 
 const SummaryNote = ({ x, title, children }: { x: number; title: string; children: ReactNode }) => (
-  <div style={abs(x, 745, { width: 800, borderTop: `2px solid ${INK}`, paddingTop: 16 })}>
+  <div style={abs(x, 700, { width: 800, borderTop: `2px solid ${INK}`, paddingTop: 16 })}>
     <div style={{ fontSize: 32, fontWeight: 600 }}>{title}</div>
     <div style={{ fontSize: 26, lineHeight: 1.45, color: MUTED, marginTop: 8 }}>{children}</div>
   </div>
@@ -374,46 +374,43 @@ const ExecSummary: Page = () => (
   <Sheet>
     <Heading>Executive summary</Heading>
     <div style={abs(120, 200, { fontSize: 26, fontStyle: 'italic', color: MUTED })}>What I did</div>
-    <Box x={120} y={245} w={330} h={120} size={26}>
-      40 tests written from the spec
+    <Box x={120} y={245} w={330} h={110} size={28}>
+      40 tests from the spec
     </Box>
-    <Box x={530} y={245} w={420} h={120} size={26}>
-      12 agent versions, 5 runs each: <span style={NUM}>2,400</span> traces
+    <Box x={530} y={245} w={420} h={110} size={28}>
+      12 agent versions, 5 runs each
     </Box>
-    <Box x={1030} y={245} w={380} h={120} size={26}>
-      6 oracles in promptfoo and DeepEval
+    <Box x={1030} y={245} w={380} h={110} size={28}>
+      6 oracles in 2 tools
     </Box>
-    <Box x={1490} y={245} w={310} h={120} fill={SKY} size={26}>
-      checked against faults, labels and red-team triage
+    <Box x={1490} y={245} w={310} h={110} fill={SKY} size={28}>
+      check the oracles
     </Box>
     <Overlay>
-      <Arrow x1={450} y1={305} x2={528} y2={305} />
-      <Arrow x1={950} y1={305} x2={1028} y2={305} />
-      <Arrow x1={1410} y1={305} x2={1488} y2={305} />
+      <Arrow x1={450} y1={300} x2={528} y2={300} />
+      <Arrow x1={950} y1={300} x2={1028} y2={300} />
+      <Arrow x1={1410} y1={300} x2={1488} y2={300} />
     </Overlay>
     <div style={abs(120, 400, { fontSize: 26, fontStyle: 'italic', color: MUTED })}>
       What I found
     </div>
     <Finding x={120} big="7 of 11">
-      faults caught by two free code checks (L1 + L2), as many as all six oracles together
+      faults caught by two free code checks
     </Finding>
     <Finding x={545} big="κ = 0.92">
-      for a rubric judge that sees the tool calls (J2); the ready-made TaskCompletion: 0.19
+      best judge sees the tool calls; TaskCompletion: 0.19
     </Finding>
     <Finding x={970} big="7 of 40">
-      reference answers recorded from the agent were wrong, so the snapshot oracle passed its bugs
+      recorded reference answers were wrong
     </Finding>
     <Finding x={1395} big="1 leak">
-      found by the red team on a path no functional test reached; on the original agent its 2
-      findings were both false
+      found only by the red team
     </Finding>
     <SummaryNote x={120} title="Contribution">
-      The study tests the oracles, not only the tools: injected faults, 640 trace labels and a read
-      of every red-team probe show how often each oracle is right.
+      Tests the oracles themselves, not only the tools.
     </SummaryNote>
     <SummaryNote x={1000} title="Limitations">
-      One small agent and model. Labels made by an AI assistant from a written guide. Tests and
-      faults written by the same person. Five runs per test.
+      One agent and model, AI-made labels, five runs per test.
     </SummaryNote>
   </Sheet>
 );
@@ -1724,79 +1721,6 @@ const Conclusions: Page = () => (
   </Sheet>
 );
 
-const Duty = ({
-  x,
-  y,
-  title,
-  children,
-}: {
-  x: number;
-  y: number;
-  title: string;
-  children: ReactNode;
-}) => (
-  <div style={abs(x, y, { width: 520, borderTop: `2px solid ${INK}`, paddingTop: 16 })}>
-    <div style={{ fontSize: 32, fontWeight: 600, lineHeight: 1.25 }}>{title}</div>
-    <div style={{ fontSize: 26, lineHeight: 1.45, color: MUTED, marginTop: 8 }}>{children}</div>
-  </div>
-);
-
-const Layer = ({ x, when, children }: { x: number; when: string; children: ReactNode }) => (
-  <div
-    style={abs(x, 700, {
-      width: 500,
-      height: 150,
-      boxSizing: 'border-box',
-      border: `1.5px solid ${INK}`,
-      background: SKY,
-      padding: '18px 22px',
-    })}
-  >
-    <div style={{ fontSize: 28, fontWeight: 600 }}>{when}</div>
-    <div style={{ fontSize: 24, lineHeight: 1.4, marginTop: 8 }}>{children}</div>
-  </div>
-);
-
-const HumanRole: Page = () => (
-  <Sheet>
-    <Heading n="12">What a human still has to do</Heading>
-    <Duty x={120} y={220} title="Write the oracle's authority">
-      the spec, expected states and rubrics
-    </Duty>
-    <Duty x={700} y={220} title="Check the judge">
-      label about 100 outputs before trusting it
-    </Duty>
-    <Duty x={1280} y={220} title="Review expected values">
-      a copied reference can carry a bug
-    </Duty>
-    <Duty x={120} y={420} title="Triage red-team findings">
-      read the trace, not only the answer
-    </Duty>
-    <Duty x={700} y={420} title="Decide what flakiness means">
-      rare bug, or noise in the oracle?
-    </Duty>
-    <Duty x={1280} y={420} title="Test the test harness">
-      my own recording bug hid in the traces
-    </Duty>
-    <div style={abs(120, 646, { fontSize: 26, fontStyle: 'italic', color: MUTED })}>
-      How I would adopt the tools, in layers
-    </div>
-    <Layer x={120} when="Every change">
-      deterministic trace checks in CI: free, and no false alarms here
-    </Layer>
-    <Layer x={710} when="On a fixed test set">
-      a rubric judge that sees tool calls, from another model family, repeated runs
-    </Layer>
-    <Layer x={1300} when="Before a release">
-      run the red team, then triage its results from the traces
-    </Layer>
-    <Overlay>
-      <Arrow x1={620} y1={775} x2={708} y2={775} />
-      <Arrow x1={1210} y1={775} x2={1298} y2={775} />
-    </Overlay>
-  </Sheet>
-);
-
 const Thanks: Page = () => (
   <Sheet>
     <div
@@ -1853,13 +1777,12 @@ export default [
   WhereWrong,
   RedTeam,
   Conclusions,
-  HumanRole,
   Thanks,
 ] satisfies Page[];
 
 export const notes: (string | undefined)[] = [
   '大家好，我是（你的名字）。我的期中報告題目是 Who Checks the Agent。我用 promptfoo 和 DeepEval 這兩個工具，測試一個會呼叫工具的 LLM agent。我想回答的問題是：這些工具判出來的 pass 和 fail，到底能不能相信。',
-  '先講結論。我寫了一個選課 agent，依照規格寫了 40 個測試，另外做了 11 個故意放錯的版本。每個版本的每個測試都跑 5 次，總共 2,400 筆執行紀錄。我用兩個工具做了六種 oracle 來判這些紀錄，再用植入的錯、640 筆標註和 red team 的結果，檢查這些 oracle 判得準不準。 結果有四點。第一，L1 和 L2 這兩個不用花錢的程式檢查，加起來抓到 11 個錯裡的 7 個，跟六個 oracle 全部加起來一樣多。第二，看得到工具呼叫的 rubric judge 最準，κ 是 0.92；DeepEval 內建的 TaskCompletion 只有 0.19。第三，從 agent 自己的輸出錄下來的參考答案，40 個裡有 7 個是錯的，會讓 bug 被當成正確答案。第四，red team 找到一個功能測試沒有碰到的資料外洩，但它在原版 agent 上報的兩個問題都是誤報。 這份研究的貢獻是，不只比較工具功能，而是把 oracle 本身拿來測。限制是只有一個 agent，標註不是獨立的人做的，測試和錯誤也是我自己寫的。',
+  '先講結論。我寫了一個選課 agent，依照規格寫了 40 個測試，另外做了 11 個故意放錯的版本，每個測試跑 5 次。我用兩個工具做了六種 oracle，再檢查這些 oracle 本身判得準不準。 結果有四點。第一，兩個不用花錢的程式檢查，就抓到 11 個錯裡的 7 個，跟六個 oracle 全部加起來一樣多。第二，看得到工具呼叫的 judge 最準，κ 是 0.92；DeepEval 內建的 TaskCompletion 只有 0.19。第三，從 agent 自己的輸出錄下來的參考答案，40 個裡有 7 個是錯的。第四，red team 找到一個只有它找得到的資料外洩。 這份研究的貢獻是把 oracle 本身拿來測，不只是比較工具。限制是只有一個 agent 和一個模型、標註是 AI 做的，而且每個測試只跑 5 次。',
   '這份研究關注的是 oracle，也就是測試裡判斷對錯的部分。我依照「預期結果從哪裡來」把 oracle 分成三類：從規格來、從之前錄下來的輸出來，或交給另一個模型判斷。在這份研究裡，L1、L2、J1、J2 的標準來自規格，L3 來自錄下來的輸出，J3 則完全交給模型自己判斷。',
   'agent 的 oracle 比一般程式難寫，有三個原因。第一，同一個正確答案可以有很多種說法，所以不能逐字比對。第二，每次執行的結果不一樣。例如測試 E06，沒改過的 agent 跑 5 次，有 3 次讓學生超過學分上限。第三，agent 會呼叫工具改資料，它可能已經幫學生選了課，回答卻說沒有選上。所以只看最後的回答不夠，還要看它中間呼叫了哪些工具。',
   '被測的系統是我寫的選課助理，使用者是學生 S001。例如他說「幫我選 CS301 和 CS320」，正確做法是只選 CS301，因為再加 CS320 會變成 22 學分，超過 20 學分的上限，而且兩門課的結果都要說明。 agent 用的是 gpt-4.1-mini，有六個工具，其中 enroll 和 drop 會改資料。資料有 25 門課、3 個學生。規格有 8 條規則，包括資格檢查、隱私，還有不能照著資料裡的指令做事。我在兩門課的課程說明裡放了惡意指令，用來測間接 prompt injection。每次執行都存成一份 trace，記錄每個工具呼叫、最後的回答，還有最後選了哪些課。',
@@ -1871,6 +1794,5 @@ export const notes: (string | undefined)[] = [
   '這頁看 oracle 錯在哪裡。深色是漏判，就是有缺陷卻判通過；淺色是誤判，就是正確卻判失敗。 L1 沒有誤判，但漏了 69%，因為大部分缺陷出在 agent 說的話，不是它做的事。J3 兩種錯都很多，因為它把 111 個正確的拒絕全部判失敗。例如使用者要看別人的資料，agent 正確地拒絕了，TaskCompletion 卻認為任務沒有完成。 右下是 L3 的 assertion echo。L3 的標準答案是從原版 agent 錄下來的，40 個裡有 7 個本身就錯。在這 7 個測試上，有缺陷的輸出剛好跟錯的標準答案一致，所以 L3 讓 68% 的缺陷通過，其他測試只有 16%。反過來，正確的回答因為跟錯的標準答案不一樣，反而被判失敗。這就是 L3 有 17 次假 kill 的原因。',
   'RQ3 是 promptfoo 的 red team。它根據我寫的 agent 用途和規則，自動產生 64 個攻擊，每個跑 3 次，共 192 次，再用另一個模型當 grader，判斷 agent 有沒有被攻破。我把每一次的 trace 都讀過，跟 grader 的判斷做比對。 在原版 agent 上，grader 標了 2 個問題，兩個都是誤報。另外有 7 個真的問題它沒抓到，其中 5 次是 agent 沒做資格檢查就直接呼叫 enroll，只是因為課程不存在，才沒有真的選上。 在 M03，也就是沒有權限檢查的版本上，有 10 次攻擊讓 agent 去查別的學生，其中 8 次把資料告訴了使用者，grader 抓到了 7 次。這是 40 個功能測試都沒有走到的路徑。另外，64 個攻擊裡有 34 個提到的課程根本不存在，因為產生攻擊的模型不知道系統裡有哪些資料。',
   '總結有五點。第一，只跑一次會讓每個 oracle 看起來都很強，要重複執行，並確認 kill 是真的。第二，便宜的確定性檢查效果很好。第三，judge 要先用標註檢查過才能相信。第四，從 agent 錄下來的參考答案會把 bug 一起錄進去。第五，red team 能找到新的路徑，但結果需要有人讀 trace 確認。 限制方面，只有一個小 agent 和一個模型；標註是 AI 助理照著準則做的，不是獨立的人；測試和錯誤是同一個人寫的；每個測試只跑 5 次。所以換一個系統，具體數字一定會變，但這些現象比較有可能會重複出現。',
-  '最後是人還需要做的事：寫規格和 rubric、先標大約 100 筆資料來檢查 judge、檢查參考答案、讀 red team 的 trace、判斷結果不穩定是 bug 還是雜訊，還有測試 harness 本身。我自己的紀錄程式就有一個 bug。 如果實際要用，我會分三層。每次改動都跑 trace 的確定性檢查；固定的測試集用看得到工具呼叫、而且跟 agent 不同模型的 rubric judge；發布前再跑 red team，並由人來看結果。',
   '兩個工具都讓人很容易加上一個 oracle，但都沒有幫忙確認這個 oracle 對不對。我的報告到這裡，謝謝。',
 ];
